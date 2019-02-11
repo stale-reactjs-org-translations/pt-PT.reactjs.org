@@ -1,6 +1,6 @@
 ---
 id: getting-started
-title: Getting Started
+title: Onde Começar
 permalink: docs/getting-started.html
 next: add-react-to-a-website.html
 redirect_from:
@@ -18,19 +18,21 @@ redirect_from:
   - "docs/environments.html"
 ---
 
-This page is an overview of the React documentation and related resources.
+Esta página é uma visão geral da documentação e recursos relacionados com React.
 
-**React** is a JavaScript library for building user interfaces. Learn what React is all about on [our homepage](/) or [in the tutorial](/tutorial/tutorial.html).
+**React** é uma biblioteca de JavaScript usada para a construção de interfaces de usuário. Descubra tudo sobre React na [nossa homepage](/) ou na [página de tutorial](/tutorial/tutorial.html).
 
 ---
 
-- [Try React](#try-react)
-- [Learn React](#learn-react)
-- [Staying Informed](#staying-informed)
-- [Versioned Documentation](#versioned-documentation)
-- [Something Missing?](#something-missing)
+- [Experimente o React](#try-react)
+- [Aprenda React](#learn-react)
+- [Mantenha-se Informado](#staying-informed)
+- [Documentação por Versões](#versioned-documentation)
+- [Acha que falta algo?](#something-missing)
 
-## Try React {#try-react}
+## Experimente o React {#try-react}
+
+O React foi construído desde o início com um método de adaptação em mente, **você pode usar React muito ou pouco, conforme as suas necessidades.**
 
 React has been designed from the start for gradual adoption, and **you can use as little or as much React as you need.** Whether you want to get a taste of React, add some interactivity to a simple HTML page, or start a complex React-powered app, the links in this section will help you get started.
 
