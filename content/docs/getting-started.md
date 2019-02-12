@@ -1,6 +1,6 @@
 ---
 id: getting-started
-title: Onde Começar
+title: Como Começar
 permalink: docs/getting-started.html
 next: add-react-to-a-website.html
 redirect_from:
@@ -20,31 +20,29 @@ redirect_from:
 
 Esta página é uma visão geral da documentação e recursos relacionados com React.
 
-**React** é uma biblioteca de JavaScript usada para a construção de interfaces de usuário. Descubra tudo sobre React na [nossa homepage](/) ou na [página de tutorial](/tutorial/tutorial.html).
+**React** é uma biblioteca de JavaScript usada para a construção de interfaces de usuário. Descobre tudo sobre React na [nossa homepage](/) ou na [página de tutorial](/tutorial/tutorial.html).
 
 ---
 
-- [Experimente o React](#try-react)
-- [Aprenda React](#learn-react)
-- [Mantenha-se Informado](#staying-informed)
+- [Experimenta o React](#try-react)
+- [Aprende React](#learn-react)
+- [Mantêm-te Informado](#staying-informed)
 - [Documentação por Versões](#versioned-documentation)
-- [Acha que falta algo?](#something-missing)
+- [Achas que falta algo?](#something-missing)
 
-## Experimente o React {#try-react}
+## Experimenta o React {#try-react}
 
-O React foi construído desde o início com um método de adaptação em mente, **você pode usar React muito ou pouco, conforme as suas necessidades.**
+O React foi construído desde o início com um método de adaptação em mente, **podes usar React muito ou pouco, conforme as tuas necessidades.** Desde aprenderes React, a adicionares alguma interacção a uma página HTML, ou construíres uma aplicação complexa, os links nesta secção vão ajudar-te.
 
-React has been designed from the start for gradual adoption, and **you can use as little or as much React as you need.** Whether you want to get a taste of React, add some interactivity to a simple HTML page, or start a complex React-powered app, the links in this section will help you get started.
+### Editores Online {#online-playgrounds}
 
-### Online Playgrounds {#online-playgrounds}
+Se estiveres interessado em interagir com React, podes usar um editor online. Experimenta um template "Hello World" no [CodePen](codepen://hello-world) ou no [CodeSandbox](https://codesandbox.io/s/new).
 
-If you're interested in playing around with React, you can use an online code playground. Try a Hello World template on [CodePen](codepen://hello-world) or [CodeSandbox](https://codesandbox.io/s/new).
+Caso prefiras usar o teu próprio editor de texto, podes efectuar o [download deste ficheiro HTML](https://raw.githubusercontent.com/reactjs/reactjs.org/master/static/html/single-file-example.html), editá-lo, e abrir com o teu sistema local. Acaba por ser mais lento ao alterar código, recomenda-mos a usar apenas para demonstrações simples.
 
-If you prefer to use your own text editor, you can also [download this HTML file](https://raw.githubusercontent.com/reactjs/reactjs.org/master/static/html/single-file-example.html), edit it, and open it from the local filesystem in your browser. It does a slow runtime code transformation, so we'd only recommend using this for simple demos.
+### Adiciona React a um Website {#add-react-to-a-website}
 
-### Add React to a Website {#add-react-to-a-website}
-
-You can [add React to an HTML page in one minute](/docs/add-react-to-a-website.html). You can then either gradually expand its presence, or keep it contained to a few dynamic widgets.
+Podes [adicionar React a uma página HTML em um minuto](/docs/add-react-to-a-website.html). Podes depois gradualmente expandir a sua presença, ou manter apenas alguns widgets.
 
 ### Create a New React App {#create-a-new-react-app}
 
