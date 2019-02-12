@@ -24,13 +24,13 @@ Esta página é uma visão geral da documentação e recursos relacionados com R
 
 ---
 
-- [Experimenta o React](#try-react)
-- [Aprende React](#learn-react)
+- [Experimentar React](#try-react)
+- [Aprender React](#learn-react)
 - [Mantêm-te Informado](#staying-informed)
 - [Documentação por Versões](#versioned-documentation)
 - [Achas que falta algo?](#something-missing)
 
-## Experimenta o React {#try-react}
+## Experimentar React {#try-react}
 
 O React foi construído desde o início com um método de adaptação em mente, **podes usar React muito ou pouco, conforme as tuas necessidades.** Desde aprenderes React, a adicionares alguma interacção a uma página HTML, ou construíres uma aplicação complexa, os links nesta secção vão ajudar-te.
 
@@ -42,40 +42,41 @@ Caso prefiras usar o teu próprio editor de texto, podes efectuar o [download de
 
 ### Adiciona React a um Website {#add-react-to-a-website}
 
-Podes [adicionar React a uma página HTML em um minuto](/docs/add-react-to-a-website.html). Podes depois gradualmente expandir a sua presença, ou manter apenas alguns widgets.
+Podes [adicionar React a uma página HTML em um minuto](/docs/add-react-to-a-website.html). Podes depois gradualmente expandir as suas funcionalidades, ou manter apenas alguns widgets dinâmicos.
 
-### Create a New React App {#create-a-new-react-app}
+### Cria uma Aplicação React {#create-a-new-react-app}
 
-When starting a React project, [a simple HTML page with script tags](/docs/add-react-to-a-website.html) might still be the best option. It only takes a minute to set up!
+Quando começas um projecto em React, [uma página de HTML simples com tags de script](/docs/add-react-to-a-website.html) será a melhor opção. Só demora um minuto a configurar.
 
-As your application grows, you might want to consider a more integrated setup. There are [several JavaScript toolchains](/docs/create-a-new-react-app.html) we recommend for larger applications. Each of them can work with little to no configuration and lets you take full advantage of the rich React ecosystem.
+Ao ponto que a tua aplicação vai crescendo, será melhor considerares uma configuração mais integrada. Existem [várias ferramentas JavaScript](/docs/create-a-new-react-app.html) que recomendamos para aplicações mais robustas. Cada aplicação pode utilizar pouca ou até nenhuma configuração e permite que aproveites ao máximo o ecossistema React.
 
-## Learn React {#learn-react}
+## Aprender React {#learn-react}
 
-People come to React from different backgrounds and with different learning styles. Whether you prefer a more theoretical or a practical approach, we hope you'll find this section helpful.
+As pessoas começam a utilizar React de diferentes origens, e com estilos de aprendizagem diferentes. Escolhas uma abordagem mais teórica ou mais prática, nós esperamos que aches esta secção útil.
 
-* If you prefer to **learn by doing**, start with our [practical tutorial](/tutorial/tutorial.html).
-* If you prefer to **learn concepts step by step**, start with our [guide to main concepts](/docs/hello-world.html).
+* Se preferires **aprender escrevendo código**, começa com o nosso [tutorial prático](/tutorial/tutorial.html).
 
-Like any unfamiliar technology, React does have a learning curve. With practice and some patience, you *will* get the hang of it.
+* Se preferires **aprender os conceitos passo a passo**, começa com o nosso [guia de conceitos principais](/docs/hello-world.html).
 
-### First Examples {#first-examples}
+Tal como qualquer tecnologia, React também tem uma curva de aprendizagem. Com prática e alguma paciência, *vais* aprender rápido.
 
-The [React homepage](/) contains a few small React examples with a live editor. Even if you don't know anything about React yet, try changing their code and see how it affects the result.
+### Primeiros Exemplos {#first-examples}
 
-### React for Beginners {#react-for-beginners}
+A [página inicial do React](/) contém alguns exemplos com um editor de texto online. Mesmo que por agora não saibas nada sobre React, tenta alterar o código e vê como vai afectar o resultado.
 
-If you feel that the React documentation goes at a faster pace than you're comfortable with, check out [this overview of React by Tania Rascia](https://www.taniarascia.com/getting-started-with-react/). It introduces the most important React concepts in a detailed, beginner-friendly way. Once you're done, give the documentation another try!
+### React para Iniciantes {#react-for-beginners}
 
-### React for Designers {#react-for-designers}
+Caso aches que a documentação está a avançar mais rápido do que te sentes confortável, vê esta [visão geral sobre React da Tania Rascia](https://www.taniarascia.com/getting-started-with-react/). É uma introdução detalhada dos conceitos mais importantes, ideal para iniciantes. Assim que tiveres acabado, volta a esta documentação.
 
-If you're coming from a design background, [these resources](http://reactfordesigners.com/) are a great place to get started.
+### React para Designers {#react-for-designers}
 
-### JavaScript Resources {#javascript-resources}
+Caso as tuas origens sejam na área de design, [estes recursos](http://reactfordesigners.com/) são o lugar ideal para começar.
 
-The React documentation assumes some familiarity with programming in the JavaScript language. You don't have to be an expert, but it's harder to learn both React and JavaScript at the same time.
+### Recursos de JavaScript {#javascript-resources}
 
-We recommend going through [this JavaScript overview](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) to check your knowledge level. It will take you between 30 minutes and an hour but you will feel more confident learning React.
+A documentação de React assume alguma familiaridade com a linguagem de programação JavaScript. Não precisas de ser um especialista, mas acaba por ser mais difícil aprender React e JavaScript ao mesmo tempo.
+
+Recomendamos que acedas a [esta visão geral sobre JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) para descobrires qual o teu nível de conhecimento. Deverá demorar entre 30 minutos a uma hora, mas vais sentir-te mais confortável a aprender React.
 
 >Tip
 >
