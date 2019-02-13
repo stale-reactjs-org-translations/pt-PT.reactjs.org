@@ -108,7 +108,7 @@ Esta secção da documentação é útil quando queres aprender mais detalhes so
 
 ### Glossário e FAQ {#glossary-and-faq}
 
-O [glossário](/docs/glossary.html) contém uma visão geral dos termos mais comuns que vais encontrar na documentação de React. Tens também uma secção de FAQ (_Perguntas e Respostas_) dedicada a pequena perguntas e respostas sobre os tópicos mais comuns, incluindo [fazer uma chamada AJAX](/docs/faq-ajax.html), [componente state](/docs/faq-state.html), e [estrutura de ficheiros](/docs/faq-structure.html).
+O [glossário](/docs/glossary.html) contém uma visão geral dos termos mais comuns que vais encontrar na documentação de React. Tens também uma secção de FAQ (_Perguntas e Respostas_) dedicada a pequenas perguntas e respostas sobre os tópicos mais comuns, incluindo [fazer uma chamada AJAX](/docs/faq-ajax.html), [component state](/docs/faq-state.html), e [estrutura de ficheiros](/docs/faq-structure.html).
 
 ## Mantêm-te Informado {#staying-informed}
 
