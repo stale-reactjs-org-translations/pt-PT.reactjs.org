@@ -20,7 +20,7 @@ redirect_from:
 
 Esta página é uma visão geral da documentação e recursos relacionados com React.
 
-**React** é uma biblioteca de JavaScript usada para a construção de interfaces de usuário. Descobre tudo sobre React na [nossa página inicial](/) ou na [página de tutorial](/tutorial/tutorial.html).
+**React** é uma biblioteca de JavaScript usada para a construção de interfaces de utilizador. Descobre tudo sobre React na [nossa página inicial](/) ou na [página de tutorial](/tutorial/tutorial.html).
 
 ---
 
