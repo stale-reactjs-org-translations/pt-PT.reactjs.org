@@ -32,7 +32,7 @@ Esta página é uma visão geral da documentação e recursos relacionados com R
 
 ## Experimentar React {#try-react}
 
-O React foi construído desde o início com um método de adaptação em mente, **podes usar React muito ou pouco, conforme as tuas necessidades.** Desde aprenderes React, a adicionares alguma interacção a uma página HTML, ou construíres uma aplicação complexa, as hiperligações nesta secção vão ajudar-te.
+O React foi construído desde o início com um método de adaptação em mente, **podes usar React muito ou pouco, conforme as tuas necessidades.** Queiras apenas experimentar React, adicionar alguma interactividade a uma página HTML, ou construir uma aplicação complexa, as hiperligações nesta secção vão ajudar-te.
 
 ### Editores Online {#online-playgrounds}
 
