@@ -19,7 +19,7 @@ Mostra na página um *heading* que diz "Olá, mundo!".
 
 **[Experimenta no CodePen!](codepen://hello-world)**
 
-Clica no *link* acima para abrir um editor online. Sente-te à vontade para fazer alterações, e ver como afectam o resultado. A maioria das páginas neste guia terão exemplos editáveis como este.
+Clica na hiperligação acima para abrir um editor online. Sente-te à vontade para fazer alterações, e ver como afectam o resultado. A maioria das páginas neste guia terão exemplos editáveis como este.
 
 ## Como Ler Este Guia {#how-to-read-this-guide}
 
@@ -27,9 +27,9 @@ Neste guia, iremos examinar a construção de blocos em aplicações React: elem
 
 >Dica
 >
->Este guia foi pensado em pessoas que preferem **aprender os conceitos passo-a-passo**. Se preferes aprender através da prática, vê o nosso [tutorial prático](/tutorial/tutorial.html). Poderás também complementar este guia com o tutorial prático.
+>Este guia foi pensado em pessoas que preferem **aprender os conceitos passo a passo**. Se preferes aprender escrevendo código, vê o nosso [tutorial prático](/tutorial/tutorial.html). Poderás também complementar este guia com o tutorial prático.
 
-Este é o primeiro capítulo de um guia passo-a-passo sobre os principais conceitos de React. Poderás encontrar a lista com todos os capítulos no menu lateral. Se estiveres a ler isto num dispositivo móvel, poderás aceder ao menu pressionando o botão no fundo do ecrã, do lado direito.
+Este é o primeiro capítulo de um guia passo a passo sobre os principais conceitos de React. Poderás encontrar a lista com todos os capítulos no menu lateral. Se estiveres a ler isto num dispositivo móvel, poderás aceder ao menu pressionando o botão no fundo do ecrã, do lado direito.
 
 Cada capítulo neste guia, complementa o conhecimento introduzido nos capítulos anteriores. **Poderás aprender a maior parte sobre React lendo os capítulos em "Conceitos Principais" pela ordem em que aparecem no menu lateral.** Por exemplo, ["Introdução ao JSX"](/docs/introducing-jsx.html) é o próximo capítulo a seguir a este.
 
