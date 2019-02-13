@@ -35,7 +35,7 @@ Cada capítulo neste guia, complementa o conhecimento introduzido nos capítulos
 
 ## Nível de Conhecimento Necessário {#knowledge-level-assumptions}
 
-React é uma biblioteca de Javascript, e portanto, iremos assumir que possuis conhecimentos básicos sobre a linguagem Javascript. **Se não te sentes muito confiante, recomendamos que leias [um tutorial de Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/A_re-introduction_to_JavaScript) para saberes o teu nível de conhecimento** e garantires que irás perceber este guia sem te perderes. Deverá tomar-te entre 30 minutos a 1 hora, mas como resultado não terás a sensação que estás a aprender React e Javascript ao mesmo tempo.
+React é uma biblioteca de JavaScript, e portanto, iremos assumir que possuis conhecimentos básicos sobre a linguagem JavaScript. **Se não te sentes muito confiante, recomendamos que leias [um tutorial de JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/A_re-introduction_to_JavaScript) para saberes o teu nível de conhecimento** e garantires que irás perceber este guia sem te perderes. Deverá tomar-te entre 30 minutos a 1 hora, mas como resultado não terás a sensação que estás a aprender React e JavaScript ao mesmo tempo.
 
 >Nota
 >
