@@ -83,7 +83,7 @@ Semelhante à [`renderToNodeStream`](#rendertonodestream), excepto que este não
 
 A saída HTML deste _stream_ é exactamente igual à que [`ReactDOMServer.renderToStaticMarkup`](#rendertostaticmarkup) retornaria.
 
-Se tens planos de usar o React no cliente para tornar o _markup_ interactivo, não use este método. Em vez disso, use [`renderToNodeStream`](#rendertonodestream) no servidor e [`ReactDOM.hydrate()`](/docs/react-dom.html#hydrate) no cliente.
+Se tens planos de usar o React no cliente para tornar o _markup_ interactivo, não uses este método. Em vez disso, usa [`renderToNodeStream`](#rendertonodestream) no servidor e [`ReactDOM.hydrate()`](/docs/react-dom.html#hydrate) no cliente.
 
 > Nota:
 >
