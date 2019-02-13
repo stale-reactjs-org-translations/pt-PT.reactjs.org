@@ -69,7 +69,7 @@ Se invocares [`ReactDOM.hydrate()`](/docs/react-dom.html#hydrate) em um nó que 
 >
 > Apenas para servidor. Esta API não está disponível no navegador.
 >
-> O _stream_ retornado por este método retornará um _stream_ de bytes (_byte stream_) codificado em utf-8. Se precisares de um _stream_ em outra codificação, veja projectos como o [iconv-lite](https://www.npmjs.com/package/iconv-lite), que fornecem _streams_ de transformação para transcodificação de texto.
+> O _stream_ retornado por este método retornará um _stream_ de bytes (_byte stream_) codificado em utf-8. Se precisares de um _stream_ em outra codificação, vê projectos como o [iconv-lite](https://www.npmjs.com/package/iconv-lite), que fornecem _streams_ de transformação para transcodificação de texto.
 
 * * *
 
