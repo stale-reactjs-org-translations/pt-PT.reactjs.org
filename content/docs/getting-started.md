@@ -52,7 +52,7 @@ Com o crescimento da tua aplicação, será melhor considerares uma configuraç�
 
 ## Aprender React {#learn-react}
 
-Pessoas de diferentes origens e com estilos de aprendizagem diferentes aprender React. Escolhas uma abordagem mais teórica ou mais prática, nós esperamos que encontres esta secção útil.
+Pessoas de origens e estilos de aprendizagem diferentes aprendem React. Escolhas uma abordagem mais teórica ou mais prática, nós esperamos que encontres esta secção útil.
 
 * Se preferires **aprender escrevendo código**, acede ao nosso [tutorial prático](/tutorial/tutorial.html).
 
