@@ -62,7 +62,7 @@ Tal como qualquer tecnologia, React também tem uma curva de aprendizagem. Com p
 
 ### Primeiros Exemplos {#first-examples}
 
-A [página inicial do React](/) contém alguns exemplos com um editor de texto online. Mesmo que por agora não saibas nada sobre React, tenta alterar o código e vê como vai afectar o resultado.
+A [página inicial do React](/) contém alguns exemplos com um editor de texto online. Mesmo que ainda não saibas nada sobre React, tenta alterar o código e vê como vai afectar o resultado.
 
 ### React para Iniciantes {#react-for-beginners}
 
