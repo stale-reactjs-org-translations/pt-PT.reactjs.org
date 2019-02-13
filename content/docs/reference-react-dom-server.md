@@ -51,7 +51,7 @@ ReactDOMServer.renderToStaticMarkup(element)
 
 Semelhante à [`renderToString`](#rendertostring), excepto que este não cria atributos DOM adicionais que o React usa internamente, como `data-reactroot`. Isto é útil se quiseres usar o React como um simples gerador de páginas estáticas, já que remover os atributos adicionais pode economizar alguns bytes.
 
-Se tens planos de usar o React no cliente para tornar o _markup_ interactivo, não use este método. Em vez disso, use [`renderToString`](#rendertostring) no servidor e [`ReactDOM.hydrate()`](/docs/react-dom.html#hydrate) no cliente.
+Se tens planos de usar o React no cliente para tornar o _markup_ interactivo, não uses este método. Em vez disso, usa [`renderToString`](#rendertostring) no servidor e [`ReactDOM.hydrate()`](/docs/react-dom.html#hydrate) no cliente.
 
 * * *
 
