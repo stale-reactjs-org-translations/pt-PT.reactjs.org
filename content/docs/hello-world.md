@@ -39,7 +39,7 @@ React é uma biblioteca de JavaScript, e portanto, iremos assumir que possuis co
 
 >Nota
 >
->Este guia usa nos exemplos, ocasionalmente, síntaxe das novas versões de Javascript. Se não tiveres usado Javascript nos últimos anos, [estes três pontos](https://gist.github.com/gaearon/683e676101005de0add59e8bb345340c) deverão guiar-te no caminho certo.
+>Este guia usa nos exemplos, ocasionalmente, síntaxe das novas versões de JavaScript. Se não tiveres usado JavaScript nos últimos anos, [estes três pontos](https://gist.github.com/gaearon/683e676101005de0add59e8bb345340c) deverão guiar-te no caminho certo.
 
 
 ## Vamos começar! {#lets-get-started}
