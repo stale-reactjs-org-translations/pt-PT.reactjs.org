@@ -124,4 +124,4 @@ Esta documentação reflecte sempre a última versão estável de React. Desde a
 
 ## Achas que falta algo? {#something-missing}
 
-Se achares que falta algo na documentação ou encontres algo confuso, [abre um _issue_ no repositório da documentação](https://github.com/reactjs/reactjs.org/issues/new) com as tuas sugestões e melhoramentos, podes também enviar um _tweet_ para a [conta @reactjs](https://twitter.com/reactjs). Adoramos ouvir o teu feedback!
+Se achares que falta algo na documentação ou encontrares algo confuso, [abre um _issue_ no repositório da documentação](https://github.com/reactjs/reactjs.org/issues/new) com as tuas sugestões e melhoramentos, podes também enviar um _tweet_ para a [conta @reactjs](https://twitter.com/reactjs). Adoramos ouvir o teu feedback!
