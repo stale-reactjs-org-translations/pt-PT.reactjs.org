@@ -104,7 +104,7 @@ Assim que te sentires confortável com os [conceitos principais](#main-concepts)
 
 ### Referência API {#api-reference}
 
-Esta secção da documentação é útil quando queres aprender mais detalhes sobre a API React. Por exemplo, [Referência API `React.Component`](/docs/react-component.html) pode fornecer em detalhe como o `setState()` funciona, e quais são os diferentes métodos de ciclo de vida dos componentes.
+Esta secção da documentação é útil quando queres aprender mais detalhes sobre a API de React. Por exemplo, [Referência API de `React.Component`](/docs/react-component.html) pode fornecer em detalhe como o `setState()` funciona, e qual a utilidade dos diferentes métodos de ciclo de vida dos componentes.
 
 ### Glossário e FAQ {#glossary-and-faq}
 
