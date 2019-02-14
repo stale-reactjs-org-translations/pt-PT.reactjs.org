@@ -80,7 +80,7 @@ Recomendamos que acedas a [esta visão geral sobre JavaScript](https://developer
 
 >Dica
 >
->Sempre que achares algo confuso em JavaScript, [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript) e [javascript.info](http://javascript.info/) são óptimos websites para tirares dúvidas. Também tens [os fóruns de suporte da comunidade](/community/support.html) onde podes pedir ajuda.
+>Sempre que achares algo confuso em JavaScript, [MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) e [javascript.info](http://javascript.info/) são óptimos websites para tirares dúvidas. Também tens [os fóruns de suporte da comunidade](/community/support.html) onde podes pedir ajuda.
 
 ### Tutorial Prático {#practical-tutorial}
 
