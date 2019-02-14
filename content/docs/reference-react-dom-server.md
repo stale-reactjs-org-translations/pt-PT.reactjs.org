@@ -37,7 +37,7 @@ Estes métodos adicionais dependem do pacote (`stream`) que **só está disponí
 ReactDOMServer.renderToString(element)
 ```
 
-Renderiza um elemento React para o seu HTML inicial. O React retornará uma string HTML. Podes usar este método para gerar HTML no servidor e enviar o _markup_ no request inicial para ter carregamentos de páginas mais rápidos e para permitir que motores de pesquisa rastreiem as tuas páginas para fins de _SEO_.
+Renderiza um elemento React para o seu HTML inicial. O React retornará uma string HTML. Podes usar este método para gerar HTML no servidor e enviar o _markup_ no request inicial para ter carregamentos de páginas mais rápidos e para permitir que motores de pesquisa indexem as tuas páginas para fins de _SEO_.
 
 Se invocares [`ReactDOM.hydrate()`](/docs/react-dom.html#hydrate) em um nó (_node_) que já tem o seu _markup_ processado pelo servidor, o React vai preservá-lo e apenas atribuir manipuladores de eventos (_event handlers_), permitindo que tenhas uma experiência no primeiro carregamento muito eficiente.
 
