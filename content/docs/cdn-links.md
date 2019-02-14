@@ -6,7 +6,7 @@ prev: create-a-new-react-app.html
 next: hello-world.html
 ---
 
-Tanto React como o ReactDom estão disponíveis através de CDN (_Rede De Entrega De Conteúdos_).
+Tanto React como o ReactDOM estão disponíveis através de uma CDN (_Rede de Entrega de Conteúdos_).
 
 ```html
 <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
