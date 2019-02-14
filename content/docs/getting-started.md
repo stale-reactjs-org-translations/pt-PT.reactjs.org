@@ -76,7 +76,7 @@ Caso as tuas origens sejam na área de design, [estes recursos](http://reactford
 
 A documentação de React assume alguma familiaridade com a linguagem de programação JavaScript. Não precisas de ser um especialista, mas acaba por ser mais difícil aprender React e JavaScript ao mesmo tempo.
 
-Recomendamos que acedas a [esta visão geral sobre JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) para descobrires qual o teu nível de conhecimento. Deverá demorar entre 30 minutos a uma hora, mas vais sentir-te mais confortável a aprender React.
+Recomendamos que acedas a [esta visão geral sobre JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/A_re-introduction_to_JavaScript) para descobrires qual o teu nível de conhecimento. Deverá demorar entre 30 minutos a uma hora, mas vais sentir-te mais confortável a aprender React.
 
 >Dica
 >
