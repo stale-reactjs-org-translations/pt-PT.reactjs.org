@@ -100,7 +100,7 @@ Algumas pessoas dão-se melhor com livros ou vídeos do que com a documentação
 
 ### Conceitos Avançados {#advanced-concepts}
 
-Assim que te sentires confortável com os [conceitos principais](#main-concepts) e já experimentas-te React por um bocado, talvez tópicos mais avançados sejam do teu interesse. Esta secção vai introduzir-te a poderosas, mas menos comuns funcionalidades como [context](/docs/context.html) e [refs](/docs/refs-and-the-dom.html).
+Assim que te sentires confortável com os [conceitos principais](#main-concepts) e já experimentaste React por um bocado, talvez, tópicos mais avançados sejam do teu interesse. Esta secção vai introduzir-te a poderosas, mas menos comuns funcionalidades como [context](/docs/context.html) e [refs](/docs/refs-and-the-dom.html).
 
 ### Referência API {#api-reference}
 
