@@ -30,7 +30,7 @@ Caso uses React através de CDN, recomendamos que mantenhas o atributo [`crossor
 <script crossorigin src="..."></script>
 ```
 
-Recomendamos também que verifiques se o CDN que estás a usar define `Access-Control-Allow-Origin: *` no cabeçalho HTTP:
+Recomendamos também que verifiques se a CDN que estás a usar define `Access-Control-Allow-Origin: *` no cabeçalho HTTP:
 
 ![Access-Control-Allow-Origin: *](../images/docs/cdn-cors-header.png)
 
