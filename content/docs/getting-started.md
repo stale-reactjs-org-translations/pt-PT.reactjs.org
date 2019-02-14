@@ -92,7 +92,7 @@ Se preferires **aprender os conceitos passo a passo,** o nosso [guia de conceito
 
 ### Pensar em React {#thinking-in-react}
 
-Muitos utilizadores de React dão crédito ao ler [Pensar em React](/docs/thinking-in-react.html) desde que React lhes _fez sentido_. É provavelmente o guia passo a passo mais antigo de React, mas continua a ser relevante.
+Muitos utilizadores de React dão crédito ao ler [Pensar em React](/docs/thinking-in-react.html) como o momento em que o React lhes passou a _fazer sentido_. É provavelmente o guia passo a passo mais antigo de React, mas continua a ser relevante.
 
 ### Cursos Recomendados {#recommended-courses}
 
