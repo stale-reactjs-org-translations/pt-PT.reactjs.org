@@ -8,15 +8,15 @@ prev: introducing-jsx.html
 next: components-and-props.html
 ---
 
-Elements are the smallest building blocks of React apps.
+Elementos são os menores blocos para a construção de aplicações React.
 
-An element describes what you want to see on the screen:
+Um elemento descreve o que queres ver na tela:
 
 ```js
 const element = <h1>Hello, world</h1>;
 ```
 
-Unlike browser DOM elements, React elements are plain objects, and are cheap to create. React DOM takes care of updating the DOM to match the React elements.
+Ao contrário de elementos DOM do navegador, elementos React são objectos simples e utilizam menos recursos. O React DOM é responsável por actualizar o DOM para exibir os elementos React.
 
 >**Note:**
 >
