@@ -61,7 +61,7 @@ Se tens planos de usar o React no cliente para tornar o _markup_ interactivo, n�
 ReactDOMServer.renderToNodeStream(element)
 ```
 
-Renderiza um elemento React para o teu HTML inicial. Retorna um [_Readable Stream_](https://nodejs.org/api/stream.html#stream_readable_streams) que gera uma string HTML. A saída HTML deste _stream_ é exactamente igual à que [`ReactDOMServer.renderToString`](#rendertostring) retornaria. Podes usar este método para gerar HTML no servidor e enviar o _markup_ no _request_ inicial para ter carregamentos de página mais rápidos e para permitir que motores de busca rastreiem as tuas páginas para fins de _SEO_.
+Renderiza um elemento React para o teu HTML inicial. Retorna um [_Readable Stream_](https://nodejs.org/api/stream.html#stream_readable_streams) que gera uma string HTML. A saída HTML deste _stream_ é exactamente igual à que [`ReactDOMServer.renderToString`](#rendertostring) retornaria. Podes usar este método para gerar HTML no servidor e enviar o _markup_ no _request_ inicial para ter carregamentos de página mais rápidos e para permitir que motores de busca indexem as tuas páginas para fins de _SEO_.
 
 Se invocares [`ReactDOM.hydrate()`](/docs/react-dom.html#hydrate) em um nó (_node_) que já tem o seu _markup_ processado pelo servidor, o React vai preservá-lo e apenas atribuir manipuladores de eventos (_event handlers_), permitindo que tenhas uma experiência no primeiro carregamento muito eficiente.
 
