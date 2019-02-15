@@ -13,63 +13,63 @@ Elementos são os menores blocos para a construção de aplicações React.
 Um elemento descreve o que queres ver na tela:
 
 ```js
-const element = <h1>Hello, world</h1>;
+const element = <h1>Olá, mundo</h1>;
 ```
 
 Ao contrário de elementos DOM do navegador, elementos React são objectos simples e utilizam menos recursos. O React DOM é responsável por actualizar o DOM para exibir os elementos React.
 
->**Note:**
+>**Nota:**
 >
->One might confuse elements with a more widely known concept of "components". We will introduce components in the [next section](/docs/components-and-props.html). Elements are what components are "made of", and we encourage you to read this section before jumping ahead.
+>És capaz de confundir elementos com o conceito mais amplo de "componentes". Iremos introduzir componentes na [próxima seccção](/docs/components-and-props.html). Componentes são "compostos" por elementos e recomendamos que leias esta secção antes de prosseguires.
 
-## Rendering an Element into the DOM {#rendering-an-element-into-the-dom}
+## Renderizando um Elemento no DOM {#rendering-an-element-into-the-dom}
 
-Let's say there is a `<div>` somewhere in your HTML file:
+Suponhamos que exista um `<div>` em algum lugar no teu ficheiro HTML:
 
 ```html
 <div id="root"></div>
 ```
 
-We call this a "root" DOM node because everything inside it will be managed by React DOM.
+Chamamos a isto de nó raiz do DOM porque tudo dentro dele será controlado pelo React DOM.
 
-Applications built with just React usually have a single root DOM node. If you are integrating React into an existing app, you may have as many isolated root DOM nodes as you like.
+Aplicações construídas apenas com o React geralmente têm apenas um único nó raiz no DOM. Se desejas integrar o React à uma aplicação existente, podes ter quantos nós raiz isolados quiseres.
 
-To render a React element into a root DOM node, pass both to `ReactDOM.render()`:
+Para renderizares um elemento React em um nó raiz, passe ambos para `ReactDOM.render()`:
 
 `embed:rendering-elements/render-an-element.js`
 
 [](codepen://rendering-elements/render-an-element)
 
-It displays "Hello, world" on the page.
+Assim, é exibido "Olá, mundo" na página.
 
-## Updating the Rendered Element {#updating-the-rendered-element}
+## Actualizando o Elemento Renderizado {#updating-the-rendered-element}
 
-React elements are [immutable](https://en.wikipedia.org/wiki/Immutable_object). Once you create an element, you can't change its children or attributes. An element is like a single frame in a movie: it represents the UI at a certain point in time.
+Elementos React são [imutáveis](https://pt.wikipedia.org/wiki/Objeto_imutável). Uma vez criados, tu não podes modificar os seus elementos filhos ou atributos. Um elemento é como um _frame_ em um filme: representa a interface gráfica (_UI_) em um certo momento.
 
-With our knowledge so far, the only way to update the UI is to create a new element, and pass it to `ReactDOM.render()`.
+Com o que aprendemos até agora, a única forma de actualizar a interface gráfica (_UI_) é criando um novo elemento e passá-lo ao `ReactDOM.render()`.
 
-Consider this ticking clock example:
+Veja o seguinte exemplo de um relógio:
 
 `embed:rendering-elements/update-rendered-element.js`
 
 [](codepen://rendering-elements/update-rendered-element)
 
-It calls `ReactDOM.render()` every second from a [`setInterval()`](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval) callback.
+O exemplo chama `ReactDOM.render()` a cada segundo a partir de um _callback_ do [`setInterval()`](https://developer.mozilla.org/pt-PT/docs/Web/API/WindowOrWorkerGlobalScope/setInterval).
 
->**Note:**
+>**Nota:**
 >
->In practice, most React apps only call `ReactDOM.render()` once. In the next sections we will learn how such code gets encapsulated into [stateful components](/docs/state-and-lifecycle.html).
+>Na prática, a maioria das aplicações React usam o `ReactDOM.render()` apenas uma vez. Nas secções seguintes, aprenderemos como este código pode ser encapsulado em [componentes com estado](/docs/state-and-lifecycle.html).
 >
->We recommend that you don't skip topics because they build on each other.
+>Recomendamos que não pules os tópicos porque eles se complementam.
 
-## React Only Updates What's Necessary {#react-only-updates-whats-necessary}
+## O React Somente Actualiza o que é Necessário {#react-only-updates-whats-necessary}
 
-React DOM compares the element and its children to the previous one, and only applies the DOM updates necessary to bring the DOM to the desired state.
+O React DOM compara o novo elemento e seus filhos com os anteriores e somente aplica as modificações necessárias no DOM para levá-lo ao estado desejado.
 
-You can verify by inspecting the [last example](codepen://rendering-elements/update-rendered-element) with the browser tools:
+Podes observar isto inspecionando o [último exemplo](codepen://rendering-elements/update-rendered-element) com as ferramentas do navegador:
 
-![DOM inspector showing granular updates](../images/docs/granular-dom-updates.gif)
+![Inspector do DOM mostrando actualizações granulares](../images/docs/granular-dom-updates.gif)
 
-Even though we create an element describing the whole UI tree on every tick, only the text node whose contents has changed gets updated by React DOM.
+Embora nós criemos um elemento descrevendo toda a estrutura da interface gráfica (_UI_) a cada instante, somente o nó de texto cujo conteúdo muda é actualizado pelo React DOM.
 
-In our experience, thinking about how the UI should look at any given moment rather than how to change it over time eliminates a whole class of bugs.
+Com base na nossa experiência, pensar em como a interface gráfica (_UI_) deve estar em um determinado momento, ao invés de pensar como modificá-la com o tempo, evita uma série de erros.
