@@ -1,6 +1,6 @@
 ---
 id: components-and-props
-title: Components and Props
+title: Componentes e Props
 permalink: docs/components-and-props.html
 redirect_from:
   - "docs/reusable-components.html"
@@ -16,7 +16,7 @@ prev: rendering-elements.html
 next: state-and-lifecycle.html
 ---
 
-Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. This page provides an introduction to the idea of components. You can find a [detailed component API reference here](/docs/react-component.html).
+Componentes permitem que dividas a interface gráfica (_UI_) em partes independentes, reutilizáveis e que te façam analisar cada parte de forma isolada. Esta página faz uma introdução à ideia de componentes. Podes encontrar uma [referência detalhada da API de componentes aqui](/docs/react-component.html).
 
 Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called "props") and return React elements describing what should appear on the screen.
 
