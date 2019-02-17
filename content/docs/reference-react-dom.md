@@ -60,7 +60,7 @@ Se o _callback_ opcional for fornecido, este irá ser executado após a renderiz
 ReactDOM.hydrate(element, container[, callback])
 ```
 
-O mesmo que [`render()`](#render), mas é usado para "hidratar" um _container_ cujos conteúdos HTML foram servidos por [`ReactDOMServer`](/docs/react-dom-server.html). O React irá tentar anexar manipuladores de eventos (_event handlers_) no código existente.
+O mesmo que [`render()`](#render), mas é usado para "hidratar" um _container_ cujos conteúdos HTML foram servidos por [`ReactDOMServer`](/docs/react-dom-server.html). O React irá tentar anexar _event listeners_ no código existente.
 
 O React espera que o conteúdo apresentado seja idêntico entre o servidor e o cliente. Pode corrigir diferenças de texto, mas deverás tratar divergências como _bugs_ e corrigi-las. Em modo de desenvolvimento, o React alerta sobre divergências durante o processo de "hidratação". Não há garantias que diferenças de atributos sejam corrigidas em caso de divergências. Isto é importante em termos de desempenho na maioria das aplicações, divergências são raras, e portanto, validar todo o código seria incomportávelmente dispendioso.
 
