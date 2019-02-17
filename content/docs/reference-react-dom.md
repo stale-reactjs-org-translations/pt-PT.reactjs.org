@@ -44,7 +44,7 @@ Se o _callback_ opcional for fornecido, este irá ser executado após a renderiz
 
 > Nota:
 >
-> `ReactDOM.render()` controla o conteúdo do nó (_node_) do _container_ que lhe é passado. Todos os elemento DOM que estão dentro do nó são substituídos na primeira invocação. Na seguintes invocações usa um algoritmo de diferenciação do DOM (do próprio React) para actualizações eficientes.
+> `ReactDOM.render()` controla o conteúdo do nó (_node_) do _container_ que lhe é passado. Todos os elementos DOM que estão dentro do nó são substituídos na primeira invocação. As invocações seguintes usam um algoritmo de diferenciação do DOM (do próprio React) para actualizações eficientes.
 >
 > `ReactDOM.render()` não modifica o nó (_node_) do _container_ (apenas modifica os filhos do _container_). É portanto possível, inserir um componente num nó já existente no DOM sem reescrever os filhos existentes.
 >
