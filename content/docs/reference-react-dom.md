@@ -86,7 +86,7 @@ Remove um componente React montado do DOM e limpa o seu estado e manipuladores d
 
 > Nota:
 >
-> `findDOMNode` é uma porta de salvação usada para aceder ao nó (_node_) do DOM subjacente. Na maioria dos casos, o uso desta porta de salvação é desaconselhado porque trespassa a abstração do componente. [Foi deprecado em `StricMode`.](/docs/strict-mode.html#warning-about-deprecated-finddomnode-usage)
+> `findDOMNode` é uma escapatória usada para aceder ao nó (_node_) do DOM subjacente. Na maioria dos casos, o uso desta escapatória é desaconselhado porque trespassa a abstração do componente. [Foi descontinuado em `StricMode`.](/docs/strict-mode.html#warning-about-deprecated-finddomnode-usage)
 
 ```javascript
 ReactDOM.findDOMNode(component)
