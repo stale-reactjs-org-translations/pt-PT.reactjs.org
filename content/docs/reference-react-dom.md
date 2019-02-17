@@ -50,7 +50,7 @@ Se o _callback_ opcional for fornecido, este irá ser executado após a renderiz
 >
 > `ReactDOM.render()` retorna a referência para a raíz da instância `ReactComponent`. No entanto, deverás evitar usá-la, pois em futuras versões de React, os componentes poderão ser renderizados assíncronamente em algums casos. Se necessitares usar uma referência para a raíz da instância `ReactComponent`, a melhor solução será anexar uma [referência callback (_callback ref_)](/docs/more-about-refs.html#the-ref-callback-attribute) no elemento raíz.
 >
-> Usar `ReactDOM.render()` para "hidratar" um _container_ renderizado pelo servidor está deprecado e será removido no React 17. Usa antes o método [`hydrate()`](#hydrate).
+> Usar `ReactDOM.render()` para "hidratar" um _container_ renderizado pelo servidor está descontinuado e será removido no React 17. Usa antes o método [`hydrate()`](#hydrate).
 
 * * *
 
