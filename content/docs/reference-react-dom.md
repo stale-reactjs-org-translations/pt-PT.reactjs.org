@@ -97,7 +97,7 @@ Quando um componente retorna `null` ou `false`, `findDOMNode` retorna `null`. Se
 
 > Nota:
 >
-> `findDOMNode` apenas funciona em componentes montados (isto é, componentes que tenham sido inseridos no DOM). Se tentares invocar este método num componente que ainda não tenha sido montado (por exemplo, invocando `findDOMNode` no `render()` de um componente que ainda não tenha sido criado) irá ser lançada uma excepção.
+> `findDOMNode` apenas funciona em componentes montados (isto é, componentes que tenham sido inseridos no DOM). Se tentares invocar este método num componente que ainda não tenha sido montado (por exemplo, invocando `findDOMNode` no `render()` de um componente que ainda não tenha sido criado) será lançada uma excepção.
 >
 > `findDOMNode` não pode ser usado em componentes funcionais (_function components_).
 
