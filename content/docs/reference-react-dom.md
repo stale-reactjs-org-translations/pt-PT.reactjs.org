@@ -10,7 +10,7 @@ Se usares o React através da tag `<script>`, estas APIs de alto nível estão d
 
 ## Visão Geral {#overview}
 
-O pacote `react-dom` fornece métodos DOM específicos que podem user usados ao mais alto nível da tua aplicação como uma porta de salvação para saíres do modelo de React se precisares. A maioria dos teus componentes não deverão necessitar de usar este módulo.
+O pacote `react-dom` fornece métodos DOM específicos que podem ser usados ao mais alto nível da tua aplicação como uma escapatória para saíres do modelo React se precisares. A maioria dos teus componentes não deverão necessitar de usar este módulo.
 
 - [`render()`](#render)
 - [`hydrate()`](#hydrate)
