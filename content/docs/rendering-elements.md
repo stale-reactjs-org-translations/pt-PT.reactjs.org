@@ -62,7 +62,7 @@ O exemplo chama `ReactDOM.render()` a cada segundo a partir de um _callback_ do 
 >
 >Recomendamos que não pules os tópicos porque eles se complementam.
 
-## O React Somente Actualiza o que é Necessário {#react-only-updates-whats-necessary}
+## O React Apenas Actualiza O Que É Necessário {#react-only-updates-whats-necessary}
 
 O React DOM compara o novo elemento e seus filhos com os anteriores e somente aplica as modificações necessárias no DOM para levá-lo ao estado desejado.
 
