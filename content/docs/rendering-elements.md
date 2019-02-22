@@ -24,7 +24,7 @@ Ao contrário de elementos DOM do navegador, elementos React são objectos simpl
 
 ## Renderizando um Elemento no DOM {#rendering-an-element-into-the-dom}
 
-Suponhamos que exista um `<div>` em algum lugar no teu ficheiro HTML:
+Suponhamos que exista um `<div>` algures no teu ficheiro HTML:
 
 ```html
 <div id="root"></div>
