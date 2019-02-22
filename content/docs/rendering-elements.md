@@ -40,7 +40,7 @@ Para renderizar um elemento React num nó raiz, passa ambos para `ReactDOM.rende
 
 [](codepen://rendering-elements/render-an-element)
 
-Assim, é exibido "Olá, mundo" na página.
+Exibe "Olá, mundo" na página.
 
 ## Actualizando o Elemento Renderizado {#updating-the-rendered-element}
 
