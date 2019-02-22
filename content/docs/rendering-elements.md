@@ -20,7 +20,7 @@ Ao contrário de elementos DOM do navegador, elementos React são objectos simpl
 
 >**Nota:**
 >
->És capaz de confundir elementos com o conceito mais amplo de "componentes". Iremos introduzir componentes na [próxima seccção](/docs/components-and-props.html). Componentes são "compostos" por elementos e recomendamos que leias esta secção antes de prosseguires.
+>Poderás confundir elementos com o mais amplo e conhecido conceito de "componentes". Iremos introduzir componentes na [próxima seccção](/docs/components-and-props.html). Elementos são o que compõem um componente, e recomendamos que leias esta secção antes de prosseguires.
 
 ## Renderizando um Elemento no DOM {#rendering-an-element-into-the-dom}
 
