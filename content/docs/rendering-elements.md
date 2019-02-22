@@ -66,7 +66,7 @@ O exemplo chama `ReactDOM.render()` a cada segundo a partir de um _callback_ do 
 
 O React DOM compara o novo elemento e seus filhos com os anteriores e somente aplica as modificações necessárias no DOM para levá-lo ao estado desejado.
 
-Podes observar isto inspecionando o [último exemplo](codepen://rendering-elements/update-rendered-element) com as ferramentas do navegador:
+Podes verificar isto inspeccionando o [último exemplo](codepen://rendering-elements/update-rendered-element) com as ferramentas do navegador:
 
 ![Inspector do DOM mostrando actualizações granulares](../images/docs/granular-dom-updates.gif)
 
