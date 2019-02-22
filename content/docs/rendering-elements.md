@@ -16,7 +16,7 @@ Um elemento descreve o que queres ver no ecrã:
 const element = <h1>Olá, mundo</h1>;
 ```
 
-Ao contrário de elementos DOM do navegador, elementos React são objectos simples e utilizam menos recursos. O React DOM é responsável por actualizar o DOM para exibir os elementos React.
+Ao contrário de elementos DOM do navegador, elementos React são objectos simples e utilizam menos recursos ao serem criados. O React DOM é responsável por actualizar o DOM para igualar os elementos React.
 
 >**Nota:**
 >
