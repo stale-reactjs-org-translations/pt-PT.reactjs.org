@@ -68,7 +68,7 @@ O React DOM compara o novo elemento e seus filhos com os anteriores e somente ap
 
 Podes verificar isto inspeccionando o [último exemplo](codepen://rendering-elements/update-rendered-element) com as ferramentas do navegador:
 
-![Inspector do DOM mostrando actualizações granulares](../images/docs/granular-dom-updates.gif)
+![Actualizações granulares no inspector do DOM](../images/docs/granular-dom-updates.gif)
 
 Embora nós criemos um elemento descrevendo toda a estrutura da interface gráfica (_UI_) a cada instante, somente o nó de texto cujo conteúdo muda é actualizado pelo React DOM.
 
