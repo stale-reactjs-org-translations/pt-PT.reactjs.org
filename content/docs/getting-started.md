@@ -68,7 +68,11 @@ A [página inicial do React](/) contém alguns exemplos com um editor de texto o
 
 Caso aches que a documentação está a avançar mais rápido do que te sentes confortável, vê esta [visão geral sobre React da Tania Rascia](https://www.taniarascia.com/getting-started-with-react/). É uma introdução detalhada dos conceitos mais importantes, ideal para iniciantes. Assim que tiveres acabado, volta a esta documentação.
 
+<<<<<<< HEAD
 ### React para Designers {#react-for-designers}
+=======
+If you're coming from a design background, [these resources](https://reactfordesigners.com/) are a great place to get started.
+>>>>>>> d615c5b7bcceef420c7f9246035f8ae3ba8ae11a
 
 Caso as tuas origens sejam na área de design, [estes recursos](http://reactfordesigners.com/) são o lugar ideal para começar.
 
@@ -80,7 +84,11 @@ Recomendamos que acedas a [esta visão geral sobre JavaScript](https://developer
 
 >Dica
 >
+<<<<<<< HEAD
 >Sempre que achares algo confuso em JavaScript, [MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) e [javascript.info](http://javascript.info/) são óptimos websites para tirares dúvidas. Também tens [os fóruns de suporte da comunidade](/community/support.html) onde podes pedir ajuda.
+=======
+>Whenever you get confused by something in JavaScript, [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and [javascript.info](https://javascript.info/) are great websites to check. There are also [community support forums](/community/support.html) where you can ask for help.
+>>>>>>> d615c5b7bcceef420c7f9246035f8ae3ba8ae11a
 
 ### Tutorial Prático {#practical-tutorial}
 
