@@ -60,7 +60,7 @@ O exemplo chama `ReactDOM.render()` a cada segundo a partir de um _callback_ do 
 >
 >Na prática, a maioria das aplicações React usam o `ReactDOM.render()` apenas uma vez. Nas secções seguintes, aprenderemos como este código pode ser encapsulado em [componentes com estado](/docs/state-and-lifecycle.html).
 >
->Recomendamos que não pules os tópicos porque eles se complementam.
+>Recomendamos que não saltes os tópicos porque eles se complementam.
 
 ## O React Apenas Actualiza O Que É Necessário {#react-only-updates-whats-necessary}
 
