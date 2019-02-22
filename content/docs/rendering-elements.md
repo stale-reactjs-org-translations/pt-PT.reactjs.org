@@ -58,7 +58,7 @@ O exemplo invoca o método `ReactDOM.render()` a cada segundo a partir de um _ca
 
 >**Nota:**
 >
->Na prática, a maioria das aplicações React usam o `ReactDOM.render()` apenas uma vez. Nas secções seguintes, aprenderemos como este código pode ser encapsulado em [componentes com estado](/docs/state-and-lifecycle.html).
+>Na prática, a maioria das aplicações em React apenas invocam o método `ReactDOM.render()` uma vez. Nas secções seguintes, aprenderemos como este código pode ser encapsulado em [componentes com estado](/docs/state-and-lifecycle.html).
 >
 >Recomendamos que não saltes os tópicos porque eles se complementam.
 
