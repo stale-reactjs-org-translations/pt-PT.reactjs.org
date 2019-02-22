@@ -54,7 +54,7 @@ Veja o seguinte exemplo de um relógio:
 
 [](codepen://rendering-elements/update-rendered-element)
 
-O exemplo chama `ReactDOM.render()` a cada segundo a partir de um _callback_ do [`setInterval()`](https://developer.mozilla.org/pt-PT/docs/Web/API/WindowOrWorkerGlobalScope/setInterval).
+O exemplo invoca o método `ReactDOM.render()` a cada segundo a partir de um _callback_ do [`setInterval()`](https://developer.mozilla.org/pt-PT/docs/Web/API/WindowOrWorkerGlobalScope/setInterval).
 
 >**Nota:**
 >
