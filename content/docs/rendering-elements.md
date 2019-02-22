@@ -44,7 +44,7 @@ Exibe "Olá, mundo" na página.
 
 ## Actualizando o Elemento Renderizado {#updating-the-rendered-element}
 
-Elementos React são [imutáveis](https://pt.wikipedia.org/wiki/Objeto_imutável). Uma vez criados, tu não podes modificar os seus elementos filhos ou atributos. Um elemento é como um _frame_ em um filme: representa a interface gráfica (_UI_) em um certo momento.
+Elementos React são [imutáveis](https://pt.wikipedia.org/wiki/Objeto_imutável). Uma vez criado o elemento, não poderás modificar os seus filhos ou atributos. Um elemento é como um _frame_ num filme: representa a interface gráfica (_UI_) num certo momento.
 
 Com o que aprendemos até agora, a única forma de actualizar a interface gráfica (_UI_) é criando um novo elemento e passando-o ao `ReactDOM.render()`.
 
