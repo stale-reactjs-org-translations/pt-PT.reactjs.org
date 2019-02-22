@@ -72,4 +72,4 @@ Podes verificar isto inspeccionando o [último exemplo](codepen://rendering-elem
 
 Embora nós criemos um elemento descrevendo toda a estrutura da interface gráfica (_UI_) a cada instante, somente o nó de texto cujo conteúdo muda é actualizado pelo React DOM.
 
-Com base na nossa experiência, pensar em como a interface gráfica (_UI_) deve estar em um determinado momento, ao invés de pensar como modificá-la com o tempo, evita uma série de bugs.
+Com base na nossa experiência, pensar em como a interface gráfica (_UI_) deve estar num determinado momento, ao invés de pensar em como modificá-la com o tempo, evita uma série de _bugs_.
