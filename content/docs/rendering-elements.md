@@ -8,7 +8,7 @@ prev: introducing-jsx.html
 next: components-and-props.html
 ---
 
-Elementos são os menores blocos para a construção de aplicações React.
+Elementos são os menores blocos para a construção de aplicações em React.
 
 Um elemento descreve o que queres ver no ecrã:
 
