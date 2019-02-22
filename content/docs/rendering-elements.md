@@ -34,7 +34,7 @@ Chamamos a isto um nó "raiz" do DOM porque tudo dentro dele será controlado pe
 
 Aplicações construídas apenas com o React geralmente têm apenas um único nó raiz no DOM. Se desejas integrar o React à uma aplicação existente, podes ter quantos nós raiz isolados quiseres.
 
-Para renderizares um elemento React em um nó raiz, passe ambos para `ReactDOM.render()`:
+Para renderizar um elemento React num nó raiz, passa ambos para `ReactDOM.render()`:
 
 `embed:rendering-elements/render-an-element.js`
 
