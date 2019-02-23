@@ -70,7 +70,7 @@ Caso aches que a documentação está a avançar mais rápido do que te sentes c
 
 ### React para Designers {#react-for-designers}
 
-Caso as tuas origens sejam na área de design, [estes recursos](http://reactfordesigners.com/) são o lugar ideal para começar.
+Caso as tuas origens sejam da área de design, [estes recursos](https://reactfordesigners.com/) são o lugar ideal para começar.
 
 ### Recursos de JavaScript {#javascript-resources}
 
@@ -80,7 +80,7 @@ Recomendamos que acedas a [esta visão geral sobre JavaScript](https://developer
 
 >Dica
 >
->Sempre que achares algo confuso em JavaScript, [MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) e [javascript.info](http://javascript.info/) são óptimos websites para tirares dúvidas. Também tens [os fóruns de suporte da comunidade](/community/support.html) onde podes pedir ajuda.
+>Sempre que achares algo confuso em JavaScript, [MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) e [javascript.info](https://javascript.info/) são óptimos websites para tirares dúvidas. Também tens [os fóruns de suporte da comunidade](/community/support.html) onde podes pedir ajuda.
 
 ### Tutorial Prático {#practical-tutorial}
 

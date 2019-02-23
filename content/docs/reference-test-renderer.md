@@ -38,7 +38,7 @@ console.log(testRenderer.toJSON());
 //   children: [ 'Facebook' ] }
 ```
 
-Podes usar o recurso de teste de snapshot do Jest para guardar automaticamente uma cópia da árvore JSON em um arquivo e verificar em seus testes que ela não foi alterada: [Aprende mais sobre isto](http://facebook.github.io/jest/blog/2016/07/27/jest-14.html).
+Podes usar o recurso de teste de snapshot do Jest para guardar automaticamente uma cópia da árvore JSON em um arquivo e verificar em seus testes que ela não foi alterada: [Aprende mais sobre isto](https://facebook.github.io/jest/blog/2016/07/27/jest-14.html).
 
 Podes também percorrer o resultado para encontrar nós específicos e fazer verificações sobre eles.
 
@@ -110,7 +110,7 @@ Cria uma instância do `TestRenderer` com o elemento React fornecido. Este méto
 testRenderer.toJSON()
 ```
 
-Retorna um objecto representando a árvore renderizada. Esta árvore contém apenas os nós específicos da plataforma como `<div>` ou `<View>` e suas props, mas não contém nenhum componente criado pelo utilizador. Isto é útil para [testes de snapshot](http://facebook.github.io/jest/docs/en/snapshot-testing.html#snapshot-testing-with-jest).
+Retorna um objecto representando a árvore renderizada. Esta árvore contém apenas os nós específicos da plataforma como `<div>` ou `<View>` e suas props, mas não contém nenhum componente criado pelo utilizador. Isto é útil para [testes de snapshot](https://facebook.github.io/jest/docs/en/snapshot-testing.html#snapshot-testing-with-jest).
 
 ### `testRenderer.toTree()` {#testrenderertotree}
 
