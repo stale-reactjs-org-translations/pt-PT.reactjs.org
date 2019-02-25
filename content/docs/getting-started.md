@@ -36,7 +36,7 @@ O React foi construído desde o início com um método de adaptação em mente, 
 
 ### Editores Online {#online-playgrounds}
 
-Se estiveres interessado em interagir com React, podes usar um editor online. Experimenta um template "Hello World" no [CodePen](codepen://hello-world) ou no [CodeSandbox](https://codesandbox.io/s/new).
+Se estiveres interessado em interagir com React, podes usar um editor online. Experimenta um template "Hello World" no [CodePen](codepen://hello-world), no [CodeSandbox](https://codesandbox.io/s/new) ou no [Glitch](https://glitch.com/edit/#!/remix/starter-react-template).
 
 Caso prefiras usar o teu próprio editor de texto, podes efectuar o [download deste ficheiro HTML](https://raw.githubusercontent.com/reactjs/reactjs.org/master/static/html/single-file-example.html), editá-lo, e abrir com o teu sistema local. Acaba por ser mais lento ao alterares código, recomendamos a usares apenas para demonstrações simples.
 
