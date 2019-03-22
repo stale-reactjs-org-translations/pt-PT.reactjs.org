@@ -46,6 +46,6 @@ O “CSS-in-JS” refere-se a um padrão onde o CSS é composto usando JavaScrip
 
 _Nota que esta funcionalidade não é uma parte de React, mas fornecido por bilbiotecas de terceiros. React não tem uma opinião sobre como os estilos são definidos; em caso de dúvida, um bom ponto de partida é definir os teus estilos num ficheiro  `*.css` como de costume e fazer referência a eles usando [`className`](/docs/dom-elements.html#classname).
 
-### Posso fazer animações no React? {#can-i-do-animations-in-react}
+### Posso fazer animações em React? {#can-i-do-animations-in-react}
 
 React pode ser usado para animar animações. Vê [React Transition Group](https://reactcommunity.org/react-transition-group/) e [React Motion](https://github.com/chenglou/react-motion), por exemplo.
