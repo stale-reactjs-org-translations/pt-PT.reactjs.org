@@ -1,18 +1,20 @@
 ---
 id: pure-render-mixin
-title: PureRenderMixin
+título: PureRenderMixin
 layout: docs
-category: Reference
+categoria: Reference
 permalink: docs/pure-render-mixin-old.html
 ---
 
-> Note
+> Nota
 
-> The `PureRenderMixin` mixin predates `React.PureComponent`. This reference doc is provided for legacy purposes, and you should consider using [`React.PureComponent`](/docs/react-api.html#reactpurecomponent) instead.
+> O mixin `PureRenderMixin` é anterior ao ` React.PureComponent`. Este documento de referência é fornecido para fins de legado, e você deve considerar o uso do [`React.PureComponent`] (/ docs / react-api.html # reactpurecomponent).
 
 If your React component's render function renders the same result given the same props and state, you can use this mixin for a performance boost in some cases.
 
-Example:
+Se o seu componente de função renderizador do React renderizar o mesmo resultado dados os mesmos prop e state, você pode usar este mixin para um aumento de desempenho em alguns casos.
+
+Exemplo:
 
 ```js
 var PureRenderMixin = require('react-addons-pure-render-mixin');
@@ -26,7 +28,7 @@ createReactClass({
 });
 ```
 
-Example using ES6 class syntax:
+Exemplo usando a classe em sintaxe ES6:
 
 ```js
 import PureRenderMixin from 'react-addons-pure-render-mixin';
@@ -42,10 +44,12 @@ class FooComponent extends React.Component {
 }
 ```
 
-Under the hood, the mixin implements [shouldComponentUpdate](/docs/component-specs.html#updating-shouldcomponentupdate), in which it compares the current props and state with the next ones and returns `false` if the equalities pass.
+Nos bastidores, o mixin implementa [shouldComponentUpdate] (/ docs / component-specs.html # update-shouldcomponentupdate), no qual compara os props e state atuais com os próximos e retorna `false` se as equalizações forem aprovadas.
 
-> Note:
+> Nota:
 >
-> This only shallowly compares the objects. If these contain complex data structures, it may produce false-negatives for deeper differences. Only mix into components which have simple props and state, or use `forceUpdate()` when you know deep data structures have changed. Or, consider using [immutable objects](https://facebook.github.io/immutable-js/) to facilitate fast comparisons of nested data.
+
+> Isto apenas compara os objetos superficialmente. Se eles contiverem estruturas de dados complexas, poderão produzir falsos negativos para diferenças mais profundas. Misture apenas em componentes que tenham props e state simples, ou use o `forceUpdate ()` quando souber que estruturas de dados profundas foram alteradas. Ou considere o uso dos [objetos imutáveis] (https://facebook.github.io/immutable-js/) para facilitar comparações rápidas de dados aninhados.
 >
-> Furthermore, `shouldComponentUpdate` skips updates for the whole component subtree. Make sure all the children components are also "pure".
+
+> Além disso, `shouldComponentUpdate` pula as atualizações para a subárvore inteira do componente. Certifique-se de que todos os componentes filhos também sejam "puros".
