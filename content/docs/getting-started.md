@@ -100,7 +100,11 @@ Algumas pessoas dão-se melhor com livros ou vídeos do que com a documentação
 
 ### Conceitos Avançados {#advanced-concepts}
 
+<<<<<<< HEAD
 Assim que te sentires confortável com os [conceitos principais](#main-concepts) e já experimentaste React por um bocado, talvez, tópicos mais avançados sejam do teu interesse. Esta secção vai introduzir-te a poderosas, mas menos comuns funcionalidades como [context](/docs/context.html) e [refs](/docs/refs-and-the-dom.html).
+=======
+Once you're comfortable with the [main concepts](/docs/hello-world.html) and played with React a little bit, you might be interested in more advanced topics. This section will introduce you to the powerful, but less commonly used React features like [context](/docs/context.html) and [refs](/docs/refs-and-the-dom.html).
+>>>>>>> b8b3db7acbba117addeea8a7fb86957eb046d7ce
 
 ### Referência API {#api-reference}
 
@@ -116,7 +120,11 @@ O [blogue do React](/blog/) é a fonte oficial para artigos sobre actualizaçõe
 
 Também podes seguir a [conta @reactjs](https://twitter.com/reactjs) no Twitter, mas não vais perder nada importante caso queiras _seguir_ só o blogue.
 
+<<<<<<< HEAD
 Nem todos os lançamentos de versões merecem o seu próprio artigo no blogue, mas podes encontrar informação detalhada sobre cada lançamento [no ficheiro `CHANGELOG.md` que se encontra no repositório React](https://github.com/facebook/react/blob/master/CHANGELOG.md), tal como na página de [Lançamentos de Versões](https://github.com/facebook/react).
+=======
+Not every React release deserves its own blog post, but you can find a detailed changelog for every release [in the `CHANGELOG.md` file in the React repository](https://github.com/facebook/react/blob/master/CHANGELOG.md), as well as on the [Releases](https://github.com/facebook/react/releases) page.
+>>>>>>> b8b3db7acbba117addeea8a7fb86957eb046d7ce
 
 ## Documentação por Versões {#versioned-documentation}
 
