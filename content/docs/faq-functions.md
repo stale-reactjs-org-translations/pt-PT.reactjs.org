@@ -14,7 +14,7 @@ Passa manipuladores de evento e outras funções como propriedades para componen
 <button onClick={this.handleClick}>
 ```
 
-Se, precisas de ter acesso para o componente pai no manipulador, também, precisas de vincular a função à instância do componente (ver abaixo)
+Se, precisas de ter acesso para o componente pai no manipulador, também, precisas de vincular a função à instância do componente (ver abaixo).
 .
 ### Como eu posso vincular uma função a uma instância do componente? {#how-do-i-bind-a-function-to-a-component-instance}
 
@@ -83,7 +83,7 @@ class Foo extends Component {
 
 >**Nota:**
 >
->Usando uma arrow function no render cria uma nova função, de cada vez que, o componente renderiza, o que pode ter implicações no desempenho (see below).
+>Usando uma arrow function no render cria uma nova função, de cada vez que, o componente renderiza, o que pode ter implicações no desempenho (vê em baixo).
 
 ### Há algum problema em usar as arrow functions em métodos de renderização? {#is-it-ok-to-use-arrow-functions-in-render-methods}
 
@@ -106,13 +106,13 @@ method();
 
 Métodos de vinculação ajuda a certificar que, o segundo pedaço funciona da mesma forma, que o primeiro.
 
-Com React, tipicamente, só precisas de vincular os métodos que *passas* para outros componentes. Por examplo, `<button onClick={this.handleClick}>` passa `this.handleClick` para que possas vinculá-lo. Contudo, é  desnecessário vincular o método `render`  ou o ciclo de vida do método: não passamo-los para outros componentes.
+Com React, tipicamente, só precisas de vincular os métodos que *passas* para outros componentes. Por exemplo, `<button onClick={this.handleClick}>` passa `this.handleClick` para que possas vinculá-lo. Contudo, é  desnecessário vincular o método `render`  ou o ciclo de vida do método: não passamo-los para outros componentes.
 
 [Esta postagem de Yehuda Katz](https://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/) explica o que vincular é, e como funções funcionam em JavaScript, em detalhe.
 
 ### Porque é que a minha função está a ser chamada, cada vez que, o componente é renderizado? {#why-is-my-function-being-called-every-time-the-component-renders}
 
-Tens que ter a certeza de que não estás a chamar a função quando o passas para o componente:
+Certifica-te de que não estás a chamar a função quando o passas para o componente:
 
 ```jsx
 render() {
@@ -121,7 +121,7 @@ render() {
 }
 ```
 
-Em vez disso, *passa a função em si* (sem parentes):
+Em vez disso, *passa a função em si* (sem parênteses):
 
 ```jsx
 render() {
@@ -147,7 +147,7 @@ Isto é o equivalente a chamar `.bind`:
 #### Exemplo: Passando parâmetros usando arrow functions {#example-passing-params-using-arrow-functions}
 
 ```jsx
-const A = 65 // ASCII código de caractere
+const A = 65 // código de caractere ASCII
 
 class Alphabet extends React.Component {
   constructor(props) {
@@ -178,12 +178,12 @@ class Alphabet extends React.Component {
 }
 ```
 
-#### Exemplo: Passando parâmetros usando data-attributes {#example-passing-params-using-data-attributes}
+#### Exemplo: Passando parâmetros usando atributos de dados {#example-passing-params-using-data-attributes}
 
-Alternadamente, podes usar DOM APIs para armazenar dados necessários para manipuladores de eventos. Considera esta aproximação, se precisares de optimizar um grande número de elementos ou ter uma àrvore de renderização que depende das verificações de igualdade no React.PureComponent.
+Alternadamente, podes usar DOM APIs para armazenar dados necessários para manipuladores de eventos. Considera esta aproximação, se precisares de optimizar um grande número de elementos ou ter uma árvore de renderização que depende das verificações de igualdade no React.PureComponent.
 
 ```jsx
-const A = 65 // ASCII código de caractere
+const A = 65 // código de caractere ASCII
 
 class Alphabet extends React.Component {
   constructor(props) {
@@ -220,7 +220,7 @@ class Alphabet extends React.Component {
 
 ### Como posso prevenir uma função ser chamada demasiado depressa ou demasiadas vezes duma só vez? {#how-can-i-prevent-a-function-from-being-called-too-quickly-or-too-many-times-in-a-row}
 
-Se, tens um manipulador de evento, tal como, `onClick` ou `onScroll` e queres prevenir o retorno de chamada de ser disparado demasiado depressa então, podes limitar a taxa em que, o retorno de chamada é executado . Isto pode ser feito ao usar:
+Se, tens um manipulador de evento, tal como, `onClick` ou `onScroll` e queres prevenir o retorno de chamada de ser disparado demasiado depressa então, podes limitar a taxa em que, o retorno de chamada é executado. Isto pode ser feito ao usar:
 
 - **throttling**: mudanças de amostras baseadas numa frequência baseada no tempo (por exemplo, [`_.throttle`](https://lodash.com/docs#throttle))
 - **debouncing**: publica mudanças depois, de um periode de inatividade (por exemplo, [`_.debounce`](https://lodash.com/docs#debounce))
@@ -291,7 +291,7 @@ class Searchbox extends React.Component {
 
   handleChange(e) {
     // Eventos React pools então, lemos o valor antes de disfarçar.
-    //Alternadamente, podemos chamar `event.persist()` e passar o evento inteiro.
+    // Alternadamente, podemos chamar `event.persist()` e passar o evento inteiro.
     // Para mais informações vê reactjs.org/docs/events.html#event-pooling
     this.emitChangeDebounced(e.target.value);
   }
@@ -304,7 +304,7 @@ class Searchbox extends React.Component {
 
 #### `requestAnimationFrame` throttling {#requestanimationframe-throttling}
 
-[`requestAnimationFrame`](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame) é uma maneira de enfileirar uma função para ser executada no navegador no momento ideal para renderizar o desempenho. Uma função que está enfileirada com `requestAnimationFrame` irá disparar no próximo frame. O navegador irá trabalhar arduamente para garantir que exista 60 frames por segundo (60 fps). Contudo, se o navegador está indisponível, para isso, irá, naturalmente, *limitar* a quantidade de frames num segundo. Por exemplo, um dispositivo que, só oode ser capaz de lidar com 30 fps e, portanto, só obterás 30 frames nesse segundo. Usando `requestAnimationFrame` para limitar, é uma técnica única que, previne-te de estar a mais do que 60 atualizações num segundo. Se, estás a fazer 100 atualizações num segundo isto cria trabalho adicional para o navegador onde, o utilizador, não irá ver de qualquer forma.
+[`requestAnimationFrame`](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame) é uma maneira de enfileirar uma função para ser executada no navegador no momento ideal para renderizar o desempenho. Uma função que está enfileirada com `requestAnimationFrame` irá disparar no próximo frame. O navegador irá trabalhar arduamente para garantir que exista 60 frames por segundo (60 fps). Contudo, se o navegador está indisponível, para isso, irá, naturalmente, *limitar* a quantidade de frames num segundo. Por exemplo, um dispositivo que, só pode ser capaz de lidar com 30 fps e, portanto, só obterás 30 frames nesse segundo. Usando `requestAnimationFrame` para limitar, é uma técnica única que, previne-te de estar a mais do que 60 atualizações num segundo. Se, estás a fazer 100 atualizações num segundo isto cria trabalho adicional para o navegador onde, o utilizador, não irá ver de qualquer forma.
 
 >**Nota:**
 >
