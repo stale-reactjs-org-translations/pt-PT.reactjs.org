@@ -1,14 +1,14 @@
 ---
 id: faq-styling
-title: Styling and CSS
+title: Estilo e CSS
 permalink: docs/faq-styling.html
 layout: docs
 category: FAQ
 ---
 
-### How do I add CSS classes to components? {#how-do-i-add-css-classes-to-components}
+### Como eu adiciono classes CSS para componentes? {#how-do-i-add-css-classes-to-components}
 
-Pass a string as the `className` prop:
+Passa uma frase como a propriedade (props) className:
 
 ```jsx
 render() {
@@ -16,7 +16,7 @@ render() {
 }
 ```
 
-It is common for CSS classes to depend on the component props or state:
+É comum para as classes de CSS dependerem das propriedades (props) ou estado (state) da componente:
 
 ```jsx
 render() {
@@ -28,24 +28,24 @@ render() {
 }
 ```
 
->Tip
+>Dica
 >
->If you often find yourself writing code like this, [classnames](https://www.npmjs.com/package/classnames#usage-with-reactjs) package can simplify it.
+>Se tu, frequentemente, encontras-te a escrever código como este, os pacotes [classnames](https://www.npmjs.com/package/classnames#usage-with-reactjs) podem simplificá-lo.
 
-### Can I use inline styles? {#can-i-use-inline-styles}
+### Posso usar estilos em linha (inline styles)? {#can-i-use-inline-styles}
 
-Yes, see the docs on styling [here](/docs/dom-elements.html#style).
+Sim, vê os documentos sobre estilo [aqui](/docs/dom-elements.html#style).
 
-### Are inline styles bad? {#are-inline-styles-bad}
+### Os estilos em linha são maus? {#are-inline-styles-bad}
 
-CSS classes are generally better for performance than inline styles.
+As classes CSS são, geralmente, melhores para o desempenho do que os estilos em linha.
 
-### What is CSS-in-JS? {#what-is-css-in-js}
+### O que é CSS-in-JS? {#what-is-css-in-js}
 
-"CSS-in-JS" refers to a pattern where CSS is composed using JavaScript instead of defined in external files. Read a comparison of CSS-in-JS libraries [here](https://github.com/MicheleBertoli/css-in-js).
+O “CSS-in-JS” refere-se a um padrão onde o CSS é composto usando JavaScript em vez de ser definido nos ficheiros externos. Lê uma comparação de bibliotecas de CSS-in-JS [aqui](https://github.com/MicheleBertoli/css-in-js).
 
-_Note that this functionality is not a part of React, but provided by third-party libraries._ React does not have an opinion about how styles are defined; if in doubt, a good starting point is to define your styles in a separate `*.css` file as usual and refer to them using [`className`](/docs/dom-elements.html#classname).
+_Nota que esta funcionalidade não é uma parte de React, mas fornecido por bilbiotecas de terceiros. React não tem uma opinião sobre como os estilos são definidos; em caso de dúvida, um bom ponto de partida é definir os teus estilos num ficheiro  `*.css` como de costume e fazer referência a eles usando [`className`](/docs/dom-elements.html#classname).
 
-### Can I do animations in React? {#can-i-do-animations-in-react}
+### Posso fazer animações em React? {#can-i-do-animations-in-react}
 
-React can be used to power animations. See [React Transition Group](https://reactcommunity.org/react-transition-group/) and [React Motion](https://github.com/chenglou/react-motion), for example.
+React pode ser usado para animar animações. Vê [React Transition Group](https://reactcommunity.org/react-transition-group/) e [React Motion](https://github.com/chenglou/react-motion), por exemplo.
