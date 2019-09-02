@@ -120,7 +120,11 @@ Nem todos os lançamentos de versões merecem o seu próprio artigo no blogue, m
 
 ## Documentação por Versões {#versioned-documentation}
 
+<<<<<<< HEAD
 Esta documentação reflecte sempre a última versão estável de React. Desde a versão 16 de React que podes encontrar documentação para versões anteriores [numa página em separado](/versions). Ressalvamos que a documentação para versões anteriores não tem uma actualização instantânea, e não são actualizadas constantemente.
+=======
+This documentation always reflects the latest stable version of React. Since React 16, you can find older versions of the documentation on a [separate page](/versions). Note that documentation for past versions is snapshotted at the time of the release, and isn't being continuously updated.
+>>>>>>> 941f54180ef5e652221f54ef6d1f6f2e9e063597
 
 ## Achas que falta algo? {#something-missing}
 
