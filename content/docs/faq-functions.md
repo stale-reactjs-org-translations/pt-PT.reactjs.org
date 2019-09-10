@@ -349,6 +349,6 @@ class ScrollListener extends React.Component {
 }
 ```
 
-#### Testing your rate limiting {#testing-your-rate-limiting}
+#### Testando a frequência limite {#testing-your-rate-limiting}
 
-When testing your rate limiting code works correctly it is helpful to have the ability to fast forward time. If you are using [`jest`](https://facebook.github.io/jest/) then you can use [`mock timers`](https://facebook.github.io/jest/docs/en/timer-mocks.html) to fast forward time. If you are using `requestAnimationFrame` throttling then you may find [`raf-stub`](https://github.com/alexreardon/raf-stub) to be a useful tool to control the ticking of animation frames.
+Ao testar o teu código de limitação de frequência, é útil ter a capacidade de avançar o tempo. Se usas [`jest`](https://facebook.github.io/jest/) então podes usar [`mock timers`](https://facebook.github.io/jest/docs/en/timer-mocks.html) para avançar o tempo. Se usas `requestAnimationFrame` _throttling_ podes achar [`raf-stub`](https://github.com/alexreardon/raf-stub) uma ferramenta útil para controlar o pulsar dos quadros das animações.
