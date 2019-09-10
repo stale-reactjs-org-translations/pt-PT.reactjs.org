@@ -6,19 +6,19 @@ layout: docs
 category: FAQ
 ---
 
-### How do I pass an event handler (like onClick) to a component? {#how-do-i-pass-an-event-handler-like-onclick-to-a-component}
+### Como passar um manipulador de eventos (como onClick) para um componente? {#how-do-i-pass-an-event-handler-like-onclick-to-a-component}
 
-Pass event handlers and other functions as props to child components:
+Passar manipuladores de evento e outras funções como props para componentes filhos:
 
 ```jsx
 <button onClick={this.handleClick}>
 ```
 
-If you need to have access to the parent component in the handler, you also need to bind the function to the component instance (see below).
+Se precisas ter acesso ao componente pai no manipulador, precisas também fazer _bind_ de uma função para a instância do componente (veja abaixo).
 
-### How do I bind a function to a component instance? {#how-do-i-bind-a-function-to-a-component-instance}
+### Como fazer _bind_ de uma função para a instância de um componente? {#how-do-i-bind-a-function-to-a-component-instance}
 
-There are several ways to make sure functions have access to component attributes like `this.props` and `this.state`, depending on which syntax and build steps you are using.
+Dependendo da sintaxe e etapas de build que estás a usar, existem diversas maneiras de garantir que as funções tenham acesso aos atributos dos componentes como `this.props` e `this.state`.
 
 #### Bind in Constructor (ES2015) {#bind-in-constructor-es2015}
 
