@@ -20,7 +20,7 @@ Se precisas ter acesso ao componente pai no manipulador, também precisas fazer 
 
 Dependendo da sintaxe e etapas de build que estás a usar, existem diversas maneiras de garantir que as funções tenham acesso aos atributos dos componentes como `this.props` e `this.state`.
 
-#### _Bind_ no Constructor (ES2015) {#bind-in-constructor-es2015}
+#### _Bind_ no `constructor` (ES2015) {#bind-in-constructor-es2015}
 
 ```jsx
 class Foo extends Component {
@@ -37,36 +37,36 @@ class Foo extends Component {
 }
 ```
 
-#### Class Properties (Stage 3 Proposal) {#class-properties-stage-3-proposal}
+#### Propriedades de Classe (Proposta de Estágio 3) {#class-properties-stage-3-proposal}
 
 ```jsx
 class Foo extends Component {
-  // Note: this syntax is experimental and not standardized yet.
+  // Nota: esta sintaxe é experimental e ainda não foi padronizada.
   handleClick = () => {
-    console.log('Click happened');
+    console.log('Clicado');
   }
   render() {
-    return <button onClick={this.handleClick}>Click Me</button>;
+    return <button onClick={this.handleClick}>Clica-me</button>;
   }
 }
 ```
 
-#### Bind in Render {#bind-in-render}
+#### _Bind_ no `render` {#bind-in-render}
 
 ```jsx
 class Foo extends Component {
   handleClick() {
-    console.log('Click happened');
+    console.log('Clicado');
   }
   render() {
-    return <button onClick={this.handleClick.bind(this)}>Click Me</button>;
+    return <button onClick={this.handleClick.bind(this)}>Clica-me</button>;
   }
 }
 ```
 
->**Note:**
+>**Nota:**
 >
->Using `Function.prototype.bind` in render creates a new function each time the component renders, which may have performance implications (see below).
+>Usar `Function.prototype.bind` in render creates a new function each time the component renders, which may have performance implications (see below).
 
 #### Arrow Function in Render {#arrow-function-in-render}
 
