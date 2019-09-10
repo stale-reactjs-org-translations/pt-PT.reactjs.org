@@ -234,7 +234,7 @@ Vê [esta visualização](http://demo.nimius.net/debounce_throttle/) para uma co
 
 #### Throttle {#throttle}
 
-Throttling prevents a function from being called more than once in a given window of time. The example below throttles a "click" handler to prevent calling it more than once per second.
+_Throttling_ impede a função de ser chamada mais de uma vez em um certo intervalo de tempo. O exemplo abaixo regula o manipulador do evento "click" para impedí-lo de ser chamado mais de uma vez por segundo.
 
 ```jsx
 import throttle from 'lodash.throttle';
@@ -251,7 +251,7 @@ class LoadMoreButton extends React.Component {
   }
 
   render() {
-    return <button onClick={this.handleClickThrottled}>Load More</button>;
+    return <button onClick={this.handleClickThrottled}>Carregar mais</button>;
   }
 
   handleClick() {
