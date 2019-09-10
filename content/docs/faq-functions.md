@@ -108,7 +108,7 @@ Métodos de _binding_ ajudam a garantir que o segundo trecho funcione da mesma m
 
 Com React, tipicamente precisas fazer _bind_ apenas nos métodos que tu *passas* para outros componentes. Por exemplo, `<button onClick={this.handleClick}>` passa `this.handleCLick` logo deve fazer _bind_ nele. Entretanto, não é necessário usar _bind_ no método `render` ou nos métodos do ciclo de vida: nós não passamos ele à outros componentes.
 
-[This post by Yehuda Katz](https://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/) explains what binding is, and how functions work in JavaScript, in detail.
+[Este post de Yehuda Katz](https://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/) explica o que é _binding_ e como funcionam as funções do JavaScript, em detalhes.
 
 ### Why is my function being called every time the component renders? {#why-is-my-function-being-called-every-time-the-component-renders}
 
