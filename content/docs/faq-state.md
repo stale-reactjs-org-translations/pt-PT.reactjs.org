@@ -92,12 +92,12 @@ Como explicado na seção anterior, React intencionalmente "espera" até todos o
 
 No entanto, podes ainda questionar porquê o React simplesmente não atualiza `this.state` imediatamente, sem renderizar novamente.
 
-There are two main reasons:
+Existem duas principais razões:
 
-* This would break the consistency between `props` and `state`, causing issues that are very hard to debug.
-* This would make some of the new features we're working on impossible to implement.
+* Isso quebraria a consistência entre `props` e `state`, causando problemas muito difíceis de debugar.
+* Isso tornaria algumas das novas funcionalidades em que estamos a trabalhar impossíveis de implementar.
 
-This [GitHub comment](https://github.com/facebook/react/issues/11527#issuecomment-360199710) dives deep into the specific examples.
+Este [comentário no GitHub](https://github.com/facebook/react/issues/11527#issuecomment-360199710) aprofunda com exemplos específicos.
 
 ### Should I use a state management library like Redux or MobX? {#should-i-use-a-state-management-library-like-redux-or-mobx}
 
