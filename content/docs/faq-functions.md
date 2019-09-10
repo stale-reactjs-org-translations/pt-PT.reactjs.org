@@ -66,7 +66,7 @@ class Foo extends Component {
 
 >**Nota:**
 >
->Usar `Function.prototype.bind` no render, uma nova função é criada cada vez que o componente é renderizado, o que pode afetar a performance (veja abaixo).
+>Ao usar `Function.prototype.bind` no render, uma nova função é criada cada vez que o componente é renderizado, o que pode afetar a performance (veja abaixo).
 
 #### _Arrow function_ no `render` {#arrow-function-in-render}
 
@@ -81,15 +81,15 @@ class Foo extends Component {
 }
 ```
 
->**Note:**
+>**Nota:**
 >
->Using an arrow function in render creates a new function each time the component renders, which may break optimizations based on strict identity comparison.
+>Ao usar uma arrow function no render, uma nova função é criada cada vez que o componente é renderizado, que pode quebrar otimizações com base em comparação de identidade `on strict`.
 
-### Is it OK to use arrow functions in render methods? {#is-it-ok-to-use-arrow-functions-in-render-methods}
+### Não faz mal usar _arrow functions_ em métodos de `render`? {#is-it-ok-to-use-arrow-functions-in-render-methods}
 
-Generally speaking, yes, it is OK, and it is often the easiest way to pass parameters to callback functions.
+De um modo geral, não faz mal. E muitas das vezes é a maneira mais fácil de passar parâmetros para funções de callback.
 
-If you do have performance issues, by all means, optimize!
+Se tiveres problemas de performance, procure sempre otimizar!
 
 ### Why is binding necessary at all? {#why-is-binding-necessary-at-all}
 
