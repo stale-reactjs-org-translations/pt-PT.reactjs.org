@@ -48,7 +48,7 @@ Elementos React são [imutáveis](https://pt.wikipedia.org/wiki/Objeto_imutável
 
 Com o que aprendemos até agora, a única forma de actualizar a interface gráfica (_UI_) é criando um novo elemento e passando-o ao `ReactDOM.render()`.
 
-Veja o seguinte exemplo de um relógio:
+Vê o seguinte exemplo de um relógio:
 
 `embed:rendering-elements/update-rendered-element.js`
 
