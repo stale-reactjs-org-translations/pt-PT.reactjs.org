@@ -62,12 +62,12 @@ class CodeEditor extends Component {
     if (showBabelErrorMessage) {
       errorMessage = (
         <span>
-          Babel could not be loaded.
+          Babel não pôde ser carregado.
           <br />
           <br />
-          This can be caused by an ad blocker. If you're using one, consider
-          adding reactjs.org to the whitelist so the live code examples will
-          work.
+          Isto pode ser causado por um bloqueador de anúncios. Se estás a usar
+          algum, considera adicionar o endereço reactjs.org na <i>whitelist</i>,
+          e feito isso os exemplos com <i>live code</i> irão funcionar.
         </span>
       );
     } else if (error != null) {
