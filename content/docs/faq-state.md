@@ -18,13 +18,13 @@ Aqui estão alguns bons recursos para ler mais sobre quando usar `props` vs `sta
 * [Props vs State](https://github.com/uberVU/react-guide/blob/master/props-vs-state.md)
 * [ReactJS: Props vs. State](https://lucybain.com/blog/2016/react-state-vs-pros/)
 
-### Why is `setState` giving me the wrong value? {#why-is-setstate-giving-me-the-wrong-value}
+### Porquê `setState` está a dar-me o valor errado? {#why-is-setstate-giving-me-the-wrong-value}
 
-In React, both `this.props` and `this.state` represent the *rendered* values, i.e. what's currently on the screen.
+Em React, tanto `this.props` quanto `this.state` representam os valores *renderizados*, ou seja, o que está atualmente na tela.
 
-Calls to `setState` are asynchronous - don't rely on `this.state` to reflect the new value immediately after calling `setState`. Pass an updater function instead of an object if you need to compute values based on the current state (see below for details).
+Chamadas para `setState` são assíncronas - não confie que `this.state` vá refletir o novo valor imediatamente após chamar `setState`. Usa uma função de atualização ao invés de um objeto se precisas calcular valores baseado no state atual (vê abaixo para mais detalhes).
 
-Example of code that will *not* behave as expected:
+Exemplo de código que *não* vai funcionar como esperado:
 
 ```jsx
 incrementCount() {
