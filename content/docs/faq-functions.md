@@ -14,7 +14,7 @@ Passar manipuladores de evento e outras funções como props para componentes fi
 <button onClick={this.handleClick}>
 ```
 
-Se precisas ter acesso ao componente pai no manipulador, precisas também fazer _bind_ de uma função para a instância do componente (veja abaixo).
+Se precisas ter acesso ao componente pai no manipulador, também precisas fazer _bind_ de uma função para a instância do componente (veja abaixo).
 
 ### Como fazer _bind_ de uma função para a instância de um componente? {#how-do-i-bind-a-function-to-a-component-instance}
 
