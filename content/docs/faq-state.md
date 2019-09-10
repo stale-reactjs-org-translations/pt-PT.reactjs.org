@@ -8,7 +8,7 @@ category: FAQ
 
 ### O que `setState` faz? {#what-does-setstate-do}
 
-`setState()` agenda uma atualização para o objeto `state` de um componente. Quando o state muda, o componente responde renderizando novamente.
+`setState()` agenda uma atualização para o objeto `state` de um componente. Quando o estado muda, o componente responde renderizando novamente.
 
 ### Qual é a diferença entre `state` e `props`? {#what-is-the-difference-between-state-and-props}
 
@@ -22,7 +22,7 @@ Aqui estão alguns bons recursos para ler mais sobre quando usar `props` vs `sta
 
 Em React, tanto `this.props` quanto `this.state` representam os valores *renderizados*, ou seja, o que está atualmente na tela.
 
-Chamadas para `setState` são assíncronas - não confie que `this.state` vá refletir o novo valor imediatamente após chamar `setState`. Usa uma função de atualização ao invés de um objeto se precisas calcular valores baseado no state atual (vê abaixo para mais detalhes).
+Chamadas para `setState` são assíncronas - não confie que `this.state` vá refletir o novo valor imediatamente após chamar `setState`. Usa uma função de atualização ao invés de um objeto se precisas calcular valores baseado no estado atual (vê abaixo para mais detalhes).
 
 Exemplo de código que *não* vai funcionar como esperado:
 
@@ -51,7 +51,7 @@ Vê abaixo como solucionar esse problema.
 
 ### Como atualizar o `state` com valores que dependem do `state` atual? {#how-do-i-update-state-with-values-that-depend-on-the-current-state}
 
-Passa uma função ao invés de um objeto para `setState` para garantir que a chamada sempre use o valor mais recente do state (vê abaixo).
+Passa uma função ao invés de um objeto para `setState` para garantir que a chamada sempre use o valor mais recente do estado (vê abaixo).
 
 ### Qual é a diferença entre passar um objeto e uma função em `setState`? {#what-is-the-difference-between-passing-an-object-or-a-function-in-setstate}
 
@@ -97,10 +97,10 @@ Existem duas principais razões:
 * Isso quebraria a consistência entre `props` e `state`, causando problemas muito difíceis de debugar.
 * Isso tornaria algumas das novas funcionalidades em que estamos a trabalhar impossíveis de implementar.
 
-Este [comentário no GitHub](https://github.com/facebook/react/issues/11527#issuecomment-360199710) aprofunda com exemplos específicos.
+Este [comentário no GitHub](https://github.com/facebook/react/issues/11527#issuecomment-360199710) aprofunda mais com exemplos específicos.
 
-### Should I use a state management library like Redux or MobX? {#should-i-use-a-state-management-library-like-redux-or-mobx}
+### Devo usar uma biblioteca de gestão de estado, como Redux ou MobX? {#should-i-use-a-state-management-library-like-redux-or-mobx}
 
-[Maybe.](https://redux.js.org/faq/general#when-should-i-use-redux)
+[Talvez.](https://redux.js.org/faq/general#when-should-i-use-redux)
 
-It's a good idea to get to know React first, before adding in additional libraries. You can build quite complex applications using only React.
+É uma boa ideia aprofundar-se em React primeiro, antes de adicionar bibliotecas. Podes fazer aplicativos muito complexos apenas com React.
