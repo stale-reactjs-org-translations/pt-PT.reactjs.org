@@ -91,9 +91,9 @@ De um modo geral, não faz mal. E muitas das vezes é a maneira mais fácil de p
 
 Se tiveres problemas de performance, procure sempre otimizar!
 
-### Why is binding necessary at all? {#why-is-binding-necessary-at-all}
+### Porquê _binding_ é necessário afinal? {#why-is-binding-necessary-at-all}
 
-In JavaScript, these two code snippets are **not** equivalent:
+Em JavaScript, estes dois trechos de código **não** são equivalentes:
 
 ```js
 obj.method();
@@ -104,9 +104,9 @@ var method = obj.method;
 method();
 ```
 
-Binding methods helps ensure that the second snippet works the same way as the first one.
+Métodos de _binding_ ajudam a garantir que o segundo trecho funcione da mesma maneira que o primeiro.
 
-With React, typically you only need to bind the methods you *pass* to other components. For example, `<button onClick={this.handleClick}>` passes `this.handleClick` so you want to bind it. However, it is unnecessary to bind the `render` method or the lifecycle methods: we don't pass them to other components.
+Com React, tipicamente precisas fazer _bind_ apenas nos métodos que tu *passas* para outros componentes. Por exemplo, `<button onClick={this.handleClick}>` passa `this.handleCLick` logo deve fazer _bind_ nele. Entretanto, não é necessário usar _bind_ no método `render` ou nos métodos do ciclo de vida: nós não passamos ele à outros componentes.
 
 [This post by Yehuda Katz](https://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/) explains what binding is, and how functions work in JavaScript, in detail.
 
