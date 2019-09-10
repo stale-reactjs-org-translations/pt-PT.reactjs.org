@@ -12,7 +12,7 @@ Podes usar qualquer biblioteca AJAX que desejas com React. Algumas populares sã
 
 ### Onde devo fazer uma requisição AJAX no ciclo de vida do componente? {#where-in-the-component-lifecycle-should-i-make-an-ajax-call}
 
-You should populate data with AJAX calls in the [`componentDidMount`](/docs/react-component.html#mounting) lifecycle method. This is so you can use `setState` to update your component when the data is retrieved.
+Deves preencher dados com requisições AJAX no método [`componentDidMount`](/docs/react-component.html#mounting) do ciclo de vida. Isto é para que consigas usar `setState` para atualizar o teu componente quando os dados forem recebidos.
 
 ### Example: Using AJAX results to set local state {#example-using-ajax-results-to-set-local-state}
 
