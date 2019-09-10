@@ -37,9 +37,9 @@ profile/
 
 A definição de "funcionalidade" não é universal e cabe a ti decidir. Se não conseguires criar uma lista de pastas de alto nível, podes perguntar para os utilizadores do teu produto quais são as partes principais que ele contém e usar o modelo mental como estrutura.
 
-#### Agrupar por tipo de arquivo {#grouping-by-file-type}
+#### Agrupar por tipo de ficheiro {#grouping-by-file-type}
 
-Outra maneira popular de estruturar projetos é agrupar arquivos semelhantes por tipo, por exemplo:
+Outra maneira popular de estruturar projetos é agrupar ficheiros semelhantes por tipo, por exemplo:
 
 ```
 api/
@@ -61,14 +61,14 @@ components/
 
 Algumas pessoas preferem ir mais além, e separar os componentes em pastas diferentes, dependendo do papel que desempenham na aplicação. Por exemplo o [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) que é uma metodologia de design construída sobre este princípio. Lembra-te de que é mais produtivo tratar essas metodologias como exemplos úteis, ao invés de regras estritas que devem ser seguidas.
 
-#### Avoid too much nesting {#avoid-too-much-nesting}
+#### Evite muitas ramificações {#avoid-too-much-nesting}
 
-There are many pain points associated with deep directory nesting in JavaScript projects. It becomes harder to write relative imports between them, or to update those imports when the files are moved. Unless you have a very compelling reason to use a deep folder structure, consider limiting yourself to a maximum of three or four nested folders within a single project. Of course, this is only a recommendation, and it may not be relevant to your project.
+Existem vários problemas associados à ramificações de pastas em projetos JavaScript. Torna-se mais difícil escrever importações relativas entre elas ou atualizá-las quando os ficheiros são movidos. A menos que tenhas um motivo muito convincente para usar uma estrutura de pastas ramificadas, considera limitar-te a um máximo de três ou quatro pastas ramificadas em um único projeto. Claro, isso é apenas uma recomendação e pode não ser relevante para o seu projeto.
 
-#### Don't overthink it {#dont-overthink-it}
+#### Não pense muito {#dont-overthink-it}
 
-If you're just starting a project, [don't spend more than five minutes](https://en.wikipedia.org/wiki/Analysis_paralysis) on choosing a file structure. Pick any of the above approaches (or come up with your own) and start writing code! You'll likely want to rethink it anyway after you've written some real code.
+Se estás apenas a começar um projeto, [não perca mais do que cinco minutos](https://en.wikipedia.org/wiki/Analysis_paralysis) na escolha de uma estrutura de ficheiros. Escolhe qualquer uma das abordagens acima (ou crie as tuas próprias) e começa a escrever o código! Provavelmente sempre vais querer reestruturá-lo depois de teres escrito algum código.
 
-If you feel completely stuck, start by keeping all files in a single folder. Eventually it will grow large enough that you will want to separate some files from the rest. By that time you'll have enough knowledge to tell which files you edit together most often. In general, it is a good idea to keep files that often change together close to each other. This principle is called "colocation".
+Se sentires-te completamente preso, começa por manter todos os ficheiros em uma única pasta. Eventualmente ela crescerá o suficiente para que desejes separar alguns ficheiros dos demais. A essa altura, terás conhecimento suficiente para saber quais ficheiros são modificados juntos com mais frequência. Em geral é uma boa ideia manter os ficheiros que geralmente são alterados juntos uns dos outros. Este princípio é chamado de "colocation".
 
-As projects grow larger, they often use a mix of both of the above approaches in practice. So choosing the "right" one in the beginning isn't very important.
+À medida que os projetos vão crescendo, eles costumam usar uma mistura de ambas as abordagens acima na prática. Então escolher a abordagem "certa" no começo não é muito importante.
