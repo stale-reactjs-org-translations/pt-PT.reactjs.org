@@ -8,7 +8,7 @@ category: FAQ
 
 ### Como passar um manipulador de eventos (como onClick) para um componente? {#how-do-i-pass-an-event-handler-like-onclick-to-a-component}
 
-Passar manipuladores de evento e outras funções como props para componentes filhos:
+Passe manipuladores de evento e outras funções como props para componentes filhos:
 
 ```jsx
 <button onClick={this.handleClick}>
