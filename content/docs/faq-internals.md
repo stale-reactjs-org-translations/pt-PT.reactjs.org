@@ -18,6 +18,6 @@ Dado que "virtual DOM" é mais um padrão do que uma tecnologia específica, as 
 
 Não, eles são diferentes. O Shadow DOM é uma tecnologia do navegador desenhada principalmente para guardar variáveis e CSS no escopo dos web components. O virtual DOM é um conceito implementado por bibliotecas de JavaScript em cima das APIs do navegador.
 
-### What is "React Fiber"? {#what-is-react-fiber}
+### O que é "React Fiber"? {#what-is-react-fiber}
 
 Fiber is the new reconciliation engine in React 16. Its main goal is to enable incremental rendering of the virtual DOM. [Read more](https://github.com/acdlite/react-fiber-architecture).
