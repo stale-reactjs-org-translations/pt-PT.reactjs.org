@@ -14,7 +14,7 @@ Passe manipuladores de evento e outras funções como props para componentes fil
 <button onClick={this.handleClick}>
 ```
 
-Se precisas ter acesso ao componente pai no manipulador, também precisas fazer _bind_ de uma função para a instância do componente (veja abaixo).
+Se precisas ter acesso ao componente pai no manipulador, também precisas fazer _bind_ de uma função para a instância do componente (Vê abaixo).
 
 ### Como fazer _bind_ de uma função para a instância de um componente? {#how-do-i-bind-a-function-to-a-component-instance}
 
@@ -66,7 +66,7 @@ class Foo extends Component {
 
 >**Nota:**
 >
->Ao usar `Function.prototype.bind` no render, uma nova função é criada cada vez que o componente é renderizado, o que pode afetar a performance (veja abaixo).
+>Ao usar `Function.prototype.bind` no render, uma nova função é criada cada vez que o componente é renderizado, o que pode afetar a performance (Vê abaixo).
 
 #### _Arrow function_ no `render` {#arrow-function-in-render}
 

@@ -28,26 +28,26 @@ Exemplo de código que *não* vai funcionar como esperado:
 
 ```jsx
 incrementCount() {
-  // Note: this will *not* work as intended.
+  // Nota: isso *não* vai funcionar como esperado.
   this.setState({count: this.state.count + 1});
 }
 
 handleSomething() {
-  // Let's say `this.state.count` starts at 0.
+  // Digamos que `this.state.count` começa em 0.
   this.incrementCount();
   this.incrementCount();
   this.incrementCount();
-  // When React re-renders the component, `this.state.count` will be 1, but you expected 3.
+  // Quando o React renderizar novamente o componente, `this.state.count` será 1, mas tu esperavas 3.
 
-  // This is because `incrementCount()` function above reads from `this.state.count`,
-  // but React doesn't update `this.state.count` until the component is re-rendered.
-  // So `incrementCount()` ends up reading `this.state.count` as 0 every time, and sets it to 1.
+  // Isto é porque a função `incrementCount()` usa `this.state.count`,
+  // mas o React não atualiza `this.state.count` até o componente ser renderizado novamente.
+  // Então `incrementCount()` lê `this.state.count` como 0 todas as vezes, e muda seu valor para 1.
 
-  // The fix is described below!
+  // A solução é descrita abaixo!
 }
 ```
 
-See below for how to fix this problem.
+Vê abaixo como solucionar esse problema.
 
 ### How do I update state with values that depend on the current state? {#how-do-i-update-state-with-values-that-depend-on-the-current-state}
 
