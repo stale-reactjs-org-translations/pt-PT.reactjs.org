@@ -66,17 +66,17 @@ class Foo extends Component {
 
 >**Nota:**
 >
->Usar `Function.prototype.bind` in render creates a new function each time the component renders, which may have performance implications (see below).
+>Usar `Function.prototype.bind` no render, uma nova função é criada cada vez que o componente é renderizado, o que pode afetar a performance (veja abaixo).
 
-#### Arrow Function in Render {#arrow-function-in-render}
+#### _Arrow function_ no `render` {#arrow-function-in-render}
 
 ```jsx
 class Foo extends Component {
   handleClick() {
-    console.log('Click happened');
+    console.log('Clicado');
   }
   render() {
-    return <button onClick={() => this.handleClick()}>Click Me</button>;
+    return <button onClick={() => this.handleClick()}>Clica-me</button>;
   }
 }
 ```
