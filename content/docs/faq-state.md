@@ -8,11 +8,11 @@ category: FAQ
 
 ### O que `setState` faz? {#what-does-setstate-do}
 
-`setState()` schedules an update to a component's `state` object. When state changes, the component responds by re-rendering.
+`setState()` agenda uma atualização para o objeto `state` de um componente. Quando o state muda, o componente responde renderizando novamente.
 
 ### Qual é a diferença entre `state` e `props`? {#what-is-the-difference-between-state-and-props}
 
-[`props`](/docs/components-and-props.html) (short for "properties") and [`state`](/docs/state-and-lifecycle.html) are both plain JavaScript objects. While both hold information that influences the output of render, they are different in one important way: `props` get passed *to* the component (similar to function parameters) whereas `state` is managed *within* the component (similar to variables declared within a function).
+[`props`](/docs/components-and-props.html) (abreviação de "<i lang="en">properties</i>") and [`state`](/docs/state-and-lifecycle.html) são ambos objetos JavaScript. While both hold information that influences the output of render, they are different in one important way: `props` get passed *to* the component (similar to function parameters) whereas `state` is managed *within* the component (similar to variables declared within a function).
 
 Here are some good resources for further reading on when to use `props` vs `state`:
 * [Props vs State](https://github.com/uberVU/react-guide/blob/master/props-vs-state.md)
