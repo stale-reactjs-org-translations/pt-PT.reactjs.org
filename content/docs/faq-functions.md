@@ -106,7 +106,7 @@ method();
 
 Métodos de _binding_ ajudam a garantir que o segundo trecho funcione da mesma maneira que o primeiro.
 
-Com React, tipicamente precisas fazer _bind_ apenas nos métodos que tu *passas* para outros componentes. Por exemplo, `<button onClick={this.handleClick}>` passa `this.handleCLick` logo deve fazer _bind_ nele. Entretanto, não é necessário usar _bind_ no método `render` ou nos métodos do ciclo de vida: nós não passamos ele à outros componentes.
+Com React, geralmente precisas fazer _bind_ apenas nos métodos que *tu passas* para outros componentes. Por exemplo, `<button onClick={this.handleClick}>` passa `this.handleCLick` logo deve fazer _bind_ nele. Entretanto, não é necessário usar _bind_ no método `render` ou nos métodos do ciclo de vida: nós não passamos ele à outros componentes.
 
 [Este post de Yehuda Katz](https://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/) explica o que é _binding_ e como funcionam as funções do JavaScript, em detalhes.
 
@@ -130,24 +130,24 @@ render() {
 }
 ```
 
-### How do I pass a parameter to an event handler or callback? {#how-do-i-pass-a-parameter-to-an-event-handler-or-callback}
+### Como passar um parâmetro para um manipulador de evento ou um callback? {#how-do-i-pass-a-parameter-to-an-event-handler-or-callback}
 
-You can use an arrow function to wrap around an event handler and pass parameters:
+Podes usar uma _arrow function_ para envolver um manipulador de eventos e passar parâmetros:
 
 ```jsx
 <button onClick={() => this.handleClick(id)} />
 ```
 
-This is equivalent to calling `.bind`:
+Isto é equivalente à chamar o `.bind`:
 
 ```jsx
 <button onClick={this.handleClick.bind(this, id)} />
 ```
 
-#### Example: Passing params using arrow functions {#example-passing-params-using-arrow-functions}
+#### Exemplo: Passando parâmetros usando _arrow functions_ {#example-passing-params-using-arrow-functions}
 
 ```jsx
-const A = 65 // ASCII character code
+const A = 65 // cógido de caractere ASCII
 
 class Alphabet extends React.Component {
   constructor(props) {
@@ -164,7 +164,7 @@ class Alphabet extends React.Component {
   render() {
     return (
       <div>
-        Just clicked: {this.state.justClicked}
+        Acabaste de clicar: {this.state.justClicked}
         <ul>
           {this.state.letters.map(letter =>
             <li key={letter} onClick={() => this.handleClick(letter)}>
@@ -178,12 +178,12 @@ class Alphabet extends React.Component {
 }
 ```
 
-#### Example: Passing params using data-attributes {#example-passing-params-using-data-attributes}
+#### Exemplo: Passando parâmetros usando _data-attributes_ {#example-passing-params-using-data-attributes}
 
 Alternately, you can use DOM APIs to store data needed for event handlers. Consider this approach if you need to optimize a large number of elements or have a render tree that relies on React.PureComponent equality checks.
 
 ```jsx
-const A = 65 // ASCII character code
+const A = 65 // cógido de caractere ASCII
 
 class Alphabet extends React.Component {
   constructor(props) {
@@ -204,7 +204,7 @@ class Alphabet extends React.Component {
   render() {
     return (
       <div>
-        Just clicked: {this.state.justClicked}
+        Acabaste de clicar: {this.state.justClicked}
         <ul>
           {this.state.letters.map(letter =>
             <li key={letter} data-letter={letter} onClick={this.handleClick}>
