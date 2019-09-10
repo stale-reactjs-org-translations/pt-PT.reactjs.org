@@ -78,13 +78,13 @@ handleSomething() {
 
 [Lê mais sobre setState](/docs/react-component.html#setstate)
 
-### When is `setState` asynchronous? {#when-is-setstate-asynchronous}
+### Quando é que `setState` é assíncrono? {#when-is-setstate-asynchronous}
 
-Currently, `setState` is asynchronous inside event handlers.
+Atualmente, `setState` é assíncrono dentro de manipuladores de evento.
 
-This ensures, for example, that if both `Parent` and `Child` call `setState` during a click event, `Child` isn't re-rendered twice. Instead, React "flushes" the state updates at the end of the browser event. This results in significant performance improvements in larger apps.
+Isto garante que, por exemplo, caso tanto `Parent` quanto `Child` chamem `setState` após um evento de clique, `Child` não seja renderizado duas vezes. Em vez disso, React executa todas as atualizações de estado ao final do evento do navegador. Isto resulta numa melhoria de performance significativa para aplicativos maiores.
 
-This is an implementation detail so avoid relying on it directly. In the future versions, React will batch updates by default in more cases.
+Isto é um detalhe de implementação, então evita depender disso diretamente. Em versões futuras, o React fará atualizações em lotes em mais casos.
 
 ### Why doesn't React update `this.state` synchronously? {#why-doesnt-react-update-thisstate-synchronously}
 
