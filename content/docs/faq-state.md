@@ -12,7 +12,7 @@ category: FAQ
 
 ### Qual é a diferença entre `state` e `props`? {#what-is-the-difference-between-state-and-props}
 
-[`props`](/docs/components-and-props.html) (abreviação de "<i lang="en">properties</i>") and [`state`](/docs/state-and-lifecycle.html) são ambos objetos JavaScript. While both hold information that influences the output of render, they are different in one important way: `props` get passed *to* the component (similar to function parameters) whereas `state` is managed *within* the component (similar to variables declared within a function).
+[`props`](/docs/components-and-props.html) (abreviação de "<i lang="en">properties</i>") and [`state`](/docs/state-and-lifecycle.html) são ambos objetos JavaScript. Apesar de ambos guardarem informações que influenciam no resultado da renderização, eles são diferentes por uma razão importante: `props` são *passados* para o componente (como parâmetros de funções), enquanto `state` é gerido *de dentro* do componente (como variáveis declaradas dentro de uma função).
 
 Here are some good resources for further reading on when to use `props` vs `state`:
 * [Props vs State](https://github.com/uberVU/react-guide/blob/master/props-vs-state.md)
