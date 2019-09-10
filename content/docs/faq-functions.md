@@ -262,7 +262,7 @@ class LoadMoreButton extends React.Component {
 
 #### Debounce {#debounce}
 
-Debouncing ensures that a function will not be executed until after a certain amount of time has passed since it was last called. This can be useful when you have to perform some expensive calculation in response to an event that might dispatch rapidly (exemplo: scroll or keyboard events). The example below debounces text input with a 250ms delay.
+_Debouncing_ garante que a função não vai ser executada até que um certo período de tempo tenha passado desde sua última chamada. Isso pode ser útil quando tens que executar algum cálculo pesado em resposta à um evento que pode despachar rapidamente (exemplo: rolagem do mouse ou evento de teclas). O exemplo abaixo atualiza o texto com um atraso de 250ms.
 
 ```jsx
 import debounce from 'lodash.debounce';
