@@ -20,7 +20,7 @@ Se precisas ter acesso ao componente pai no manipulador, também precisas fazer 
 
 Dependendo da sintaxe e etapas de build que estás a usar, existem diversas maneiras de garantir que as funções tenham acesso aos atributos dos componentes como `this.props` e `this.state`.
 
-#### Bind in Constructor (ES2015) {#bind-in-constructor-es2015}
+#### _Bind_ no Constructor (ES2015) {#bind-in-constructor-es2015}
 
 ```jsx
 class Foo extends Component {
@@ -29,10 +29,10 @@ class Foo extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
   handleClick() {
-    console.log('Click happened');
+    console.log('Clicado');
   }
   render() {
-    return <button onClick={this.handleClick}>Click Me</button>;
+    return <button onClick={this.handleClick}>Clica-me</button>;
   }
 }
 ```
