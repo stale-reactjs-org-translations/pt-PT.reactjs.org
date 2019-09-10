@@ -86,11 +86,11 @@ Isto garante que, por exemplo, caso tanto `Parent` quanto `Child` chamem `setSta
 
 Isto é um detalhe de implementação, então evita depender disso diretamente. Em versões futuras, o React fará atualizações em lotes em mais casos.
 
-### Why doesn't React update `this.state` synchronously? {#why-doesnt-react-update-thisstate-synchronously}
+### Porquê é que o React não atualiza `this.state` de forma síncrona? {#why-doesnt-react-update-thisstate-synchronously}
 
-As explained in the previous section, React intentionally "waits" until all components call `setState()` in their event handlers before starting to re-render. This boosts performance by avoiding unnecessary re-renders.
+Como explicado na seção anterior, React intencionalmente "espera" até todos os componentes terem chamado `setState()` em seus manipuladores de evento antes de começar a renderizar novamente. Isso aumenta performance por evitar renderizações desnecessárias.
 
-However, you might still be wondering why React doesn't just update `this.state` immediately without re-rendering.
+No entanto, podes ainda questionar porquê o React simplesmente não atualiza `this.state` imediatamente, sem renderizar novamente.
 
 There are two main reasons:
 
