@@ -6,13 +6,13 @@ layout: docs
 category: FAQ
 ---
 
-### Is there a recommended way to structure React projects? {#is-there-a-recommended-way-to-structure-react-projects}
+### Existe uma maneira recomendada para estruturar os projetos em React? {#is-there-a-recommended-way-to-structure-react-projects}
 
-React doesn't have opinions on how you put files into folders. That said there are a few common approaches popular in the ecosystem you may want to consider.
+O React não opina sobre como deves estruturar o projeto. No entanto, existem algumas abordagens populares que podes experimentar.
 
-#### Grouping by features or routes {#grouping-by-features-or-routes}
+#### Agrupar por funcionalidades ou rotas {#grouping-by-features-or-routes}
 
-One common way to structure projects is locate CSS, JS, and tests together inside folders grouped by feature or route.
+Uma maneira bem comum para estruturar os projetos é colocar CSS, JS e testes juntos dentro de pastas agrupadas por funcionalidades ou rotas, por exemplo:
 
 ```
 common/
@@ -35,11 +35,11 @@ profile/
   ProfileAPI.js
 ```
 
-The definition of a "feature" is not universal, and it is up to you to choose the granularity. If you can't come up with a list of top-level folders, you can ask the users of your product what major parts it consists of, and use their mental model as a blueprint.
+A definição de "funcionalidade" não é universal e cabe a ti decidir. Se não conseguires criar uma lista de pastas de alto nível, podes perguntar para os utilizadores do teu produto quais são as partes principais que ele contém e usar o modelo mental como estrutura.
 
-#### Grouping by file type {#grouping-by-file-type}
+#### Agrupar por tipo de arquivo {#grouping-by-file-type}
 
-Another popular way to structure projects is to group similar files together, for example:
+Outra maneira popular de estruturar projetos é agrupar arquivos semelhantes por tipo, por exemplo:
 
 ```
 api/
@@ -59,7 +59,7 @@ components/
   ProfileHeader.css
 ```
 
-Some people also prefer to go further, and separate components into different folders depending on their role in the application. For example, [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) is a design methodology built on this principle. Remember that it's often more productive to treat such methodologies as helpful examples rather than strict rules to follow.
+Algumas pessoas preferem ir mais além, e separar os componentes em pastas diferentes, dependendo do papel que desempenham na aplicação. Por exemplo o [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) que é uma metodologia de design construída sobre este princípio. Lembra-te de que é mais produtivo tratar essas metodologias como exemplos úteis, ao invés de regras estritas que devem ser seguidas.
 
 #### Avoid too much nesting {#avoid-too-much-nesting}
 
