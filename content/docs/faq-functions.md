@@ -283,7 +283,7 @@ class Searchbox extends React.Component {
       <input
         type="text"
         onChange={this.handleChange}
-        placeholder="Search..."
+        placeholder="A procurar..."
         defaultValue={this.props.value}
       />
     );
@@ -304,11 +304,11 @@ class Searchbox extends React.Component {
 
 #### `requestAnimationFrame` throttling {#requestanimationframe-throttling}
 
-[`requestAnimationFrame`](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame) is a way of queuing a function to be executed in the browser at the optimal time for rendering performance. A function that is queued with `requestAnimationFrame` will fire in the next frame. The browser will work hard to ensure that there are 60 frames per second (60 fps). However, if the browser is unable to it will naturally *limit* the amount of frames in a second. For example, a device might only be able to handle 30 fps and so you will only get 30 frames in that second. Using `requestAnimationFrame` for throttling is a useful technique in that it prevents you from doing more than 60 updates in a second. If you are doing 100 updates in a second this creates additional work for the browser that the user will not see anyway.
+[`requestAnimationFrame`](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame) é uma maneira de enfileirar uma função para ser executada no navegador no tempo ideal para a performance de renderização. A função que é enfileirada com `requestAnimationFrame` vai disparar no próximo frame. O navegador esforça-se para garantir que haja 60 frames por segundo (60 fps). Entretanto, se o navegador for incapaz disso, vai naturalmente *limitar* a quantidade de frames por segundo. Por exemplo, um dispostivo pode ser capaz de aguentar apenas 30fps e então só terás 30 frames por segundo. Usar `requestAnimationFrame` para _throttling_ é uma técnica útil para impedir que faças mais de 60 atualizações em um segundo. Se estás a fazer 100 atualizações em um segundo, isso cria trabalho extra para o navegador que o utilizador nem será capaz de ver.
 
->**Note:**
+>**Nota:**
 >
->Using this technique will only capture the last published value in a frame. You can see an example of how this optimization works on [`MDN`](https://developer.mozilla.org/en-US/docs/Web/Events/scroll)
+>Usar esta técnica capturará apenas o último valor publicado em um frame. Podes ver um exemplo de como esta otimização funciona em [`MDN`](https://developer.mozilla.org/en-US/docs/Web/Events/scroll)
 
 ```jsx
 import rafSchedule from 'raf-schd';
