@@ -14,11 +14,11 @@ Podes usar qualquer biblioteca AJAX que desejas com React. Algumas populares sã
 
 Deves preencher dados com requisições AJAX no método [`componentDidMount`](/docs/react-component.html#mounting) do ciclo de vida. Isto é necessário para que consigas usar `setState` para atualizar o teu componente quando os dados forem recebidos.
 
-### Example: Using AJAX results to set local state {#example-using-ajax-results-to-set-local-state}
+### Exemplo: Usando resultados AJAX para definir o estado local {#example-using-ajax-results-to-set-local-state}
 
-The component below demonstrates how to make an AJAX call in `componentDidMount` to populate local component state. 
+O componente abaixo demonstra como fazer uma requisição AJAX no `componentDidMount` para preencher o estado (state) local.
 
-The example API returns a JSON object like this:
+A API de exemplo retorna um objeto JSON como este:
 
 ```
 {
@@ -65,9 +65,9 @@ class MyComponent extends React.Component {
   render() {
     const { error, isLoaded, items } = this.state;
     if (error) {
-      return <div>Error: {error.message}</div>;
+      return <div>Erro: {error.message}</div>;
     } else if (!isLoaded) {
-      return <div>Loading...</div>;
+      return <div>A processar...</div>;
     } else {
       return (
         <ul>
