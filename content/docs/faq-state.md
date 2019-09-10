@@ -49,34 +49,34 @@ handleSomething() {
 
 Vê abaixo como solucionar esse problema.
 
-### How do I update state with values that depend on the current state? {#how-do-i-update-state-with-values-that-depend-on-the-current-state}
+### Como atualizar o `state` com valores que dependem do `state` atual? {#how-do-i-update-state-with-values-that-depend-on-the-current-state}
 
-Pass a function instead of an object to `setState` to ensure the call always uses the most updated version of state (see below). 
+Passa uma função ao invés de um objeto para `setState` para garantir que a chamada sempre use o valor mais recente do state (vê abaixo).
 
-### What is the difference between passing an object or a function in `setState`? {#what-is-the-difference-between-passing-an-object-or-a-function-in-setstate}
+### Qual é a diferença entre passar um objeto e uma função em `setState`? {#what-is-the-difference-between-passing-an-object-or-a-function-in-setstate}
 
-Passing an update function allows you to access the current state value inside the updater. Since `setState` calls are batched, this lets you chain updates and ensure they build on top of each other instead of conflicting:
+Passar uma função de atualização permite que acesses o valor atual do `state` dentro dela. Como as chamadas de `setState` são feitas em lotes, isso permite que você encadeie atualizações e garanta que elas se componham ao invés de entrar em conflito:
 
 ```jsx
 incrementCount() {
   this.setState((state) => {
-    // Important: read `state` instead of `this.state` when updating.
+    // Importante: use `state` em vez de `this.state` quando estiveres a atualizar.
     return {count: state.count + 1}
   });
 }
 
 handleSomething() {
-  // Let's say `this.state.count` starts at 0.
+  // Digamos que `this.state.count` começa em 0.
   this.incrementCount();
   this.incrementCount();
   this.incrementCount();
 
-  // If you read `this.state.count` now, it would still be 0.
-  // But when React re-renders the component, it will be 3.
+  // Se fores a ler `this.state.count` agora, ele ainda seria 0.
+  // Mas quando o React renderizar novamente o componente, ele será 3.
 }
 ```
 
-[Learn more about setState](/docs/react-component.html#setstate)
+[Lê mais sobre setState](/docs/react-component.html#setstate)
 
 ### When is `setState` asynchronous? {#when-is-setstate-asynchronous}
 
