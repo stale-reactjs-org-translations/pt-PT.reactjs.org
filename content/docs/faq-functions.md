@@ -180,7 +180,7 @@ class Alphabet extends React.Component {
 
 #### Exemplo: Passando parâmetros usando _data-attributes_ {#example-passing-params-using-data-attributes}
 
-Alternately, you can use DOM APIs to store data needed for event handlers. Consider this approach if you need to optimize a large number of elements or have a render tree that relies on React.PureComponent equality checks.
+Em vez disso, podes usar APIs do DOM para guardar dados necessários para manipuladores de evento. Considera esta abordagem caso precises otimizar um grande número de elementos ou caso possuas uma árvore de renderização que depende de verificações de igualdade do React.PureComponent.
 
 ```jsx
 const A = 65 // cógido de caractere ASCII
@@ -218,19 +218,19 @@ class Alphabet extends React.Component {
 }
 ```
 
-### How can I prevent a function from being called too quickly or too many times in a row? {#how-can-i-prevent-a-function-from-being-called-too-quickly-or-too-many-times-in-a-row}
+### Como evitar que uma função seja invocada muito rapidamente ou chamada muitas vezes em seguida? {#how-can-i-prevent-a-function-from-being-called-too-quickly-or-too-many-times-in-a-row}
 
-If you have an event handler such as `onClick` or `onScroll` and want to prevent the callback from being fired too quickly, then you can limit the rate at which callback is executed. This can be done by using:
+Se tens um manipulador de eventos como `onClick` ou `onScroll` e queres evitar que o callback seja ativado muito rapidamente, então podes limitar a frequência com a qual o callback é executado. Isso pode ser feito usando:
 
-- **throttling**: sample changes based on a time based frequency (eg [`_.throttle`](https://lodash.com/docs#throttle))
-- **debouncing**: publish changes after a period of inactivity (eg [`_.debounce`](https://lodash.com/docs#debounce))
-- **`requestAnimationFrame` throttling**: sample changes based on [`requestAnimationFrame`](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame) (eg [`raf-schd`](https://github.com/alexreardon/raf-schd))
+- **throttling**: amostra de mudanças com base em uma frequência baseada no tempo (exemplo: [`_.throttle`](https://lodash.com/docs#throttle))
+- **debouncing**: publica alterações após um período de inatividade (exemplo: [`_.debounce`](https://lodash.com/docs#debounce))
+- **`requestAnimationFrame` throttling**: amostra de mudanças baseadas em [`requestAnimationFrame`](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame) (exemplo: [`raf-schd`](https://github.com/alexreardon/raf-schd))
 
-See [this visualization](http://demo.nimius.net/debounce_throttle/) for a comparison of `throttle` and `debounce` functions.
+Vê [esta visualização](http://demo.nimius.net/debounce_throttle/) para uma comparação entre as funções `throttle` e `debounce`.
 
-> Note:
+> Nota:
 >
-> `_.debounce`, `_.throttle` and `raf-schd` provide a `cancel` method to cancel delayed callbacks. You should either call this method from `componentWillUnmount` _or_ check to ensure that the component is still mounted within the delayed function.
+> `_.debounce`, `_.throttle` e `raf-schd` fornecem um método `cancel` para cancelar callbacks atrasados. Deves chamar este método a partir de `componentWillUnmount` _ou_ verificar se o componente ainda está montado dentro da função atrasada.
 
 #### Throttle {#throttle}
 
@@ -262,7 +262,7 @@ class LoadMoreButton extends React.Component {
 
 #### Debounce {#debounce}
 
-Debouncing ensures that a function will not be executed until after a certain amount of time has passed since it was last called. This can be useful when you have to perform some expensive calculation in response to an event that might dispatch rapidly (eg scroll or keyboard events). The example below debounces text input with a 250ms delay.
+Debouncing ensures that a function will not be executed until after a certain amount of time has passed since it was last called. This can be useful when you have to perform some expensive calculation in response to an event that might dispatch rapidly (exemplo: scroll or keyboard events). The example below debounces text input with a 250ms delay.
 
 ```jsx
 import debounce from 'lodash.debounce';
