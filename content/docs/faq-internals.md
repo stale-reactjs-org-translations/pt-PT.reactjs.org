@@ -14,7 +14,7 @@ Esta abordagem permite a API declarativa do React: dizes ao React em que estado 
 
 Dado que "virtual DOM" é mais um padrão do que uma tecnologia específica, as pessoas às vezes o citam querendo dizer coisas diferentes. No mundo do React, o termo "virtual DOM" é geralmente associado aos [Elementos do React](/docs/rendering-elements.html) uma vez que eles são objetos que representam a interface do usuário. O React, contudo, também usa objetos internos chamados "fibers" para guardar informações adicionais sobre a árvore de componentes. Eles também podem ser considerados parte da implementação do "virtual DOM" no React.
 
-### Is the Shadow DOM the same as the Virtual DOM? {#is-the-shadow-dom-the-same-as-the-virtual-dom}
+### O Shadow DOM é a mesma coisa que o Virtual DOM? {#is-the-shadow-dom-the-same-as-the-virtual-dom}
 
 No, they are different. The Shadow DOM is a browser technology designed primarily for scoping variables and CSS in web components. The virtual DOM is a concept implemented by libraries in JavaScript on top of browser APIs.
 
