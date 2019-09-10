@@ -87,7 +87,7 @@ class Foo extends Component {
 
 ### Não faz mal usar _arrow functions_ em métodos de `render`? {#is-it-ok-to-use-arrow-functions-in-render-methods}
 
-De um modo geral, não faz mal. E muitas das vezes é a maneira mais fácil de passar parâmetros para funções de callback.
+De um modo geral, não, não faz mal. E muitas das vezes é a maneira mais fácil de passar parâmetros para funções de callback.
 
 Se tiveres problemas de performance, procure sempre otimizar!
 
@@ -110,23 +110,23 @@ Com React, tipicamente precisas fazer _bind_ apenas nos métodos que tu *passas*
 
 [Este post de Yehuda Katz](https://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/) explica o que é _binding_ e como funcionam as funções do JavaScript, em detalhes.
 
-### Why is my function being called every time the component renders? {#why-is-my-function-being-called-every-time-the-component-renders}
+### Porquê a minha função é invocada sempre que o componente renderiza? {#why-is-my-function-being-called-every-time-the-component-renders}
 
-Make sure you aren't _calling the function_ when you pass it to the component:
+Certifique-se de não estar a _invocar a função_ quando passas para o componente:
 
 ```jsx
 render() {
-  // Wrong: handleClick is called instead of passed as a reference!
-  return <button onClick={this.handleClick()}>Click Me</button>
+  // Errado: handleClick é invocado ao invés de ser passado como referência!
+  return <button onClick={this.handleClick()}>Clica-me</button>
 }
 ```
 
-Instead, *pass the function itself* (without parens):
+Em vez disso, *passe a própria função* (sem parentêses):
 
 ```jsx
 render() {
-  // Correct: handleClick is passed as a reference!
-  return <button onClick={this.handleClick}>Click Me</button>
+  // Correto: handleClick é passado como referência!
+  return <button onClick={this.handleClick}>Clica-me</button>
 }
 ```
 
