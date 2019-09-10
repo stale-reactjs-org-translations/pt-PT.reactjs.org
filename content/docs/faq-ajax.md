@@ -8,7 +8,7 @@ category: FAQ
 
 ### Como fazer uma requisição AJAX? {#how-can-i-make-an-ajax-call}
 
-You can use any AJAX library you like with React. Some popular ones are [Axios](https://github.com/axios/axios), [jQuery AJAX](https://api.jquery.com/jQuery.ajax/), and the browser built-in [window.fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
+Podes usar qualquer biblioteca AJAX que desejas com React. Algumas populares são [Axios](https://github.com/axios/axios), [jQuery AJAX](https://api.jquery.com/jQuery.ajax/), e o método nativo do navegador [window.fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 
 ### Where in the component lifecycle should I make an AJAX call? {#where-in-the-component-lifecycle-should-i-make-an-ajax-call}
 
