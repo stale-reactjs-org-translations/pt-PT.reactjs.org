@@ -85,7 +85,7 @@ Vamos recapitular o que acontece neste exemplo:
 3. Nosso componente `Welcome` retorna um elemento `<h1>Hello, Sara</h1>` como resultad
 4. React DOM atualiza eficientemente o DOM para corresponder à `<h1>Hello, Sara</h1>`.
 
->**Note:** Always start component names with a capital letter.
+>**Nota:** Sempre comeces os nomes dos componentes com uma letra maiúscula.
 >
 >React treats components starting with lowercase letters as DOM tags. For example, `<div />` represents an HTML div tag, but `<Welcome />` represents a component and requires `Welcome` to be in scope.
 >
