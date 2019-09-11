@@ -45,7 +45,7 @@ function WelcomeDialog() {
 }
 ```
 
-**[Experimente no CodePen](https://codepen.io/gaearon/pen/ozqNOV?editors=0010)**
+**[Experimenta no CodePen](https://codepen.io/gaearon/pen/ozqNOV?editors=0010)**
 
 Qualquer conteúdo dentro da tag JSX do componente `<FancyBorder>` vai ser passado ao componente `FancyBorder` como prop `children`. Desde que `FancyBorder` renderize a `{props.children}` dentro de uma `<div>`, os elementos serão renderizados no resultado final.
 
@@ -78,7 +78,7 @@ function App() {
 }
 ```
 
-[**Experimente no CodePen**](https://codepen.io/gaearon/pen/gwZOJp?editors=0010)
+[**Experimenta no CodePen**](https://codepen.io/gaearon/pen/gwZOJp?editors=0010)
 
 Os elementos em React como `<Contacts/>` e `<Chat/>` são apenas objetos, e podes passá-los como props assim como fazes com outros tipos de dados. Esta abordagem pode soar familiar como "slots" em outras bibliotecas, mas em React não existe limitações sobre o que pode ser passado como props.
 
@@ -111,7 +111,7 @@ function WelcomeDialog() {
 }
 ```
 
-[**Experimente no CodePen**](https://codepen.io/gaearon/pen/kkEaOZ?editors=0010)
+[**Experimenta no CodePen**](https://codepen.io/gaearon/pen/kkEaOZ?editors=0010)
 
 A composição também irá funcionar para componentes escritos como classes:
 
@@ -161,7 +161,7 @@ class SignUpDialog extends React.Component {
 }
 ```
 
-[**Experimente no CodePen**](https://codepen.io/gaearon/pen/gwZbYa?editors=0010)
+[**Experimenta no CodePen**](https://codepen.io/gaearon/pen/gwZbYa?editors=0010)
 
 ## E em relação a herança? {#so-what-about-inheritance}
 
