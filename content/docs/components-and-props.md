@@ -42,11 +42,11 @@ class Welcome extends React.Component {
 }
 ```
 
-The above two components are equivalent from React's point of view.
+Os dois componentes acima são equivalentes do ponto de vista do React.
 
-Classes have some additional features that we will discuss in the [next sections](/docs/state-and-lifecycle.html). Until then, we will use function components for their conciseness.
+Classes tem alguns recursos adicionais que nós discutiremos nas [próximas seções](/docs/state-and-lifecycle.html). Até lá, nós usaremos componentes de função por serem mais sucintos.
 
-## Rendering a Component {#rendering-a-component}
+## Renderizando um Componente {#rendering-a-component}
 
 Previously, we only encountered React elements that represent DOM tags:
 
