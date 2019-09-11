@@ -8,47 +8,47 @@ redirect_from:
   - "docs/events-ko-KR.html"
 ---
 
-Handling events with React elements is very similar to handling events on DOM elements. There are some syntactic differences:
+Manipular eventos em elementos React é muito semelhante à manipular eventos em elementos do DOM. Existem algumas diferenças sintáticas:
 
-* React events are named using camelCase, rather than lowercase.
-* With JSX you pass a function as the event handler, rather than a string.
+* Eventos em React são nomeados usando camelCase ao invés de letras minúsculas.
+* Com o JSX você passa uma função como manipulador de eventos ao invés de um texto.
 
-For example, the HTML:
+Por exemplo, com HTML:
 
 ```html
 <button onclick="activateLasers()">
-  Activate Lasers
+  Ativar Lasers
 </button>
 ```
 
-is slightly different in React:
+é ligeiramente diferente em React:
 
 ```js{1}
 <button onClick={activateLasers}>
-  Activate Lasers
+  Ativar Lasers
 </button>
 ```
 
-Another difference is that you cannot return `false` to prevent default behavior in React. You must call `preventDefault` explicitly. For example, with plain HTML, to prevent the default link behavior of opening a new page, you can write:
+Outra diferença é que não podes retornar `false` para evitar o comportamento padrão no React. Deves chamar `preventDefault` explícitamente. Por exemplo, com HTML simples, para evitar que um link abra uma nova página, podes escrever:
 
 ```html
-<a href="#" onclick="console.log('The link was clicked.'); return false">
-  Click me
+<a href="#" onclick="console.log('O link foi clicado.'); return false">
+  Clica-me
 </a>
 ```
 
-In React, this could instead be:
+Em React, isto poderia ser:
 
 ```js{2-5,8}
 function ActionLink() {
   function handleClick(e) {
     e.preventDefault();
-    console.log('The link was clicked.');
+    console.log('O link foi clicado.');
   }
 
   return (
     <a href="#" onClick={handleClick}>
-      Click me
+      Clica-me
     </a>
   );
 }
