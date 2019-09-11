@@ -46,7 +46,7 @@ Os dois componentes acima são equivalentes do ponto de vista do React.
 
 Classes tem alguns recursos adicionais que nós discutiremos nas [próximas seções](/docs/state-and-lifecycle.html). Até lá, nós usaremos componentes de função por serem mais sucintos.
 
-## Renderizando um Componente {#rendering-a-component}
+## Renderização de um Componente {#rendering-a-component}
 
 Anteriormente, nós encontramos apenas elementos React que representam tags do DOM:
 
@@ -122,11 +122,11 @@ ReactDOM.render(
 
 Geralmente, novas aplicações em React têm um único componente `App` no topo. Contudo, se integrares o React em uma aplicação existente, podes começar de baixo para cima com um componente pequeno como o `Button` e gradualmente chegar ao topo da hierarquia de componentes.
 
-## Extracting Components {#extracting-components}
+## Extração de Componentes {#extracting-components}
 
-Don't be afraid to split components into smaller components.
+Não tenhas receio de dividir componentes em componentes menores.
 
-For example, consider this `Comment` component:
+Por exemplo, considere esse componente `Comment`:
 
 ```js
 function Comment(props) {
@@ -154,9 +154,9 @@ function Comment(props) {
 
 [](codepen://components-and-props/extracting-components)
 
-It accepts `author` (an object), `text` (a string), and `date` (a date) as props, and describes a comment on a social media website.
+Ele aceita `author` (um objeto), `text` (uma string) e `date` (uma data) como props e descreve um comentário em um website de mídia social.
 
-This component can be tricky to change because of all the nesting, and it is also hard to reuse individual parts of it. Let's extract a few components from it.
+Esse componente pode ser difícil de alterar por causa de toda ramificação. Também é difícil reutilizar suas partes individuais. Vamos extrair alguns componentes dele.
 
 First, we will extract `Avatar`:
 
