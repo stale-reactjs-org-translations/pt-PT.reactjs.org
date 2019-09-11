@@ -20,24 +20,24 @@ Componentes permitem que dividas a interface gráfica (_UI_) em partes independe
 
 Em conceito, componentes são como funções em JavaScript. Eles aceitam entradas arbitrárias (chamadas "props") e retornam elementos React descrevendo o que deve aparecer na tela.
 
-## Function and Class Components {#function-and-class-components}
+## Componentes de Função e Classe {#function-and-class-components}
 
-The simplest way to define a component is to write a JavaScript function:
+A maneira mais simples de definir um componente é escrever uma função JavaScript:
 
 ```js
 function Welcome(props) {
-  return <h1>Hello, {props.name}</h1>;
+  return <h1>Olá, {props.name}</h1>;
 }
 ```
 
-This function is a valid React component because it accepts a single "props" (which stands for properties) object argument with data and returns a React element. We call such components "function components" because they are literally JavaScript functions.
+Essa função é um componente React válido porque aceita um único argumento de objeto "props" (que significa propriedades) com dados e retorna um elemento React. Nós chamamos estes componentes de "componentes de função" porque são literalmente funções JavaScript.
 
-You can also use an [ES6 class](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes) to define a component:
+Podes também usar uma [classe ES6](https://developer.mozilla.org/pt-PT/docs/Web/JavaScript/Reference/Classes) para definir um componente:
 
 ```js
 class Welcome extends React.Component {
   render() {
-    return <h1>Hello, {this.props.name}</h1>;
+    return <h1>Olá, {this.props.name}</h1>;
   }
 }
 ```
