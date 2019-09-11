@@ -82,9 +82,9 @@ function App() {
 
 Os elementos em React como `<Contacts/>` e `<Chat/>` são apenas objetos, e podes passá-los como props assim como fazes com outros tipos de dados. Esta abordagem pode soar familiar como "slots" em outras bibliotecas, mas em React não existe limitações sobre o que pode ser passado como props.
 
-## Specialization {#specialization}
+## Especialização {#specialization}
 
-Sometimes we think about components as being "special cases" of other components. For example, we might say that a `WelcomeDialog` is a special case of `Dialog`.
+Algumas vezes acabamos pensando em componentes como "casos especiais" de outros componentes, por exemplo, podemos dizer que o componente `WelcomeDialog` é um caso especial de `Dialog`.
 
 In React, this is also achieved by composition, where a more "specific" component renders a more "generic" one and configures it with props:
 
