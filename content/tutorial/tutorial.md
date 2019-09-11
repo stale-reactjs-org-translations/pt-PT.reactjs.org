@@ -18,9 +18,9 @@ Este tutorial não assume nenhum conhecimento existente do React.
 
 Vamos construir um pequeno jogo durante este tutorial. **Até podes tentar ignorá-lo porque não vais construir jogos - mas dá uma chance.** As técnicas que aprenderás no tutorial são fundamentais para criar qualquer aplicação React e o domínio delas lhe dará um profundo entendimento de React.
 
->Tip
+>Dica
 >
->This tutorial is designed for people who prefer to **learn by doing**. If you prefer learning concepts from the ground up, check out our [step-by-step guide](/docs/hello-world.html). You might find this tutorial and the guide complementary to each other.
+>Este tutorial foi criado para pessoas que preferem **aprender fazendo**. Se prefes aprender conceitos do zero, vê o nosso [guia passo-a-passo](/docs/hello-world.html). Podes achar este tutorial e o guia complementares um ao outro.
 
 The tutorial is divided into several sections:
 
