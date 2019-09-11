@@ -8,13 +8,13 @@ prev: lifting-state-up.html
 next: thinking-in-react.html
 ---
 
-React has a powerful composition model, and we recommend using composition instead of inheritance to reuse code between components.
+O React tem um poderoso modelo de composição, e por isso recomendamos o uso de composição ao invés de herança para reutilizar código entre componentes.
 
-In this section, we will consider a few problems where developers new to React often reach for inheritance, and show how we can solve them with composition.
+Nesta seção, iremos demonstrar alguns problemas encontrados pelos desenvolvedores que estão a iniciar com o React e deparam-swe em situações com herança, e mostraremos como podemos resolver utilizando composição.
 
-## Containment {#containment}
+## Contenção {#containment}
 
-Some components don't know their children ahead of time. This is especially common for components like `Sidebar` or `Dialog` that represent generic "boxes".
+Alguns componentes não tem como saber quem serão seus elementos filhos. Isto é muito comum para componentes como o `SideBar` ou `Dialog` que representam "caixas" genéricas.
 
 We recommend that such components use the special `children` prop to pass children elements directly into their output:
 
