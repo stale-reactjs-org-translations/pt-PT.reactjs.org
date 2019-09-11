@@ -87,9 +87,9 @@ Vamos recapitular o que acontece neste exemplo:
 
 >**Nota:** Sempre comeces os nomes dos componentes com uma letra maiúscula.
 >
->React treats components starting with lowercase letters as DOM tags. For example, `<div />` represents an HTML div tag, but `<Welcome />` represents a component and requires `Welcome` to be in scope.
+>O React trata componentes começando com letras minúsculas como tags do DOM. Por exemplo, `<div />` representa uma tag div do HTML, mas `<Welcome />` representa um componente e requer que `Welcome` esteja no escopo.
 >
->To learn more about the reasoning behind this convention, please read [JSX In Depth](/docs/jsx-in-depth.html#user-defined-components-must-be-capitalized).
+>Para ler mais sobre o raciocínio por trás dessa convenção, leia [JSX em Profundidade](/docs/jsx-in-depth.html#user-defined-components-must-be-capitalized).
 
 ## Composing Components {#composing-components}
 
