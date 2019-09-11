@@ -158,7 +158,7 @@ Ele aceita `author` (um objeto), `text` (uma string) e `date` (uma data) como pr
 
 Esse componente pode ser difícil de alterar por causa de toda ramificação. Também é difícil reutilizar suas partes individuais. Vamos extrair alguns componentes dele.
 
-First, we will extract `Avatar`:
+Primeiro, nós vamos extrair `Avatar`:
 
 ```js{3-6}
 function Avatar(props) {
@@ -171,11 +171,11 @@ function Avatar(props) {
 }
 ```
 
-The `Avatar` doesn't need to know that it is being rendered inside a `Comment`. This is why we have given its prop a more generic name: `user` rather than `author`.
+O `Avatar` não precisa saber que está a ser renderizado dentro do `Comment`. É por isto que nós demos ao seu prop um nome mais genérico: `user` em vez de `author`.
 
-We recommend naming props from the component's own point of view rather than the context in which it is being used.
+Nós recomendamos nomear props a partir do ponto de vista do próprio componente ao invés do contexto em que ele está a ser usado.
 
-We can now simplify `Comment` a tiny bit:
+Agora nós podemos simplificar `Comment` um pouco mais:
 
 ```js{5}
 function Comment(props) {
