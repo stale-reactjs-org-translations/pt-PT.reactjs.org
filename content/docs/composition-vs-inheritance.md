@@ -80,7 +80,7 @@ function App() {
 
 [**Experimente no CodePen**](https://codepen.io/gaearon/pen/gwZOJp?editors=0010)
 
-React elements like `<Contacts />` and `<Chat />` are just objects, so you can pass them as props like any other data. This approach may remind you of "slots" in other libraries but there are no limitations on what you can pass as props in React.
+Os elementos em React como `<Contacts/>` e `<Chat/>` são apenas objetos, e podes passá-los como props assim como fazes com outros tipos de dados. Esta abordagem pode soar familiar como "slots" em outras bibliotecas, mas em React não existe limitações sobre o que pode ser passado como props.
 
 ## Specialization {#specialization}
 
