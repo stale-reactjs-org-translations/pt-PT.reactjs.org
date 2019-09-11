@@ -60,9 +60,9 @@ No entanto, elementos também podem representar componentes definidos pelo utili
 const element = <Welcome name="Sara" />;
 ```
 
-When React sees an element representing a user-defined component, it passes JSX attributes to this component as a single object. We call this object "props".
+Quando o React vê um elemento representando um componente definido pelo utilizador, ele passa atributos JSX para esse componente como um único objeto. Nós chamamos esse objeto de "props".
 
-For example, this code renders "Hello, Sara" on the page:
+Por exemplo, esse código renderiza "Hello, Sara" na página:
 
 ```js{1,5}
 function Welcome(props) {
@@ -78,12 +78,12 @@ ReactDOM.render(
 
 [](codepen://components-and-props/rendering-a-component)
 
-Let's recap what happens in this example:
+Vamos recapitular o que acontece neste exemplo:
 
-1. We call `ReactDOM.render()` with the `<Welcome name="Sara" />` element.
-2. React calls the `Welcome` component with `{name: 'Sara'}` as the props.
-3. Our `Welcome` component returns a `<h1>Hello, Sara</h1>` element as the result.
-4. React DOM efficiently updates the DOM to match `<h1>Hello, Sara</h1>`.
+1. Nós chamamos `ReactDOM.render()` com o elemento `<Welcome name="Sara" />`.
+2. React chama o componente `Welcome` com `{name: 'Sara'}` como props.
+3. Nosso componente `Welcome` retorna um elemento `<h1>Hello, Sara</h1>` como resultad
+4. React DOM atualiza eficientemente o DOM para corresponder à `<h1>Hello, Sara</h1>`.
 
 >**Note:** Always start component names with a capital letter.
 >
