@@ -16,7 +16,7 @@ Nesta seção, iremos demonstrar alguns problemas encontrados pelos desenvolvedo
 
 Alguns componentes não tem como saber quem serão seus elementos filhos. Isto é muito comum para componentes como o `SideBar` ou `Dialog` que representam "caixas" genéricas.
 
-We recommend that such components use the special `children` prop to pass children elements directly into their output:
+Recomendamos que esses componentes utilizem a prop especial `children` para passar os elementos filhos diretos para sua respectiva saída:
 
 ```js{4}
 function FancyBorder(props) {
@@ -28,28 +28,28 @@ function FancyBorder(props) {
 }
 ```
 
-This lets other components pass arbitrary children to them by nesting the JSX:
+Isto permite outros componentes passar elementos filhos no próprio JSX:
 
 ```js{4-9}
 function WelcomeDialog() {
   return (
     <FancyBorder color="blue">
       <h1 className="Dialog-title">
-        Welcome
+        Bem-vindo
       </h1>
       <p className="Dialog-message">
-        Thank you for visiting our spacecraft!
+        Obrigado por visitar a nossa nave-espacial!
       </p>
     </FancyBorder>
   );
 }
 ```
 
-**[Try it on CodePen](https://codepen.io/gaearon/pen/ozqNOV?editors=0010)**
+**[Experimente no CodePen](https://codepen.io/gaearon/pen/ozqNOV?editors=0010)**
 
-Anything inside the `<FancyBorder>` JSX tag gets passed into the `FancyBorder` component as a `children` prop. Since `FancyBorder` renders `{props.children}` inside a `<div>`, the passed elements appear in the final output.
+Qualquer conteúdo dentro da tag JSX do componente `<FancyBorder>` vai ser passado ao componente `FancyBorder` como prop `children`. Desde que `FancyBorder` renderize a `{props.children}` dentro de uma `<div>`, os elementos serão renderizados no resultado final.
 
-While this is less common, sometimes you might need multiple "holes" in a component. In such cases you may come up with your own convention instead of using `children`:
+Mesmo que seja não seja comum, às vezes pode ser que precises de diversos "buracos" no componente. Em alguns casos podes criar a tua própria convenção e não utilizar `children`:
 
 ```js{5,8,18,21}
 function SplitPane(props) {
@@ -78,7 +78,7 @@ function App() {
 }
 ```
 
-[**Try it on CodePen**](https://codepen.io/gaearon/pen/gwZOJp?editors=0010)
+[**Experimente no CodePen**](https://codepen.io/gaearon/pen/gwZOJp?editors=0010)
 
 React elements like `<Contacts />` and `<Chat />` are just objects, so you can pass them as props like any other data. This approach may remind you of "slots" in other libraries but there are no limitations on what you can pass as props in React.
 
@@ -111,7 +111,7 @@ function WelcomeDialog() {
 }
 ```
 
-[**Try it on CodePen**](https://codepen.io/gaearon/pen/kkEaOZ?editors=0010)
+[**Experimente no CodePen**](https://codepen.io/gaearon/pen/kkEaOZ?editors=0010)
 
 Composition works equally well for components defined as classes:
 
@@ -161,7 +161,7 @@ class SignUpDialog extends React.Component {
 }
 ```
 
-[**Try it on CodePen**](https://codepen.io/gaearon/pen/gwZbYa?editors=0010)
+[**Experimente no CodePen**](https://codepen.io/gaearon/pen/gwZbYa?editors=0010)
 
 ## So What About Inheritance? {#so-what-about-inheritance}
 
