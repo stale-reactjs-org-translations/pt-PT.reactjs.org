@@ -14,9 +14,9 @@ redirect_from:
 
 Este tutorial não assume nenhum conhecimento existente do React.
 
-## Before We Start the Tutorial {#before-we-start-the-tutorial}
+## Antes de começarmos o tutorial {#before-we-start-the-tutorial}
 
-We will build a small game during this tutorial. **You might be tempted to skip it because you're not building games -- but give it a chance.** The techniques you'll learn in the tutorial are fundamental to building any React app, and mastering it will give you a deep understanding of React.
+Vamos construir um pequeno jogo durante este tutorial. **Até podes tentar ignorá-lo porque não vais construir jogos - mas dá uma chance.** As técnicas que aprenderás no tutorial são fundamentais para criar qualquer aplicação React e o domínio delas lhe dará um profundo entendimento de React.
 
 >Tip
 >
