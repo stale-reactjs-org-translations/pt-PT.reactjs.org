@@ -1,24 +1,24 @@
 ---
 id: faq-ajax
-title: AJAX and APIs
+title: AJAX e APIs
 permalink: docs/faq-ajax.html
 layout: docs
 category: FAQ
 ---
 
-### How can I make an AJAX call? {#how-can-i-make-an-ajax-call}
+### Como é que faço uma requisição AJAX? {#how-can-i-make-an-ajax-call}
 
-You can use any AJAX library you like with React. Some popular ones are [Axios](https://github.com/axios/axios), [jQuery AJAX](https://api.jquery.com/jQuery.ajax/), and the browser built-in [window.fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
+Podes usar qualquer biblioteca AJAX que desejas com React. Algumas populares são [Axios](https://github.com/axios/axios), [jQuery AJAX](https://api.jquery.com/jQuery.ajax/), e o método nativo do navegador [window.fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 
-### Where in the component lifecycle should I make an AJAX call? {#where-in-the-component-lifecycle-should-i-make-an-ajax-call}
+### Onde devo fazer uma requisição AJAX no ciclo de vida do componente? {#where-in-the-component-lifecycle-should-i-make-an-ajax-call}
 
-You should populate data with AJAX calls in the [`componentDidMount`](/docs/react-component.html#mounting) lifecycle method. This is so you can use `setState` to update your component when the data is retrieved.
+Deves preencher dados com requisições AJAX no método [`componentDidMount`](/docs/react-component.html#mounting) do ciclo de vida. Isto é necessário para que consigas usar `setState` para atualizar o teu componente quando os dados forem recebidos.
 
-### Example: Using AJAX results to set local state {#example-using-ajax-results-to-set-local-state}
+### Exemplo: Usando resultados AJAX para definir o estado local {#example-using-ajax-results-to-set-local-state}
 
-The component below demonstrates how to make an AJAX call in `componentDidMount` to populate local component state. 
+O componente abaixo demonstra como fazer uma requisição AJAX no `componentDidMount` para preencher o estado (state) local.
 
-The example API returns a JSON object like this:
+A API de exemplo retorna um objeto JSON como este:
 
 ```
 {
@@ -65,9 +65,9 @@ class MyComponent extends React.Component {
   render() {
     const { error, isLoaded, items } = this.state;
     if (error) {
-      return <div>Error: {error.message}</div>;
+      return <div>Erro: {error.message}</div>;
     } else if (!isLoaded) {
-      return <div>Loading...</div>;
+      return <div>A processar...</div>;
     } else {
       return (
         <ul>

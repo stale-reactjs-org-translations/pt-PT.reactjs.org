@@ -2,7 +2,7 @@
 id: static-type-checking
 title: Static Type Checking
 permalink: docs/static-type-checking.html
-prev: typechecking-with-prototypes.html
+prev: typechecking-with-proptypes.html
 next: refs-and-the-dom.html
 ---
 
@@ -88,13 +88,13 @@ If you manually configured Babel for your project, you will need to install a sp
 If you use Yarn, run:
 
 ```bash
-yarn add --dev babel-preset-flow
+yarn add --dev @babel/preset-flow
 ```
 
 If you use npm, run:
 
 ```bash
-npm install --save-dev babel-preset-flow
+npm install --save-dev @babel/preset-flow
 ```
 
 Then add the `flow` preset to your [Babel configuration](https://babeljs.io/docs/usage/babelrc/). For example, if you configure Babel through `.babelrc` file, it could look like this:
@@ -102,7 +102,7 @@ Then add the `flow` preset to your [Babel configuration](https://babeljs.io/docs
 ```js{3}
 {
   "presets": [
-    "flow",
+    "@babel/preset-flow",
     "react"
   ]
 }
@@ -332,4 +332,4 @@ JetBrains develops and maintains several tools specifically for the React commun
 
 ## Other Languages {#other-languages}
 
-Note there are other statically typed languages that compile to JavaScript and are thus React compatible. For example, [F#/Fable](http://fable.io) with [elmish-react](https://elmish.github.io/react). Check out their respective sites for more information, and feel free to add more statically typed languages that work with React to this page!
+Note there are other statically typed languages that compile to JavaScript and are thus React compatible. For example, [F#/Fable](https://fable.io/) with [elmish-react](https://elmish.github.io/react). Check out their respective sites for more information, and feel free to add more statically typed languages that work with React to this page!
