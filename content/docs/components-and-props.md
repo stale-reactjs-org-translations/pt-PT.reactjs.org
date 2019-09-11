@@ -89,13 +89,13 @@ Vamos recapitular o que acontece neste exemplo:
 >
 >O React trata componentes que começam com letras minúsculas como tags do DOM. Por exemplo, `<div />` representa uma tag div do HTML, mas `<Welcome />` representa um componente e requer que `Welcome` esteja no escopo.
 >
->Para ler mais sobre o raciocínio por trás dessa convenção, leia [JSX em Profundidade](/docs/jsx-in-depth.html#user-defined-components-must-be-capitalized).
+>Para ler mais sobre o raciocínio por trás dessa convenção, leia [JSX em profundidade](/docs/jsx-in-depth.html#user-defined-components-must-be-capitalized).
 
 ## Composição de Componentes {#composing-components}
 
 Componentes podem fazer referência à outros componentes. Isto nos permite usar a mesma abstração de componentes para qualquer nível. Um botão, um formulário, uma caixa de diálogo, uma tela: em aplicações em React, todos esses são normalmente expressos como componentes.
 
-For example, we can create an `App` component that renders `Welcome` many times:
+Por exemplo, nós podemos criar um componente `App` que renderiza `Welcome` várias vezes:
 
 ```js{8-10}
 function Welcome(props) {
@@ -120,7 +120,7 @@ ReactDOM.render(
 
 [](codepen://components-and-props/composing-components)
 
-Typically, new React apps have a single `App` component at the very top. However, if you integrate React into an existing app, you might start bottom-up with a small component like `Button` and gradually work your way to the top of the view hierarchy.
+Geralmente, novas aplicações em React têm um único componente `App` no topo. Contudo, se integrares o React em uma aplicação existente, podes começar de baixo para cima com um componente pequeno como o `Button` e gradualmente chegar ao topo da hierarquia de componentes.
 
 ## Extracting Components {#extracting-components}
 
