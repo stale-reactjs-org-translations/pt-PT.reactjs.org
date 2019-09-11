@@ -22,12 +22,12 @@ Vamos construir um pequeno jogo durante este tutorial. **Até podes tentar ignor
 >
 >Este tutorial foi criado para pessoas que preferem **aprender fazendo**. Se prefes aprender conceitos do zero, vê o nosso [guia passo-a-passo](/docs/hello-world.html). Podes achar este tutorial e o guia complementares um ao outro.
 
-The tutorial is divided into several sections:
+O tutorial está dividido em várias seções:
 
-* [Setup for the Tutorial](#setup-for-the-tutorial) will give you **a starting point** to follow the tutorial.
-* [Overview](#overview) will teach you **the fundamentals** of React: components, props, and state.
-* [Completing the Game](#completing-the-game) will teach you **the most common techniques** in React development.
-* [Adding Time Travel](#adding-time-travel) will give you **a deeper insight** into the unique strengths of React.
+* [Configuração do Tutorial](#setup-for-the-tutorial) lhe dará **um ponto de partida** para seguir o tutorial.
+* [Visão geral](#overview) te ensinará **os fundamentos** do React: componentes, propriedades (_props_) e estado (_state_).
+* [Completando o Jogo](#completing-the-game) te ensinará **as técnicas mais comuns** para desenvolver com React.
+* [Adicionando Time Travel (viagem no tempo)](#adding-time-travel) te dará **uma visão mais profunda** dos pontos fortes exclusivos do React.
 
 You don't have to complete all of the sections at once to get the value out of this tutorial. Try to get as far as you can -- even if it's one or two sections.
 
