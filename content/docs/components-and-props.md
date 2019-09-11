@@ -255,8 +255,8 @@ function withdraw(account, amount) {
 }
 ```
 
-React is pretty flexible but it has a single strict rule:
+React é bastante flexível mas tem uma única regra estrita:
 
-**All React components must act like pure functions with respect to their props.**
+**Todos os componentes em React tem que agir como funções puras em relação ao seus props.**
 
-Of course, application UIs are dynamic and change over time. In the [next section](/docs/state-and-lifecycle.html), we will introduce a new concept of "state". State allows React components to change their output over time in response to user actions, network responses, and anything else, without violating this rule.
+Obviamente, as UIs de aplicações são dinâmicas e mudam com o tempo. Na [próxima seção](/docs/state-and-lifecycle.html), nós vamos introduzir um novo conceito de "estado" (_state_). O _state_ permite aos componentes React alterar sua saída ao longo do tempo em resposta a ações do utilizador, respostas de rede e quaisquer outras coisas, sem violar essa regra.
