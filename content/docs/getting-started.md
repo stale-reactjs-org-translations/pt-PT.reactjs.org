@@ -36,7 +36,7 @@ O React foi construído desde o início com um método de adaptação em mente, 
 
 ### Editores Online {#online-playgrounds}
 
-Se estiveres interessado em interagir com React, podes usar um editor online. Experimenta um template "Hello World" no [CodePen](codepen://hello-world) ou no [CodeSandbox](https://codesandbox.io/s/new).
+Se estiveres interessado em interagir com React, podes usar um editor online. Experimenta um template "Hello World" no [CodePen](codepen://hello-world), no [CodeSandbox](https://codesandbox.io/s/new) ou no [Glitch](https://glitch.com/edit/#!/remix/starter-react-template).
 
 Caso prefiras usar o teu próprio editor de texto, podes efectuar o [download deste ficheiro HTML](https://raw.githubusercontent.com/reactjs/reactjs.org/master/static/html/single-file-example.html), editá-lo, e abrir com o teu sistema local. Acaba por ser mais lento ao alterares código, recomendamos a usares apenas para demonstrações simples.
 
@@ -70,7 +70,7 @@ Caso aches que a documentação está a avançar mais rápido do que te sentes c
 
 ### React para Designers {#react-for-designers}
 
-Caso as tuas origens sejam na área de design, [estes recursos](http://reactfordesigners.com/) são o lugar ideal para começar.
+Caso as tuas origens sejam da área de design, [estes recursos](https://reactfordesigners.com/) são o lugar ideal para começar.
 
 ### Recursos de JavaScript {#javascript-resources}
 
@@ -80,7 +80,7 @@ Recomendamos que acedas a [esta visão geral sobre JavaScript](https://developer
 
 >Dica
 >
->Sempre que achares algo confuso em JavaScript, [MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) e [javascript.info](http://javascript.info/) são óptimos websites para tirares dúvidas. Também tens [os fóruns de suporte da comunidade](/community/support.html) onde podes pedir ajuda.
+>Sempre que achares algo confuso em JavaScript, [MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) e [javascript.info](https://javascript.info/) são óptimos websites para tirares dúvidas. Também tens [os fóruns de suporte da comunidade](/community/support.html) onde podes pedir ajuda.
 
 ### Tutorial Prático {#practical-tutorial}
 
@@ -100,7 +100,7 @@ Algumas pessoas dão-se melhor com livros ou vídeos do que com a documentação
 
 ### Conceitos Avançados {#advanced-concepts}
 
-Assim que te sentires confortável com os [conceitos principais](#main-concepts) e já experimentaste React por um bocado, talvez, tópicos mais avançados sejam do teu interesse. Esta secção vai introduzir-te a poderosas, mas menos comuns funcionalidades como [context](/docs/context.html) e [refs](/docs/refs-and-the-dom.html).
+Assim que te sentires confortável com os [conceitos principais](/docs/hello-world.html) e já experimentaste React por um bocado, talvez, tópicos mais avançados sejam do teu interesse. Esta secção vai introduzir-te a poderosas, mas menos comuns funcionalidades como [context](/docs/context.html) e [refs](/docs/refs-and-the-dom.html).
 
 ### Referência API {#api-reference}
 
@@ -116,11 +116,11 @@ O [blogue do React](/blog/) é a fonte oficial para artigos sobre actualizaçõe
 
 Também podes seguir a [conta @reactjs](https://twitter.com/reactjs) no Twitter, mas não vais perder nada importante caso queiras _seguir_ só o blogue.
 
-Nem todos os lançamentos de versões merecem o seu próprio artigo no blogue, mas podes encontrar informação detalhada sobre cada lançamento [no ficheiro `CHANGELOG.md` que se encontra no repositório React](https://github.com/facebook/react/blob/master/CHANGELOG.md), tal como na página de [Lançamentos de Versões](https://github.com/facebook/react).
+Nem todos os lançamentos de versões merecem o seu próprio artigo no blogue, mas podes encontrar informação detalhada sobre cada lançamento [no ficheiro `CHANGELOG.md` que se encontra no repositório React](https://github.com/facebook/react/blob/master/CHANGELOG.md), tal como na página de [Lançamentos de Versões](https://github.com/facebook/react/releases).
 
 ## Documentação por Versões {#versioned-documentation}
 
-Esta documentação reflecte sempre a última versão estável de React. Desde a versão 16 de React que podes encontrar documentação para versões anteriores [numa página em separado](/versions). Ressalvamos que a documentação para versões anteriores não tem uma actualização instantânea, e não são actualizadas constantemente.
+Esta documentação reflecte sempre a última versão estável de React. Desde a versão 16 de React que podes encontrar documentação para versões anteriores [numa página em separado](/versions). Ressalvamos que a documentação para versões anteriores é gravada no momento de lançamento, e não é actualizada constantemente.
 
 ## Achas que falta algo? {#something-missing}
 
