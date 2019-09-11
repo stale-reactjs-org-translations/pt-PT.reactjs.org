@@ -26,7 +26,7 @@ A maneira mais simples de definir um componente é escrever uma função JavaScr
 
 ```js
 function Welcome(props) {
-  return <h1>Olá, {props.name}</h1>;
+  return <h1>Hello, {props.name}</h1>;
 }
 ```
 
@@ -37,7 +37,7 @@ Podes também usar uma [classe ES6](https://developer.mozilla.org/pt-PT/docs/Web
 ```js
 class Welcome extends React.Component {
   render() {
-    return <h1>Olá, {this.props.name}</h1>;
+    return <h1>Hello, {this.props.name}</h1>;
   }
 }
 ```
@@ -91,9 +91,9 @@ Vamos recapitular o que acontece neste exemplo:
 >
 >Para ler mais sobre o raciocínio por trás dessa convenção, leia [JSX em Profundidade](/docs/jsx-in-depth.html#user-defined-components-must-be-capitalized).
 
-## Composing Components {#composing-components}
+## Composição de Componentes {#composing-components}
 
-Components can refer to other components in their output. This lets us use the same component abstraction for any level of detail. A button, a form, a dialog, a screen: in React apps, all those are commonly expressed as components.
+Componentes podem fazer referência à outros componentes. Isto nos permite usar a mesma abstração de componentes para qualquer nível. Um botão, um formulário, uma caixa de diálogo, uma tela: em aplicações em React, todos esses são normalmente expressos como componentes.
 
 For example, we can create an `App` component that renders `Welcome` many times:
 
