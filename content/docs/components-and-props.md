@@ -30,7 +30,7 @@ function Welcome(props) {
 }
 ```
 
-Essa função é um componente React válido porque aceita um único argumento de objeto "props" (que significa propriedades) com dados e retorna um elemento React. Nós chamamos estes componentes de "componentes de função" porque são literalmente funções JavaScript.
+Esta função é um componente React válido porque aceita um único argumento de objeto "props" (que significa propriedades) com dados e retorna um elemento React. Nós chamamos estes componentes de "componentes de função" porque são literalmente funções JavaScript.
 
 Podes também usar uma [classe ES6](https://developer.mozilla.org/pt-PT/docs/Web/JavaScript/Reference/Classes) para definir um componente:
 
@@ -89,7 +89,7 @@ Vamos recapitular o que acontece neste exemplo:
 >
 >O React trata componentes que começam com letras minúsculas como tags do DOM. Por exemplo, `<div />` representa uma tag div do HTML, mas `<Welcome />` representa um componente e requer que `Welcome` esteja no escopo.
 >
->Para ler mais sobre o raciocínio por trás dessa convenção, leia [JSX em profundidade](/docs/jsx-in-depth.html#user-defined-components-must-be-capitalized).
+>Para ler mais sobre o raciocínio por trás desta convenção, leia [JSX em profundidade](/docs/jsx-in-depth.html#user-defined-components-must-be-capitalized).
 
 ## Composição de Componentes {#composing-components}
 
@@ -235,9 +235,9 @@ function Comment(props) {
 
 Extrair componentes pode parecer um trabalho pesado no começo, mas ter uma conjunto de componentes reutilizáveis compensa em aplicações maiores. Uma boa regra é, se uma parte da sua UI for usada várias vezes (`Button`, `Panel`, `Avatar`) ou for complexa o suficiente por si só (`App`, `FeedStory`, `Comment`), é uma boa candidata a se tornar um componente reutilizável.
 
-## Props are Read-Only {#props-are-read-only}
+## Props são somente leitura {#props-are-read-only}
 
-Whether you declare a component [as a function or a class](#function-and-class-components), it must never modify its own props. Consider this `sum` function:
+Independente de declarares um componente [como uma função ou uma classe](#function-and-class-components), ele nunca deve modificar seus próprios props. Considera esta função `sum`:
 
 ```js
 function sum(a, b) {
@@ -245,9 +245,9 @@ function sum(a, b) {
 }
 ```
 
-Such functions are called ["pure"](https://en.wikipedia.org/wiki/Pure_function) because they do not attempt to change their inputs, and always return the same result for the same inputs.
+Tais funções são chamadas ["puras"](https://en.wikipedia.org/wiki/Pure_function) porque elas não tentam alterar suas entradas e sempre retornam o mesmo resultado para as mesmas entradas.
 
-In contrast, this function is impure because it changes its own input:
+Em contraste, esta função é impura porque altera sua própria entrada:
 
 ```js
 function withdraw(account, amount) {
