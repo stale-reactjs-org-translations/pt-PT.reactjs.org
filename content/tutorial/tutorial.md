@@ -39,11 +39,11 @@ Podes ver o que vamos construir aqui: **[Resultado Final](https://codepen.io/gae
 
 Recomendamos que vejas o jogo da velha (_tic-tac-toe_) antes de continuar com o tutorial. Uma das características que vais notar é que existe uma lista numerada à direita do tabuleiro do jogo. Esta lista fornece um histórico de todas as jogadas que ocorreram no jogo e é atualizada à medida que o jogo avança.
 
-You can close the tic-tac-toe game once you're familiar with it. We'll be starting from a simpler template in this tutorial. Our next step is to set you up so that you can start building the game.
+Podes fechar o jogo da velha assim que estiveres familiarizado com ele. Começaremos a partir de um modelo mais simples neste tutorial. Nosso próximo passo é prepará-lo para que possas começar a desenvolver o jogo.
 
-### Prerequisites {#prerequisites}
+### Pré-requisitos {#prerequisites}
 
-We'll assume that you have some familiarity with HTML and JavaScript, but you should be able to follow along even if you're coming from a different programming language. We'll also assume that you're familiar with programming concepts like functions, objects, arrays, and to a lesser extent, classes.
+Vamos presumir que já tenhas alguma familiaridade com HTML e JavaScript. Porém, tu deves ser capaz de acompanhar mesmo que estejas a vir de uma linguagem de programação diferente. Também vamos presumir que também já estejas familiarizado com conceitos de programação. Tais como: funções, objetos, matrizes, e um pouco de classes.
 
 If you need to review JavaScript, we recommend reading [this guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript). Note that we're also using some features from ES6 -- a recent version of JavaScript. In this tutorial, we're using [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), [classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes), [`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let), and [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) statements. You can use the [Babel REPL](babel://es5-syntax-example) to check what ES6 code compiles to.
 
