@@ -11,7 +11,7 @@ redirect_from:
 Manipular eventos em elementos React é muito semelhante à manipular eventos em elementos do DOM. Existem algumas diferenças sintáticas:
 
 * Eventos em React são nomeados usando camelCase ao invés de letras minúsculas.
-* Com o JSX você passa uma função como manipulador de eventos ao invés de um texto.
+* Com o JSX tu passas uma função como manipulador de eventos ao invés de um texto.
 
 Por exemplo, com HTML:
 
