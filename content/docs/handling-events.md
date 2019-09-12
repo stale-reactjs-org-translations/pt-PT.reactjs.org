@@ -66,7 +66,7 @@ class Toggle extends React.Component {
     super(props);
     this.state = {isToggleOn: true};
 
-    // Aqui utilizamos o `bind` para que o `this` funcione dentro da nossa callback
+    // Aqui utilizamos o `bind` para que o `this` funcione dentro do nosso callback
     this.handleClick = this.handleClick.bind(this);
   }
 
@@ -93,38 +93,38 @@ ReactDOM.render(
 
 [**Experimenta no CodePen**](https://codepen.io/gaearon/pen/xEmzGg?editors=0010)
 
-You have to be careful about the meaning of `this` in JSX callbacks. In JavaScript, class methods are not [bound](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_objects/Function/bind) by default. If you forget to bind `this.handleClick` and pass it to `onClick`, `this` will be `undefined` when the function is actually called.
+Precisas ter cuidado com o significado do `this` nos callbacks do JSX. Em JavaScript, os métodos de classe não são [vinculados](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_objects/Function/bind) por padrão. Se esqueceres de fazer o _bind_ de `this.handleClick` e passá-lo para um `onClick`, o `this` será `undefined` quando a função for realmente chamada.
 
-This is not React-specific behavior; it is a part of [how functions work in JavaScript](https://www.smashingmagazine.com/2014/01/understanding-javascript-function-prototype-bind/). Generally, if you refer to a method without `()` after it, such as `onClick={this.handleClick}`, you should bind that method.
+Este não é um comportamento específico do React. É [como funcionam as funções em JavaScript](https://www.smashingmagazine.com/2014/01/understanding-javascript-function-prototype-bind/). Geralmente, se referires à um método sem `()` depois dele, como `onClick={this.handleClick}`, deves fazer o _bind_ desse método.
 
-If calling `bind` annoys you, there are two ways you can get around this. If you are using the experimental [public class fields syntax](https://babeljs.io/docs/plugins/transform-class-properties/), you can use class fields to correctly bind callbacks:
+Se chamar `bind` incomoda-te, há duas maneiras de contornar isto. Se estiveres a usar a [sintaxe experimental de campos de classe pública](https://babeljs.io/docs/plugins/transform-class-properties/), podes usar campos de classe para vincular callbacks corretamente:
 
 ```js{2-6}
 class LoggingButton extends React.Component {
-  // This syntax ensures `this` is bound within handleClick.
-  // Warning: this is *experimental* syntax.
+  // Esta sintaxe garante que o `this` seja vinculado ao handleClick.
+  // Atenção: esta é uma sintaxe *experimental*.
   handleClick = () => {
-    console.log('this is:', this);
+    console.log('this é:', this);
   }
 
   render() {
     return (
       <button onClick={this.handleClick}>
-        Click me
+        Clica-me
       </button>
     );
   }
 }
 ```
 
-This syntax is enabled by default in [Create React App](https://github.com/facebookincubator/create-react-app).
+Esta sintaxe é habilitada por padrão em [Create React App](https://github.com/facebookincubator/create-react-app).
 
-If you aren't using class fields syntax, you can use an [arrow function](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions) in the callback:
+Se não estiveres a usar a sintaxe de campos de classe, poderás usar uma [arrow function](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/Arrow_functions) como callback:
 
 ```js{7-9}
 class LoggingButton extends React.Component {
   handleClick() {
-    console.log('this is:', this);
+    console.log('this é:', this);
   }
 
   render() {
