@@ -119,7 +119,7 @@ class LoggingButton extends React.Component {
 
 Esta sintaxe é habilitada por padrão em [Create React App](https://github.com/facebookincubator/create-react-app).
 
-Se não estiveres a usar a sintaxe de campos de classe, poderás usar uma [arrow function](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/Arrow_functions) como callback:
+Se não estiveres a usar a sintaxe de campos de classe, poderás usar uma [função arrow](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/Arrow_functions) como callback:
 
 ```js{7-9}
 class LoggingButton extends React.Component {
@@ -128,27 +128,27 @@ class LoggingButton extends React.Component {
   }
 
   render() {
-    // This syntax ensures `this` is bound within handleClick
+    // Esta sintaxe garante que o `this` seja vinculado ao handleClick.
     return (
       <button onClick={(e) => this.handleClick(e)}>
-        Click me
+        Clica-me
       </button>
     );
   }
 }
 ```
 
-The problem with this syntax is that a different callback is created each time the `LoggingButton` renders. In most cases, this is fine. However, if this callback is passed as a prop to lower components, those components might do an extra re-rendering. We generally recommend binding in the constructor or using the class fields syntax, to avoid this sort of performance problem.
+O problema com esta sintaxe é que um callback diferente é criado toda vez que o `LoggingButton` é renderizado. Na maioria dos casos não há problema. No entanto, se este callback for passado para componentes inferiores através de props, estes componentes poderão fazer uma renderização adicional. Geralmente recomendamos a vinculação no construtor ou a sintaxe dos campos de classe para evitar este tipo de problema de desempenho.
 
-## Passing Arguments to Event Handlers {#passing-arguments-to-event-handlers}
+## Passar argumentos para manipuladores de eventos {#passing-arguments-to-event-handlers}
 
-Inside a loop it is common to want to pass an extra parameter to an event handler. For example, if `id` is the row ID, either of the following would work:
+Dentro de uma estrutura de repetição é comum desejar passar um parâmetro extra para um manipulador de evento. Por exemplo, se `id` é o ID de identificação da linha, qualquer um dos dois a seguir funcionará:
 
 ```js
-<button onClick={(e) => this.deleteRow(id, e)}>Delete Row</button>
-<button onClick={this.deleteRow.bind(this, id)}>Delete Row</button>
+<button onClick={(e) => this.deleteRow(id, e)}>Apagar Linha</button>
+<button onClick={this.deleteRow.bind(this, id)}>Apagar Linha</button>
 ```
 
-The above two lines are equivalent, and use [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) and [`Function.prototype.bind`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind) respectively.
+As duas linhas acima são equivalentes e usam [função arrow](https://developer.mozilla.org/pt-PT/docs/Web/JavaScript/Reference/Functions/Arrow_functions) e [`Function.prototype.bind`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_objects/Function/bind) respectivamente.
 
-In both cases, the `e` argument representing the React event will be passed as a second argument after the ID. With an arrow function, we have to pass it explicitly, but with `bind` any further arguments are automatically forwarded.
+Em ambos os casos, o argumento `e` que representa o evento de React será passado como segundo argumento após o ID. Com uma função _arrow_, nós temos que passá-lo explicitamente. Mas com o `bind` outros argumentos adicionais serão automaticamente encaminhados.
