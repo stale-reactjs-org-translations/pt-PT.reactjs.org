@@ -67,9 +67,9 @@ Isto é completamente opcional e não é necessário para este tutorial!
 
 <details>
 
-<summary><b>Optional: Instructions for following along locally using your preferred text editor</b></summary>
+<summary><b>Opcional: instruções para serem seguidas na tua máquina usando o teu editor de texto preferido</b></summary>
 
-This setup requires more work but allows you to complete the tutorial using an editor of your choice. Here are the steps to follow:
+Esta opção de configuração requer mais trabalho mas permite que completes o tutorial utilizando um editor da tua preferência. Aqui estão os passos a serem seguidos:
 
 1. Make sure you have a recent version of [Node.js](https://nodejs.org/en/) installed.
 2. Follow the [installation instructions for Create React App](/docs/create-a-new-react-app.html#create-react-app) to make a new project.
