@@ -59,9 +59,9 @@ Primeiro, abre este **[Código Inicial](https://codepen.io/gaearon/pen/oWWQNa?ed
 
 Agora podes ignorar a segunda opção de configuração e ir para a seção [Visão geral](#overview) para obter uma visão geral do React.
 
-### Setup Option 2: Local Development Environment {#setup-option-2-local-development-environment}
+### Opção de configuração 2: Ambiente de desenvolvimento local {#setup-option-2-local-development-environment}
 
-This is completely optional and not required for this tutorial!
+Isto é completamente opcional e não é necessário para este tutorial!
 
 <br>
 
