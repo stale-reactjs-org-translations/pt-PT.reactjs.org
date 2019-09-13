@@ -55,9 +55,9 @@ Existem duas maneiras de concluir este tutorial: podes escrever o código no teu
 
 Esta é a maneira mais rápida de começar!
 
-First, open this **[Starter Code](https://codepen.io/gaearon/pen/oWWQNa?editors=0010)** in a new tab. The new tab should display an empty tic-tac-toe game board and React code. We will be editing the React code in this tutorial.
+Primeiro, abre este **[Código Inicial](https://codepen.io/gaearon/pen/oWWQNa?editors=0010)** em uma nova aba. A nova aba deve exibir um tabuleiro de tic-tac-toe (jogo da velha) vazio e o código React. Nós iremos editar o código em React neste tutorial.
 
-You can now skip the second setup option, and go to the [Overview](#overview) section to get an overview of React.
+Agora podes ignorar a segunda opção de configuração e ir para a seção [Visão geral](#overview) para obter uma visão geral do React.
 
 ### Setup Option 2: Local Development Environment {#setup-option-2-local-development-environment}
 
