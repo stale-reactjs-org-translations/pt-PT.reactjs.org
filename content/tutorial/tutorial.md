@@ -53,7 +53,7 @@ Existem duas maneiras de concluir este tutorial: podes escrever o código no teu
 
 ### Opção de configuração 1: Escrever o código no navegador {#setup-option-1-write-code-in-the-browser}
 
-This is the quickest way to get started!
+Esta é a maneira mais rápida de começar!
 
 First, open this **[Starter Code](https://codepen.io/gaearon/pen/oWWQNa?editors=0010)** in a new tab. The new tab should display an empty tic-tac-toe game board and React code. We will be editing the React code in this tutorial.
 
