@@ -47,7 +47,7 @@ Vamos presumir que já tenhas alguma familiaridade com HTML e JavaScript. Porém
 
 Se precisas revisar JavaScript, recomendamos que leias [este guia](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/A_re-introduction_to_JavaScript). Observe que também estamos a usar alguns recursos do ES6 - uma versão recente do JavaScript. Neste tutorial usamos [arrow function](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/Arrow_functions), [classes](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Classes), [`let`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/let), e declarações [`const`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/const). Podes usar o [Babel REPL](babel://es5-syntax-example) para verificar o código ES6 compilado.
 
-## Setup for the Tutorial {#setup-for-the-tutorial}
+## Configuração para o tutorial {#setup-for-the-tutorial}
 
 There are two ways to complete this tutorial: you can either write the code in your browser, or you can set up a local development environment on your computer.
 
