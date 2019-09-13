@@ -24,22 +24,22 @@ Vamos construir um pequeno jogo durante este tutorial. **Até podes tentar ignor
 
 O tutorial está dividido em várias seções:
 
-* [Configuração do Tutorial](#setup-for-the-tutorial) te dará **um ponto de partida** para seguir o tutorial.
+* [Configuração do tutorial](#setup-for-the-tutorial) te dará **um ponto de partida** para seguir o tutorial.
 * [Visão geral](#overview) te ensinará **os fundamentos** do React: componentes, propriedades (_props_) e estado (_state_).
-* [Completando o Jogo](#completing-the-game) te ensinará **as técnicas mais comuns** para desenvolver com React.
-* [Adicionando Time Travel (viagem no tempo)](#adding-time-travel) te dará **uma visão mais profunda** dos pontos fortes exclusivos do React.
+* [Completando o jogo](#completing-the-game) te ensinará **as técnicas mais comuns** para desenvolver com React.
+* [Adicionando _time travel_ (viagem no tempo)](#adding-time-travel) te dará **uma visão mais profunda** dos pontos fortes exclusivos do React.
 
 Não precisas completar todas as seções de uma vez para entender tudo que o tutorial tem a oferecer. Tenta chegar o mais longe possível, mesmo que seja uma ou duas seções.
 
 ### O que é que estamos a construir? {#what-are-we-building}
 
-Neste tutorial, mostraremos como criar um jogo interativo de jogo da velha com React.
+Neste tutorial, mostraremos como criar um jogo interativo de jogo da velha (_tic-tac-toe_) com React.
 
 Podes ver o que vamos construir aqui: **[Resultado Final](https://codepen.io/gaearon/pen/gWWZgR?editors=0010)**. Se o código não fizer sentido para ti ou se não estiveres familiarizado com a sintaxe do código, não te preocupes! O objetivo deste tutorial é ajudar-te a entender o React e sua sintaxe.
 
 Recomendamos que vejas o jogo da velha (_tic-tac-toe_) antes de continuar com o tutorial. Uma das características que vais notar é que existe uma lista numerada à direita do tabuleiro do jogo. Esta lista fornece um histórico de todas as jogadas que ocorreram no jogo e é atualizada à medida que o jogo avança.
 
-Podes fechar o jogo da velha assim que estiveres familiarizado com ele. Começaremos a partir de um modelo mais simples neste tutorial. Nosso próximo passo é prepará-lo para que possas começar a desenvolver o jogo.
+Podes fechar o jogo da velha (_tic-tac-toe_) assim que estiveres familiarizado com ele. Começaremos a partir de um modelo mais simples neste tutorial. Nosso próximo passo é prepará-lo para que possas começar a desenvolver o jogo.
 
 ### Pré-requisitos {#prerequisites}
 
