@@ -49,7 +49,7 @@ Se precisas revisar JavaScript, recomendamos que leias [este guia](https://devel
 
 ## Configuração para o tutorial {#setup-for-the-tutorial}
 
-There are two ways to complete this tutorial: you can either write the code in your browser, or you can set up a local development environment on your computer.
+Existem duas maneiras de concluir este tutorial: podes escrever o código no teu navegador ou configurar um ambiente de desenvolvimento local no teu computador.
 
 ### Setup Option 1: Write Code in the Browser {#setup-option-1-write-code-in-the-browser}
 
