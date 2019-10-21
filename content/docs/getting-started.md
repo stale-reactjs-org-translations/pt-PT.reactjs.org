@@ -46,7 +46,11 @@ Podes [adicionar React a uma página HTML em um minuto](/docs/add-react-to-a-web
 
 ### Cria uma Aplicação React {#create-a-new-react-app}
 
+<<<<<<< HEAD
 Quando começas um projecto em React, [uma página de HTML simples com tags de script](/docs/add-react-to-a-website.html) será a melhor opção. Só demora um minuto a configurar.
+=======
+When starting a React project, a [simple HTML page with script tags](/docs/add-react-to-a-website.html) might still be the best option. It only takes a minute to set up!
+>>>>>>> d2ade76cce133af47ab198188fa2de03fa51834b
 
 Com o crescimento da tua aplicação, será melhor considerares uma configuração mais integrada. Existem [várias ferramentas JavaScript](/docs/create-a-new-react-app.html) que recomendamos para aplicações mais robustas. Cada aplicação pode utilizar pouca ou até nenhuma configuração e permite que aproveites ao máximo o ecossistema React.
 
@@ -116,7 +120,11 @@ O [blogue do React](/blog/) é a fonte oficial para artigos sobre actualizaçõe
 
 Também podes seguir a [conta @reactjs](https://twitter.com/reactjs) no Twitter, mas não vais perder nada importante caso queiras _seguir_ só o blogue.
 
+<<<<<<< HEAD
 Nem todos os lançamentos de versões merecem o seu próprio artigo no blogue, mas podes encontrar informação detalhada sobre cada lançamento [no ficheiro `CHANGELOG.md` que se encontra no repositório React](https://github.com/facebook/react/blob/master/CHANGELOG.md), tal como na página de [Lançamentos de Versões](https://github.com/facebook/react/releases).
+=======
+Not every React release deserves its own blog post, but you can find a detailed changelog for every release in the [`CHANGELOG.md` file in the React repository](https://github.com/facebook/react/blob/master/CHANGELOG.md), as well as on the [Releases](https://github.com/facebook/react/releases) page.
+>>>>>>> d2ade76cce133af47ab198188fa2de03fa51834b
 
 ## Documentação por Versões {#versioned-documentation}
 
