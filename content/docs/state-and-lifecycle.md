@@ -1,6 +1,6 @@
 ---
 id: state-and-lifecycle
-title: State and Lifecycle
+title: Estado e Ciclo de Vida
 permalink: docs/state-and-lifecycle.html
 redirect_from:
   - "docs/interactivity-and-dynamic-uis.html"
@@ -8,16 +8,18 @@ prev: components-and-props.html
 next: handling-events.html
 ---
 
-This page introduces the concept of state and lifecycle in a React component. You can find a [detailed component API reference here](/docs/react-component.html).
+Esta página introduz o conceito de estado e ciclo de vida em um componente React. Podes encontrar uma [referência detalhada da API de componente aqui](/docs/react-component.html).
 
 Consider the ticking clock example from [one of the previous sections](/docs/rendering-elements.html#updating-the-rendered-element). In [Rendering Elements](/docs/rendering-elements.html#rendering-an-element-into-the-dom), we have only learned one way to update the UI. We call `ReactDOM.render()` to change the rendered output:
+
+Considerando o exemplo do relógio de ponto em [uma das seções anteriores](/docs/rendering-elements.html#update-the-rendering-element). Em [Renderizando Elementos](/docs/rendering-elements.html#rendering-an-element-into-the-dom), aprendeste como atualizar a interface do utilizador. Chamamos `ReactDOM.render()` para alterar o resultado renderizado:
 
 ```js{8-11}
 function tick() {
   const element = (
     <div>
-      <h1>Hello, world!</h1>
-      <h2>It is {new Date().toLocaleTimeString()}.</h2>
+      <h1>Olá, mundo!</h1>
+      <h2>São {new Date().toLocaleTimeString()}.</h2>
     </div>
   );
   ReactDOM.render(
@@ -29,18 +31,18 @@ function tick() {
 setInterval(tick, 1000);
 ```
 
-[**Try it on CodePen**](https://codepen.io/gaearon/pen/gwoJZk?editors=0010)
+[**Experimenta no CodePen**](https://codepen.io/gaearon/pen/gwoJZk?editors=0010)
 
-In this section, we will learn how to make the `Clock` component truly reusable and encapsulated. It will set up its own timer and update itself every second.
+Nesta seção, aprenderás como tornar o componente `Clock` verdadeiramente reutilizável e encapsulado. Este irá configurar o seu próprio cronómetro e atualizar-se automaticamente a cada segundo.
 
-We can start by encapsulating how the clock looks:
+Podemos começar por encapsular a aparência do relógio:
 
 ```js{3-6,12}
 function Clock(props) {
   return (
     <div>
-      <h1>Hello, world!</h1>
-      <h2>It is {props.date.toLocaleTimeString()}.</h2>
+      <h1>Olá, mundo!</h1>
+      <h2>São {props.date.toLocaleTimeString()}.</h2>
     </div>
   );
 }
@@ -55,11 +57,11 @@ function tick() {
 setInterval(tick, 1000);
 ```
 
-[**Try it on CodePen**](https://codepen.io/gaearon/pen/dpdoYR?editors=0010)
+[**Experimenta no CodePen**](https://codepen.io/gaearon/pen/dpdoYR?editors=0010)
 
-However, it misses a crucial requirement: the fact that the `Clock` sets up a timer and updates the UI every second should be an implementation detail of the `Clock`.
+No entanto, fallha em um requisito essencial: o facto de o `Clock` configurar um temporizador e atualizar a interface do usuário a cada segundo deve ser um detalhe de implementação do `Clock`.
 
-Ideally we want to write this once and have the `Clock` update itself:
+Idealmente, queremos escrever isso apenas uma vez e fazer com que o `Clock` seja atualizado:
 
 ```js{2}
 ReactDOM.render(
@@ -68,9 +70,9 @@ ReactDOM.render(
 );
 ```
 
-To implement this, we need to add "state" to the `Clock` component.
+Para implementar isso, precisas adicionar "estado" ao componente `Clock`.
 
-State is similar to props, but it is private and fully controlled by the component.
+O "estado" é semelhante a _props_, mas é privado e totalmente controlado pelo componente.
 
 ## Converting a Function to a Class {#converting-a-function-to-a-class}
 
@@ -99,7 +101,7 @@ class Clock extends React.Component {
 }
 ```
 
-[**Try it on CodePen**](https://codepen.io/gaearon/pen/zKRGpo?editors=0010)
+[**Experimenta no CodePen**](https://codepen.io/gaearon/pen/zKRGpo?editors=0010)
 
 `Clock` is now defined as a class rather than a function.
 
@@ -191,7 +193,7 @@ ReactDOM.render(
 );
 ```
 
-[**Try it on CodePen**](https://codepen.io/gaearon/pen/KgQpJd?editors=0010)
+[**Experimenta no CodePen**](https://codepen.io/gaearon/pen/KgQpJd?editors=0010)
 
 Next, we'll make the `Clock` set up its own timer and update itself every second.
 
@@ -300,7 +302,7 @@ ReactDOM.render(
 );
 ```
 
-[**Try it on CodePen**](https://codepen.io/gaearon/pen/amqdNA?editors=0010)
+[**Experimenta no CodePen**](https://codepen.io/gaearon/pen/amqdNA?editors=0010)
 
 Now the clock ticks every second.
 
@@ -435,7 +437,7 @@ function FormattedDate(props) {
 }
 ```
 
-[**Try it on CodePen**](https://codepen.io/gaearon/pen/zKRqNB?editors=0010)
+[**Experimenta no CodePen**](https://codepen.io/gaearon/pen/zKRqNB?editors=0010)
 
 This is commonly called a "top-down" or "unidirectional" data flow. Any state is always owned by some specific component, and any data or UI derived from that state can only affect components "below" them in the tree.
 
@@ -460,7 +462,7 @@ ReactDOM.render(
 );
 ```
 
-[**Try it on CodePen**](https://codepen.io/gaearon/pen/vXdGmd?editors=0010)
+[**Experimenta no CodePen**](https://codepen.io/gaearon/pen/vXdGmd?editors=0010)
 
 Each `Clock` sets up its own timer and updates independently.
 
