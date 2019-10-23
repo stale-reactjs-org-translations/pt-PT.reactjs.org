@@ -31,7 +31,7 @@ setInterval(tick, 1000);
 
 [**Experimenta no CodePen**](https://codepen.io/gaearon/pen/gwoJZk?editors=0010)
 
-Nesta seção, aprenderás como tornar o componente `Clock` verdadeiramente reutilizável e encapsulado. Este irá configurar o seu próprio cronómetro e atualizar-se automaticamente a cada segundo.
+Nesta seção, aprenderás como tornar o componente `Clock` verdadeiramente reutilizável e encapsulado. Este irá configurar o seu próprio temporizador e atualizar-se automaticamente a cada segundo.
 
 Podemos começar por encapsular a aparência do relógio:
 
@@ -57,7 +57,7 @@ setInterval(tick, 1000);
 
 [**Experimenta no CodePen**](https://codepen.io/gaearon/pen/dpdoYR?editors=0010)
 
-No entanto, fallha em um requisito essencial: o facto de o `Clock` configurar um temporizador e atualizar a interface do usuário a cada segundo deve ser um detalhe de implementação do `Clock`.
+No entanto, fallha em um requisito essencial: o facto de o `Clock` configurar um temporizador e atualizar a interface de utilizador a cada segundo deve ser um detalhe de implementação do `Clock`.
 
 Idealmente, queremos escrever isso apenas uma vez e fazer com que o `Clock` seja atualizado:
 
