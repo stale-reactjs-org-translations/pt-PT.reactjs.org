@@ -10,16 +10,14 @@ next: handling-events.html
 
 Esta página introduz o conceito de estado e ciclo de vida em um componente React. Podes encontrar uma [referência detalhada da API de componente aqui](/docs/react-component.html).
 
-Consider the ticking clock example from [one of the previous sections](/docs/rendering-elements.html#updating-the-rendered-element). In [Rendering Elements](/docs/rendering-elements.html#rendering-an-element-into-the-dom), we have only learned one way to update the UI. We call `ReactDOM.render()` to change the rendered output:
-
 Considerando o exemplo do relógio de ponto em [uma das seções anteriores](/docs/rendering-elements.html#update-the-rendering-element). Em [Renderizando Elementos](/docs/rendering-elements.html#rendering-an-element-into-the-dom), aprendeste como atualizar a interface do utilizador. Chamamos `ReactDOM.render()` para alterar o resultado renderizado:
 
 ```js{8-11}
 function tick() {
   const element = (
     <div>
-      <h1>Olá, mundo!</h1>
-      <h2>São {new Date().toLocaleTimeString()}.</h2>
+      <h1>Hello, world!</h1>
+      <h2>It is {new Date().toLocaleTimeString()}.</h2>
     </div>
   );
   ReactDOM.render(
@@ -41,8 +39,8 @@ Podemos começar por encapsular a aparência do relógio:
 function Clock(props) {
   return (
     <div>
-      <h1>Olá, mundo!</h1>
-      <h2>São {props.date.toLocaleTimeString()}.</h2>
+      <h1>Hello, world!</h1>
+      <h2>It is {props.date.toLocaleTimeString()}.</h2>
     </div>
   );
 }
