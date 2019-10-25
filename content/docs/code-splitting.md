@@ -49,7 +49,7 @@ Senão, terás de configurar o empacotamento tu mesmo. Para referência, podes v
 
 Empacotamento é ótimo, mas, à medida que a tua aplicação cresce, o pacote cresce também. Especialmente se estiveres a incluir bibliotecas de terceiros de grandes dimensões. Tens de ficar atento ao código que estás a incluir no teu pacote, para que não o faças tão grande ao ponto que torne a aplicação muito lenta a carregar.
 
-Para evitar acabar com um pacote grande, é bom antecipar o problema e começar a “dividir” o pacote. A divisão de código é um recurso suportado por empacotadores como o Webpack, Rollup e Browserify (através do coeficiente de empacotamento (factor-bundle)) no qual pode-se criar múltiplos pacotes que podem ser carregados dinamicamente em tempo de execução.
+Para evitar acabar com um pacote grande, é bom antecipar o problema e começar a “dividir” o pacote. A divisão de código é um recurso suportado por empacotadores como o Webpack, Rollup e Browserify (através do coeficiente de empacotamento ([factor-bundle](https://github.com/browserify/factor-bundle))) que podem criar múltiplos pacotes, que são posteriormente carregados dinamicamente em tempo de execução.
 
 Dividir o código da aplicação pode-te ajudar a carregar somente o necessário ao utilizador, o que pode melhorar dramaticamente o desempenho da aplicação. Apesar de não ter reduzido a quantidade total de código da aplicação, acabou por evitar carregar código que o utilizador talvez nunca precise e reduziu o código inicial necessário para carregar a aplicação.
 
