@@ -27,7 +27,7 @@
           href: /tutorial/tutorial.html#setup-option-2-local-development-environment
           forceInternal: true
         - id: help-im-stuck
-          title: Ajuda, Estou Preso!
+          title: Ajuda, Estou Bloqueado!
           href: /tutorial/tutorial.html#help-im-stuck
           forceInternal: true
     - id: overview
@@ -61,7 +61,7 @@
       forceInternal: true
       subitems:
         - id: lifting-state-up
-          title: Movendo o state para cima
+          title: Movendo o State para cima
           href: /tutorial/tutorial.html#lifting-state-up
           forceInternal: true
         - id: why-immutability-is-important
