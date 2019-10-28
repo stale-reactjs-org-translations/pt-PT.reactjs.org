@@ -22,11 +22,11 @@
 - name: Bengali
   translated_name: বাংলা
   code: bn
-  status: 0
+  status: 1
 - name: Catalan
   translated_name: Català
   code: ca
-  status: 0
+  status: 1
 - name: German
   translated_name: Deutsch
   code: de
