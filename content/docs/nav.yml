@@ -7,7 +7,9 @@
     - id: create-a-new-react-app
       title: Criando um novo React App
     - id: cdn-links
-      title: Links do CDN 
+      title: Links do CDN
+    - id: release-channels
+      title: Canais de Lançamento
 - title: Conceitos principais
   isOrdered: true
   items:
@@ -109,22 +111,22 @@
 - title: Hooks (Novo)
   isOrdered: true
   items:
-      - id: hooks-intro
-        title: Introdução aos Hooks
-      - id: hooks-overview
-        title: Hooks de forma resumida
-      - id: hooks-state
-        title: Usando um State Hook
-      - id: hooks-effect
-        title: Usando um Effect Hook
-      - id: hooks-rules
-        title: Regras dos Hooks
-      - id: hooks-custom
-        title: Criando os Hooks personalizados
-      - id: hooks-reference
-        title: Referência da API dos Hooks
-      - id: hooks-faq
-        title: Perguntas e Respostas sobre Hooks
+    - id: hooks-intro
+      title: Introdução aos Hooks
+    - id: hooks-overview
+      title: Hooks de forma resumida
+    - id: hooks-state
+      title: Usando um State Hook
+    - id: hooks-effect
+      title: Usando um Effect Hook
+    - id: hooks-rules
+      title: Regras dos Hooks
+    - id: hooks-custom
+      title: Criando os Hooks personalizados
+    - id: hooks-reference
+      title: Referência da API dos Hooks
+    - id: hooks-faq
+      title: Perguntas e Respostas sobre Hooks
 - title: Testar
   items:
     - id: testing 
@@ -133,16 +135,29 @@
       title: Receitas de Teste
     - id: testing-environments
       title: Ambientes de Teste
+- title: Modo Concorrente (Experimental)
+  isOrdered: true
+  items:
+    - id: concurrent-mode-intro
+      title: Introduzindo o Modo Concorrente
+    - id: concurrent-mode-suspense
+      title: Suspense para Busca de Dados
+    - id: concurrent-mode-patterns
+      title: Padrões Concorrentes de UI
+    - id: concurrent-mode-adoption
+      title: Adotando o Modo Concorrente
+    - id: concurrent-mode-reference
+      title: Referência da API do Modo Concorrente
 - title: Contribuindo
   items:
-  - id: how-to-contribute
-    title: Como Contribuir
-  - id: codebase-overview
-    title: Visão Geral do Codebase
-  - id: implementation-notes
-    title: Notas de Implementação
-  - id: design-principles
-    title: Princípios de Design
+    - id: how-to-contribute
+      title: Como Contribuir
+    - id: codebase-overview
+      title: Visão Geral do Codebase
+    - id: implementation-notes
+      title: Notas de Implementação
+    - id: design-principles
+      title: Princípios de Design
 - title: FAQ
   items:
     - id: faq-ajax
