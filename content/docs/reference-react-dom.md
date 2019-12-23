@@ -36,7 +36,11 @@ React suporta todos os principais navegadores, incluindo o Internet Explorer 9 e
 ReactDOM.render(element, container[, callback])
 ```
 
+<<<<<<< HEAD
 Renderiza um elemento React no DOM dentro do `container` fornecido e retorna a [referência](/docs/more-about-refs.html) para o componente, ou retorna `null` para [componentes sem estado (_stateless components_)](/docs/components-and-props.html#functional-and-class-components).
+=======
+Render a React element into the DOM in the supplied `container` and return a [reference](/docs/more-about-refs.html) to the component (or returns `null` for [stateless components](/docs/components-and-props.html#function-and-class-components)).
+>>>>>>> 1dd4e325f070ce198aed69fd9cc5467563679e54
 
 Se o elemento React já foi anteriormente renderizado no `container`, isto irá executar uma actualização onde apenas irá alterar o necessário no DOM para reflectir o elemento React actual.
 
