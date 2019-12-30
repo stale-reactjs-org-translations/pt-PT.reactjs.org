@@ -1,7 +1,13 @@
 - title: Recursos da Comunidade
   items:
     - id: support
+<<<<<<< HEAD
       title: Suporte
+=======
+      title: Support
+    - id: team
+      title: Team
+>>>>>>> 5b6ad388804aaa5cf5504ccd04329f52960e17ae
     - id: courses
       title: Cursos
     - id: examples
