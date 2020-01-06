@@ -56,7 +56,11 @@ function ActionLink() {
 
 Aqui, "`e`" é um synthetic event. O React define esses eventos sintéticos de acordo com a [especificação W3C](https://www.w3.org/TR/DOM-Level-3-Events/). Então, não precisamos nos preocupar com a compatibilidade entre navegadores. Vê a página [`SyntheticEvent`](/docs/events.html) para saberes mais.
 
+<<<<<<< HEAD
 Ao usar o React geralmente não precisas chamar `addEventListener` para adicionar _listeneres_ à um elemento no DOM depois que ele é criado. Ao invés disso podes apenas definir um _listener_ quando o elemento é inicialmente renderizado.
+=======
+When using React, you generally don't need to call `addEventListener` to add listeners to a DOM element after it is created. Instead, just provide a listener when the element is initially rendered.
+>>>>>>> 071f5b0e1622465fb6fe5cf6c1cbd2aaef7c5ef4
 
 Quando defines um componente usando uma [classe do ES6](https://developer.mozilla.org/pt-pt/docs/Web/JavaScript/Reference/Classes), um padrão comum é que um manipulador de eventos seja um método na classe. Por exemplo, este componente `Toggle` renderiza um botão que permite ao utilizador alternar entre os estados "ON" e "OFF":
 
@@ -142,7 +146,11 @@ O problema com esta sintaxe é que um callback diferente é criado toda vez que 
 
 ## Passar argumentos para manipuladores de eventos {#passing-arguments-to-event-handlers}
 
+<<<<<<< HEAD
 Dentro de uma estrutura de repetição é comum desejar passar um parâmetro extra para um manipulador de evento. Por exemplo, se `id` é o ID de identificação da linha, qualquer um dos dois a seguir funcionará:
+=======
+Inside a loop, it is common to want to pass an extra parameter to an event handler. For example, if `id` is the row ID, either of the following would work:
+>>>>>>> 071f5b0e1622465fb6fe5cf6c1cbd2aaef7c5ef4
 
 ```js
 <button onClick={(e) => this.deleteRow(id, e)}>Apagar Linha</button>
