@@ -48,7 +48,7 @@ Podes [adicionar React a uma página HTML em um minuto](/docs/add-react-to-a-web
 
 Quando começas um projecto em React, [uma página de HTML simples com tags de script](/docs/add-react-to-a-website.html) será a melhor opção. Só leva um minuto para configurar.
 
-Com o crescimento da tua aplicação, será melhor considerares uma configuração mais integrada. Existem [várias ferramentas JavaScript](/docs/create-a-new-react-app.html) que recomendamos para aplicações mais robustas. Cada aplicação pode utilizar pouca ou até nenhuma configuração e permite que aproveites ao máximo o ecossistema React.
+Com o crescimento da tua aplicação, será melhor considerares uma configuração mais integrada. Existem várias ferramentas JavaScript que recomendamos para aplicações mais robustas. Cada aplicação pode utilizar pouca ou até nenhuma configuração e permite que aproveites ao máximo o ecossistema React. [Aprende mais](/docs/create-a-new-react-app.html) 
 
 ## Aprender React {#learn-react}
 
