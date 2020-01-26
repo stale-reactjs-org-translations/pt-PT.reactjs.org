@@ -6,7 +6,7 @@ permalink: docs/accessibility.html
 
 ## Porque Acessibilidade? {#why-accessibility}
 
-A acessibilidade na web (tambem conhecido por [**a11y**](https://en.wiktionary.org/wiki/a11y)) é o design e a criação de websites que podem ser usados por todos. O suporte à acessibilidade é necessário para permitir que as tecnologias assistivas interpretem as páginas da web.
+A acessibilidade na web (também conhecida por [**a11y**](https://en.wiktionary.org/wiki/a11y)) é o design e a criação de websites que podem ser usados por todos. O suporte à acessibilidade é necessário para permitir que as tecnologias assistivas interpretem as páginas da web.
 
 O React suporta totalmente a construção de websites acessíveis, muitas vezes com apenas técnias de HTML padrão.
 
