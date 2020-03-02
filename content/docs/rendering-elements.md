@@ -70,6 +70,10 @@ Podes verificar isto inspeccionando o [último exemplo](codepen://rendering-elem
 
 ![Actualizações granulares no inspector do DOM](../images/docs/granular-dom-updates.gif)
 
+<<<<<<< HEAD
 Embora nós criemos um elemento descrevendo toda a estrutura da interface gráfica (_UI_) a cada instante, somente o nó de texto cujo conteúdo muda é actualizado pelo React DOM.
+=======
+Even though we create an element describing the whole UI tree on every tick, only the text node whose contents have changed gets updated by React DOM.
+>>>>>>> 2ab1ca5007a37ca509863a212293f1c6b26d0afc
 
 Com base na nossa experiência, pensar em como a interface gráfica (_UI_) deve estar num determinado momento, ao invés de pensar em como modificá-la com o tempo, evita uma série de _bugs_.
