@@ -6,7 +6,7 @@ permalink: docs/accessibility.html
 
 ## Porque Acessibilidade? {#why-accessibility}
 
-A acessibilidade na web (também conhecida por [**a11y**](https://en.wiktionary.org/wiki/a11y)) é o design e a criação de websites que podem ser usados por todos. O suporte à acessibilidade é necessário para permitir que as tecnologias assistivas interpretem as páginas da web.
+A acessibilidade na web (também conhecida por [** a11y **](https://en.wiktionary.org/wiki/a11y)) é o design e a criação de websites que podem ser usados por todos. O suporte à acessibilidade é necessário para permitir que as tecnologias assistivas interpretem as páginas da web.
 
 O React suporta totalmente a construção de websites acessíveis, muitas vezes com apenas técnias de HTML padrão.
 
@@ -14,9 +14,9 @@ O React suporta totalmente a construção de websites acessíveis, muitas vezes 
 
 ### WCAG {#wcag}
 
-The [Web Content Accessibility Guidelines](https://www.w3.org/WAI/intro/wcag) provides guidelines for creating accessible web sites.
+O [Web Content Accessibility Guidelines](https://www.w3.org/WAI/intro/wcag) fornece as diretrizes necessárias para a criação de sites acessíveis.
 
-The following WCAG checklists provide an overview:
+As seguintes checklists das WCAG fornecem uma visão geral:
 
 - [WCAG checklist from Wuhcag](https://www.wuhcag.com/wcag-checklist/)
 - [WCAG checklist from WebAIM](https://webaim.org/standards/wcag/checklist)
@@ -24,9 +24,9 @@ The following WCAG checklists provide an overview:
 
 ### WAI-ARIA {#wai-aria}
 
-The [Web Accessibility Initiative - Accessible Rich Internet Applications](https://www.w3.org/WAI/intro/aria) document contains techniques for building fully accessible JavaScript widgets.
+O documento [Web Accessibility Initiative - Accessible Rich Internet Applications](https://www.w3.org/WAI/intro/aria) contém as técnicas necessárias para criar widgets totalmente acessíveis.
 
-Note that all `aria-*` HTML attributes are fully supported in JSX. Whereas most DOM properties and attributes in React are camelCased, these attributes should be hyphen-cased (also known as kebab-case, lisp-case, etc) as they are in plain HTML:
+Nota que todos os atributos HTML `aria-*` são totalmente suportados em JSX. Apesar da maioria das proriedades e atributos do DOM no React serem em camelCase, estes atributos devem ser em hyphen-cased (tambem conhecido como kebab-case, lisp-case, etc) pois estão em HTML:
 
 ```javascript{3,4}
 <input
