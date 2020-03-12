@@ -105,22 +105,22 @@ function ListItem({ item }) {
 
 Para mais informação, veja a [documentação sobre Fragments](/docs/fragments.html).
 
-## Accessible Forms {#accessible-forms}
+## Formulários Acessíveis {#accessible-forms}
 
-### Labeling {#labeling}
-Every HTML form control, such as `<input>` and `<textarea>`, needs to be labeled accessibly. We need to provide descriptive labels that are also exposed to screen readers.
+### Rótulos {#labeling}
+Todos os elementos de um formulário HTML como `<input>` e `<textarea>`, precisam de ser rótulados. É necessário fornecer rótulos descritivos pois estes são expostos aos leitores de ecrã.
 
-The following resources show us how to do this:
+Os seguintes artigos mostram como os devemos aplicar:
 
 - [The W3C shows us how to label elements](https://www.w3.org/WAI/tutorials/forms/labels/)
 - [WebAIM shows us how to label elements](https://webaim.org/techniques/forms/controls)
 - [The Paciello Group explains accessible names](https://www.paciellogroup.com/blog/2017/04/what-is-an-accessible-name/)
 
-Although these standard HTML practices can be directly used in React, note that the `for` attribute is written as `htmlFor` in JSX:
+Embora estas práticas HTML padrão possam ser usadas diretamente no React, observa que o atributo `for` está escrito como `htmlFor` em JSX:
 
 ```javascript{1}
-<label htmlFor="namedInput">Name:</label>
-<input id="namedInput" type="text" name="name"/>
+<label htmlFor="inputNome">Nome:</label>
+<input id="inputNome" type="text" name="nome"/>
 ```
 
 ### Notifying the user of errors {#notifying-the-user-of-errors}
