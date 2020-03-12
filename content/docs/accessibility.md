@@ -39,16 +39,15 @@ Nota que todos os atributos HTML `aria-*` são totalmente suportados em JSX. Ape
 />
 ```
 
-## Semantic HTML {#semantic-html}
-Semantic HTML is the foundation of accessibility in a web application. Using the various HTML elements to reinforce the meaning of information
-in our websites will often give us accessibility for free.
+## Semântica HTML {#semantic-html}
+A semântica é a base de uma aplicação web acessível. Se usarmos corretamente os elementos HTML para reforçar o significado da informação colocada nos nossos websites, muitas das vezes a acessibilidade pode ser gratuita.
 
 - [MDN HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
-Sometimes we break HTML semantics when we add `<div>` elements to our JSX to make our React code work, especially when working with lists (`<ol>`, `<ul>` and `<dl>`) and the HTML `<table>`.
-In these cases we should rather use [React Fragments](/docs/fragments.html) to group together multiple elements.
+Às vezes, quebramos a semântica HTML para adicionar elementos `<div>` ao nosso JSX apenas para fazer funcionar no React, especialmente quando trabalharmos com listas (`<ol>`, `<ul>` and `<dl>`) e com `<table>`.
+Nestes casos devemos usar [React Fragments](/docs/fragments.html) para agrupar vários elementos.
 
-For example,
+Por exemplo,
 
 ```javascript{1,5,8}
 import React, { Fragment } from 'react';
@@ -73,14 +72,14 @@ function Glossary(props) {
 }
 ```
 
-You can map a collection of items to an array of fragments as you would any other type of element as well:
+Podemos mapear uma coleção de itens para um array de fragments tal como fariamos para qualquer outro tipo de elemento:
 
 ```javascript{6,9}
 function Glossary(props) {
   return (
     <dl>
       {props.items.map(item => (
-        // Fragments should also have a `key` prop when mapping collections
+        // Quando estamos a iterar um array, os Fragments devem ter a propriedade `key` adicionada
         <Fragment key={item.id}>
           <dt>{item.term}</dt>
           <dd>{item.description}</dd>
@@ -91,7 +90,7 @@ function Glossary(props) {
 }
 ```
 
-When you don't need any props on the Fragment tag you can use the [short syntax](/docs/fragments.html#short-syntax), if your tooling supports it:
+Quando não é necessario passar propriedades para a tag Fragment podemos usar a [syntax curta](/docs/fragments.html#short-syntax), se a configuração suportar:
 
 ```javascript{3,6}
 function ListItem({ item }) {
@@ -104,7 +103,7 @@ function ListItem({ item }) {
 }
 ```
 
-For more info, see [the Fragments documentation](/docs/fragments.html).
+Para mais informação, veja a [documentação sobre Fragments](/docs/fragments.html).
 
 ## Accessible Forms {#accessible-forms}
 
