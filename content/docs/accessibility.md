@@ -123,26 +123,26 @@ Embora estas práticas HTML padrão possam ser usadas diretamente no React, obse
 <input id="inputNome" type="text" name="nome"/>
 ```
 
-### Notifying the user of errors {#notifying-the-user-of-errors}
+### Notificar erros ao utilizador {#notifying-the-user-of-errors}
 
-Error situations need to be understood by all users. The following link shows us how to expose error texts to screen readers as well:
+Situações de erro precisam de ser entendidas por todos os utilizadores. Os artigos seguintes mostam como export os erros aos leitores de ecrã:
 
 - [The W3C demonstrates user notifications](https://www.w3.org/WAI/tutorials/forms/notifications/)
 - [WebAIM looks at form validation](https://webaim.org/techniques/formvalidation/)
 
-## Focus Control {#focus-control}
+## Controlo de Foco {#focus-control}
 
-Ensure that your web application can be fully operated with the keyboard only:
+Certifique-se que a aplicação web possa ser utilizada apenas com o teclado:
 
 - [WebAIM talks about keyboard accessibility](https://webaim.org/techniques/keyboard/)
 
-### Keyboard focus and focus outline {#keyboard-focus-and-focus-outline}
+### Foco no teclado e foco no contorno {#keyboard-focus-and-focus-outline}
 
-Keyboard focus refers to the current element in the DOM that is selected to accept input from the keyboard. We see it everywhere as a focus outline similar to that shown in the following image:
+Foco no teclado refere-se ao elemento DOM que foi selecionado e que aceita ações do teclado. Podemos ver o contorno na imagem a seguir:
 
-<img src="../images/docs/keyboard-focus.png" alt="Blue keyboard focus outline around a selected link." />
+<img src="../images/docs/keyboard-focus.png" alt="Contorno azul à volta do link selecionado" />
 
-Only ever use CSS that removes this outline, for example by setting `outline: 0`, if you are replacing it with another focus outline implementation.
+Apenas use CSS que elimine este contorno, por exemplo definindo `outline: 0`, se for substituir por outra implementação de foco.
 
 ### Mechanisms to skip to desired content {#mechanisms-to-skip-to-desired-content}
 
