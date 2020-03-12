@@ -130,7 +130,7 @@ Situações de erro precisam de ser entendidas por todos os utilizadores. Os art
 - [The W3C demonstrates user notifications](https://www.w3.org/WAI/tutorials/forms/notifications/)
 - [WebAIM looks at form validation](https://webaim.org/techniques/formvalidation/)
 
-## Controlo de Foco {#focus-control}
+## Controlo de foco {#focus-control}
 
 Certifique-se que a aplicação web possa ser utilizada apenas com o teclado:
 
@@ -140,44 +140,44 @@ Certifique-se que a aplicação web possa ser utilizada apenas com o teclado:
 
 Foco no teclado refere-se ao elemento DOM que foi selecionado e que aceita ações do teclado. Podemos ver o contorno na imagem a seguir:
 
-<img src="../images/docs/keyboard-focus.png" alt="Contorno azul à volta do link selecionado" />
+<img src="../images/docs/keyboard-focus.png" alt="Contorno azul à volta da ligação selecionada." />
 
 Apenas use CSS que elimine este contorno, por exemplo definindo `outline: 0`, se for substituir por outra implementação de foco.
 
-### Mechanisms to skip to desired content {#mechanisms-to-skip-to-desired-content}
+### Mecanismos para avançar para o conteudo desejado {#mechanisms-to-skip-to-desired-content}
 
-Provide a mechanism to allow users to skip past navigation sections in your application as this assists and speeds up keyboard navigation.
+Providencie mecanismos para permitir que os utilizadores consigam ignorar as secções de navegação, acelarando assim a navegação com o teclado.
 
-Skiplinks or Skip Navigation Links are hidden navigation links that only become visible when keyboard users interact with the page. They are very easy to implement with internal page anchors and some styling:
+Skiplinks ou Skip Navigation Links são ligações escondidos que só ficam visiveis quando os utilizadores de teclado interagem com a página. São muito fáceis de implementar com alguns estilos e âncoras:
 
 - [WebAIM - Skip Navigation Links](https://webaim.org/techniques/skipnav/)
 
-Also use landmark elements and roles, such as `<main>` and `<aside>`, to demarcate page regions as assistive technology allow the user to quickly navigate to these sections.
+Use também elementos e pontos de referência como `<main>` e `<aside>`, para demarcar zonas da página, sendo que as tecnologias de acessibilidade permitem assim que o utilizador navege rapidamente nessas seções.
 
-Read more about the use of these elements to enhance accessibility here:
+Saiba mais sobre o uso destes elementos para melhorar a acessibilidade aqui:
 
 - [Accessible Landmarks](https://www.scottohara.me/blog/2018/03/03/landmarks.html)
 
-### Programmatically managing focus {#programmatically-managing-focus}
+### Controlar programaticamente o foco {#programmatically-managing-focus}
 
-Our React applications continuously modify the HTML DOM during runtime, sometimes leading to keyboard focus being lost or set to an unexpected element. In order to repair this, we need to programmatically nudge the keyboard focus in the right direction. For example, by resetting keyboard focus to a button that opened a modal window after that modal window is closed.
+As nossas aplicações React modificam continuamente o HTML DOM durante o tempo de execução, às vezes perdendo o foco do teclado ou adicionado o foco a um elemento inesperado. Para corrigir isso, é necessário programar o foco do teclado na direção certo. Por exemplo, colocar o foco do teclado no botão que faz abrir uma modal depois dessa mesma modal ser fechada.
 
-MDN Web Docs takes a look at this and describes how we can build [keyboard-navigable JavaScript widgets](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets).
+Pode encontrar mais informações de como implementar no MDN Web Docs [keyboard-navigable JavaScript widgets](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets).
 
-To set focus in React, we can use [Refs to DOM elements](/docs/refs-and-the-dom.html).
+Para colocar o foco no React, podemos usar [Refs para elementos no DOM](/docs/refs-and-the-dom.html).
 
-Using this, we first create a ref to an element in the JSX of a component class:
+Desta maneira, em primeiro lugar no componente de JSX criamos a referência:
 
 ```javascript{4-5,8-9,13}
 class CustomTextInput extends React.Component {
   constructor(props) {
     super(props);
-    // Create a ref to store the textInput DOM element
+    // Criamos a ref para gravar o elemento DOM textInput
     this.textInput = React.createRef();
   }
   render() {
-  // Use the `ref` callback to store a reference to the text input DOM
-  // element in an instance field (for example, this.textInput).
+  // Use o callback `ref` para gravar a referência do elemento
+  // text input nesta instancia (por exemplo, this.textInput).
     return (
       <input
         type="text"
@@ -188,17 +188,17 @@ class CustomTextInput extends React.Component {
 }
 ```
 
-Then we can focus it elsewhere in our component when needed:
+Depois podemos colocar o foco quando for necessário:
 
  ```javascript
  focus() {
-   // Explicitly focus the text input using the raw DOM API
-   // Note: we're accessing "current" to get the DOM node
+   // Explicitamente devemos usar a DOM API nativa para colocar o foco
+   // Nota: estamos a aceder ao "current" para obter o elemento DOM
    this.textInput.current.focus();
  }
  ```
 
-Sometimes a parent component needs to set focus to an element in a child component. We can do this by [exposing DOM refs to parent components](/docs/refs-and-the-dom.html#exposing-dom-refs-to-parent-components) through a special prop on the child component that forwards the parent's ref to the child's DOM node.
+Às vezes um componente pai precisa de colocar o foco a um elemento no componente filho. Podemos fazer isso [expondo as referências DOM aos componentes pais](/docs/refs-and-the-dom.html#exposing-dom-refs-to-parent-components) através de uma `prop` especial no componente filho que encaminhe o componente pai ao elemento DOM do componente filho.
 
 ```javascript{4,12,16}
 function CustomTextInput(props) {
@@ -221,19 +221,18 @@ class Parent extends React.Component {
   }
 }
 
-// Now you can set focus when required.
+// Agora podemos colocar o foco quando for necessário.
 this.inputElement.current.focus();
 ```
 
-When using a HOC to extend components, it is recommended to [forward the ref](/docs/forwarding-refs.html) to the wrapped component using the `forwardRef` function of React. If a third party HOC does not implement ref forwarding, the above pattern can still be used as a fallback.
+Ao usar um HOC para estender componentes, é recomendado [encaminhar a ref](/docs/forwarding-refs.html) para o elemento embrulhado usando a função de React `forwardRef`. se um third party HOC  não implementar o `forwardRef`, o padrão acima pode ser usado como fallback.
 
-A great focus management example is the [react-aria-modal](https://github.com/davidtheclark/react-aria-modal). This is a relatively rare example of a fully accessible modal window. Not only does it set initial focus on
-the cancel button (preventing the keyboard user from accidentally activating the success action) and trap keyboard focus inside the modal, it also resets focus back to the element that initially triggered the modal.
+Um ótimo exemplo de controlar o foco é o [react-aria-modal](https://github.com/davidtheclark/react-aria-modal). Este é um exemplo relativamente raro de uma janela modal totalmente acessível. Não só coloca o foco inicial no botão de cancelar (prevenindo assim que o utilizador ative acidentalmente a ação de sucesso) mas também bloqueia o foco do teclado dentro da modal, e ainda reinicia o foco ao elemento que primeiramente acionou a modal.
 
->Note:
+>Nota:
 >
->While this is a very important accessibility feature, it is also a technique that should be used judiciously. Use it to repair the keyboard focus flow when it is disturbed, not to try and anticipate how
->users want to use applications.
+>Embora seja um recurso de acessibilidade muito importante, esta técnica deve ser usada de maneira criteriosa. Use-o para corrigir o comportamento do foco quando este está distorcido, e não para tentar
+>antecipar como os utilizadores querem usar a aplicação.
 
 ## Mouse and pointer events {#mouse-and-pointer-events}
 
