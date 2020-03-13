@@ -475,43 +475,43 @@ Testar com um leitor de ecrã deve fazer parte dos testes de acessibilidade.
 
 Note que a combinação entre os browsers e os leitores de ecrã tem importância. É recomendado que teste a sua aplicação no browser mais adequando ao seu leitor de ecrã.
 
-### Commonly Used Screen Readers {#commonly-used-screen-readers}
+### Leitores de ecrã mais comuns {#commonly-used-screen-readers}
 
-#### NVDA in Firefox {#nvda-in-firefox}
+#### NVDA no Firefox {#nvda-in-firefox}
 
-[NonVisual Desktop Access](https://www.nvaccess.org/) or NVDA is an open source Windows screen reader that is widely used.
+[NonVisual Desktop Access](https://www.nvaccess.org/) ou NVDA é um leitor de ecrã open source que é bastant utilizado.
 
-Refer to the following guides on how to best use NVDA:
+Consulte os seguintes guias de como usar o NVDA:
 
 - [WebAIM - Using NVDA to Evaluate Web Accessibility](https://webaim.org/articles/nvda/)
 - [Deque - NVDA Keyboard Shortcuts](https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts)
 
-#### VoiceOver in Safari {#voiceover-in-safari}
+#### VoiceOver no Safari {#voiceover-in-safari}
 
-VoiceOver is an integrated screen reader on Apple devices.
+VoiceOver é um leitor de ecrã integrado nos dispositivos da Apple.
 
-Refer to the following guides on how to activate and use VoiceOver:
+Consulte os seguintes guias sobre como ativar e utilizar o VoiceOver:
 
 - [WebAIM - Using VoiceOver to Evaluate Web Accessibility](https://webaim.org/articles/voiceover/)
 - [Deque - VoiceOver for OS X Keyboard Shortcuts](https://dequeuniversity.com/screenreaders/voiceover-keyboard-shortcuts)
 - [Deque - VoiceOver for iOS Shortcuts](https://dequeuniversity.com/screenreaders/voiceover-ios-shortcuts)
 
-#### JAWS in Internet Explorer {#jaws-in-internet-explorer}
+#### JAWS no Internet Explorer {#jaws-in-internet-explorer}
 
-[Job Access With Speech](https://www.freedomscientific.com/Products/software/JAWS/) or JAWS, is a prolifically used screen reader on Windows.
+[Job Access With Speech](https://www.freedomscientific.com/Products/software/JAWS/) ou JAWS, é um leitor de ecrã muito popular no sistema operativo Windows.
 
-Refer to the following guides on how to best use JAWS:
+Consulte os seguintes guias de como usar o JAWS:
 
 - [WebAIM - Using JAWS to Evaluate Web Accessibility](https://webaim.org/articles/jaws/)
 - [Deque - JAWS Keyboard Shortcuts](https://dequeuniversity.com/screenreaders/jaws-keyboard-shortcuts)
 
-### Other Screen Readers {#other-screen-readers}
+### Outros Leitores de Ecrã {#other-screen-readers}
 
-#### ChromeVox in Google Chrome {#chromevox-in-google-chrome}
+#### ChromeVox no Google Chrome {#chromevox-in-google-chrome}
 
-[ChromeVox](https://www.chromevox.com/) is an integrated screen reader on Chromebooks and is available [as an extension](https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en) for Google Chrome.
+[ChromeVox](https://www.chromevox.com/) é um leitor de ecrã integrado no Chromebooks e está disponível como [extensão](https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en) para o Google Chrome.
 
-Refer to the following guides on how best to use ChromeVox:
+Consulte os seguintes guias de como usar o ChromeVox:
 
 - [Google Chromebook Help - Use the Built-in Screen Reader](https://support.google.com/chromebook/answer/7031755?hl=en)
 - [ChromeVox Classic Keyboard Shortcuts Reference](https://www.chromevox.com/keyboard_shortcuts.html)
