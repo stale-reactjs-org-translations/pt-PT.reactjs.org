@@ -365,14 +365,14 @@ Este código expõe a funcionalidade para os utilizadores com dispositivos de cu
 
 Este é um exemplo de muitos casos em que depender apenas dos eventos de cursor, pode quebrar a funcionalidade para os utilizadores de teclado. Deve ir testando sempre com o teclado porque vai realçar logo as áreas problemáticas que podem ser corrigidas usando os eventos de reconhecimento de teclado.
 
-## More Complex Widgets {#more-complex-widgets}
+## Widgets mais complexos {#more-complex-widgets}
 
-A more complex user experience should not mean a less accessible one. Whereas accessibility is most easily achieved by coding as close to HTML as possible, even the most complex widget can be coded accessibly.
+Uma experiencia de utilização mais complexa não significa que seja menos acessível. Considerando que a acessibilidade é alcançada mais facilmente se programado o mais proximo possivel do HTML, até mesmo o widget mais complexo pode ser programado de forma acessível.
 
-Here we require knowledge of [ARIA Roles](https://www.w3.org/TR/wai-aria/#roles) as well as [ARIA States and Properties](https://www.w3.org/TR/wai-aria/#states_and_properties).
-These are toolboxes filled with HTML attributes that are fully supported in JSX and enable us to construct fully accessible, highly functional React components.
+Aqui é necessário conhecimento de [ARIA Roles](https://www.w3.org/TR/wai-aria/#roles) bem como [ARIA States and Properties](https://www.w3.org/TR/wai-aria/#states_and_properties).
+Estas são ferramentas com atrributos HTML que são totalmente suportadas em JSX e permitem construir componentes em React totalmente funcionais e totalmente acessíveis.
 
-Each type of widget has a specific design pattern and is expected to function in a certain way by users and user agents alike:
+Cada tipo de widget tem um design específico e espera-se que funcione de uma certa forma:
 
 - [WAI-ARIA Authoring Practices - Design Patterns and Widgets](https://www.w3.org/TR/wai-aria-practices/#aria_ex)
 - [Heydon Pickering - ARIA Examples](https://heydonworks.com/practical_aria_examples/)
