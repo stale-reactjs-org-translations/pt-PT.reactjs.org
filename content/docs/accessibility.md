@@ -6,11 +6,11 @@ permalink: docs/accessibility.html
 
 ## Porque Acessibilidade? {#why-accessibility}
 
-A acessibilidade na web (também conhecida por [** a11y **](https://en.wiktionary.org/wiki/a11y)) é o design e a criação de websites que podem ser usados por todos. O suporte à acessibilidade é necessário para permitir que as tecnologias assistivas interpretem as páginas da web.
+A acessibilidade na web (também conhecida por [** a11y **](https://en.wiktionary.org/wiki/a11y)) é o design e a criação de websites que podem ser usados por todos. O suporte à acessibilidade é necessário para permitir que as tecnologias de acessibilidade interpretem as páginas da web.
 
-O React suporta totalmente a construção de websites acessíveis, muitas vezes com apenas técnias de HTML padrão.
+O React suporta totalmente a construção de websites acessíveis, muitas vezes com apenas técnicas de HTML padrão.
 
-## Standards and Guidelines {#standards-and-guidelines}
+## Padrões e Diretrizes {#standards-and-guidelines}
 
 ### WCAG {#wcag}
 
@@ -26,7 +26,7 @@ As seguintes checklists das WCAG fornecem uma visão geral:
 
 O documento [Web Accessibility Initiative - Accessible Rich Internet Applications](https://www.w3.org/WAI/intro/aria) contém as técnicas necessárias para criar widgets totalmente acessíveis.
 
-Nota que todos os atributos HTML `aria-*` são totalmente suportados em JSX. Apesar da maioria das proriedades e atributos do DOM no React serem em camelCase, estes atributos devem ser em hyphen-cased (tambem conhecido como kebab-case, lisp-case, etc) pois estão em HTML:
+Nota que todos os atributos HTML `aria-*` são totalmente suportados em JSX. Apesar da maioria das propriedades e atributos do DOM no React serem em camelCase, estes atributos devem ser em hyphen-cased (também conhecido como kebab-case, lisp-case, etc) pois estão em HTML:
 
 ```javascript{3,4}
 <input
@@ -40,11 +40,12 @@ Nota que todos os atributos HTML `aria-*` são totalmente suportados em JSX. Ape
 ```
 
 ## Semântica HTML {#semantic-html}
+
 A semântica é a base de uma aplicação web acessível. Se usarmos corretamente os elementos HTML para reforçar o significado da informação colocada nos nossos websites, muitas das vezes a acessibilidade pode ser gratuita.
 
 - [MDN HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
-Às vezes, quebramos a semântica HTML para adicionar elementos `<div>` ao nosso JSX apenas para fazer funcionar no React, especialmente quando trabalharmos com listas (`<ol>`, `<ul>` and `<dl>`) e com `<table>`.
+Às vezes, quebramos a semântica HTML para adicionar elementos `<div>` ao nosso JSX apenas para fazer funcionar no React, especialmente quando trabalharmos com listas (`<ol>`, `<ul>` e `<dl>`) e com `<table>`.
 Nestes casos devemos usar [React Fragments](/docs/fragments.html) para agrupar vários elementos.
 
 Por exemplo,
@@ -72,7 +73,7 @@ function Glossary(props) {
 }
 ```
 
-Podemos mapear uma coleção de itens para um array de fragments tal como fariamos para qualquer outro tipo de elemento:
+Podemos mapear uma coleção de itens para um array de fragments tal como faríamos para qualquer outro tipo de elemento:
 
 ```javascript{6,9}
 function Glossary(props) {
@@ -90,7 +91,7 @@ function Glossary(props) {
 }
 ```
 
-Quando não é necessario passar propriedades para a tag Fragment podemos usar a [syntax curta](/docs/fragments.html#short-syntax), se a configuração suportar:
+Quando não é necessário passar propriedades para a tag Fragment podemos usar a [syntax curta](/docs/fragments.html#short-syntax), se a configuração suportar:
 
 ```javascript{3,6}
 function ListItem({ item }) {
@@ -108,7 +109,7 @@ Para mais informação, veja a [documentação sobre Fragments](/docs/fragments.
 ## Formulários Acessíveis {#accessible-forms}
 
 ### Rótulos {#labeling}
-Todos os elementos de um formulário HTML como `<input>` e `<textarea>`, precisam de ser rótulados. É necessário fornecer rótulos descritivos pois estes são expostos aos leitores de ecrã.
+Todos os elementos de um formulário HTML como `<input>` e `<textarea>`, precisam de ser rotulados. É necessário fornecer rótulos descritivos pois estes são expostos aos leitores de ecrã.
 
 Os seguintes artigos mostram como os devemos aplicar:
 
@@ -125,46 +126,46 @@ Embora estas práticas HTML padrão possam ser usadas diretamente no React, obse
 
 ### Notificar erros ao utilizador {#notifying-the-user-of-errors}
 
-Situações de erro precisam de ser entendidas por todos os utilizadores. Os artigos seguintes mostam como export os erros aos leitores de ecrã:
+Situações de erro precisam de ser entendidas por todos os utilizadores. Os artigos seguintes mostram como exportar os erros aos leitores de ecrã:
 
 - [The W3C demonstrates user notifications](https://www.w3.org/WAI/tutorials/forms/notifications/)
 - [WebAIM looks at form validation](https://webaim.org/techniques/formvalidation/)
 
-## Controlo de foco {#focus-control}
+## Controlo de focus {#focus-control}
 
 Certifique-se que a aplicação web possa ser utilizada apenas com o teclado:
 
 - [WebAIM talks about keyboard accessibility](https://webaim.org/techniques/keyboard/)
 
-### Foco no teclado e foco no contorno {#keyboard-focus-and-focus-outline}
+### Focus no teclado e focus no contorno {#keyboard-focus-and-focus-outline}
 
-Foco no teclado refere-se ao elemento DOM que foi selecionado e que aceita ações do teclado. Podemos ver o contorno na imagem a seguir:
+Focus no teclado refere-se ao elemento DOM que foi selecionado e que aceita ações do teclado. Podemos ver o contorno na imagem a seguir:
 
 <img src="../images/docs/keyboard-focus.png" alt="Contorno azul à volta da ligação selecionada." />
 
-Apenas use CSS que elimine este contorno, por exemplo definindo `outline: 0`, se for substituir por outra implementação de foco.
+Apenas use CSS que elimine este contorno, por exemplo definindo `outline: 0`, se for substituir por outra implementação de focus.
 
-### Mecanismos para avançar para o conteudo desejado {#mechanisms-to-skip-to-desired-content}
+### Mecanismos para avançar para o conteúdo desejado {#mechanisms-to-skip-to-desired-content}
 
-Providencie mecanismos para permitir que os utilizadores consigam ignorar as secções de navegação, acelarando assim a navegação com o teclado.
+Providencie mecanismos para permitir que os utilizadores consigam ignorar as secções de navegação, acelerando assim a navegação com o teclado.
 
-Skiplinks ou Skip Navigation Links são ligações escondidos que só ficam visiveis quando os utilizadores de teclado interagem com a página. São muito fáceis de implementar com alguns estilos e âncoras:
+Skiplinks ou Skip Navigation Links são ligações escondidos que só ficam visíveis quando os utilizadores de teclado interagem com a página. São muito fáceis de implementar com alguns estilos e âncoras:
 
 - [WebAIM - Skip Navigation Links](https://webaim.org/techniques/skipnav/)
 
-Use também elementos e pontos de referência como `<main>` e `<aside>`, para demarcar zonas da página, sendo que as tecnologias de acessibilidade permitem assim que o utilizador navege rapidamente nessas seções.
+Use também elementos e pontos de referência como `<main>` e `<aside>`, para demarcar zonas da página, sendo que as tecnologias de acessibilidade permitem assim que o utilizador navegue rapidamente nessas secções.
 
 Saiba mais sobre o uso destes elementos para melhorar a acessibilidade aqui:
 
 - [Accessible Landmarks](https://www.scottohara.me/blog/2018/03/03/landmarks.html)
 
-### Controlar programaticamente o foco {#programmatically-managing-focus}
+### Controlar programaticamente o focus {#programmatically-managing-focus}
 
-As nossas aplicações React modificam continuamente o HTML DOM durante o tempo de execução, às vezes perdendo o foco do teclado ou adicionado o foco a um elemento inesperado. Para corrigir isso, é necessário programar o foco do teclado na direção certo. Por exemplo, colocar o foco do teclado no botão que faz abrir uma modal depois dessa mesma modal ser fechada.
+As nossas aplicações React modificam continuamente o HTML DOM durante o tempo de execução, às vezes perdendo o focus do teclado ou adicionado o focus a um elemento inesperado. Para corrigir isso, é necessário programar o focus do teclado na direção certo. Por exemplo, colocar o focus do teclado no botão que faz abrir uma modal depois dessa mesma modal ser fechada.
 
 Pode encontrar mais informações de como implementar no MDN Web Docs [keyboard-navigable JavaScript widgets](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets).
 
-Para colocar o foco no React, podemos usar [Refs para elementos no DOM](/docs/refs-and-the-dom.html).
+Para colocar o focus no React, podemos usar [Refs para elementos no DOM](/docs/refs-and-the-dom.html).
 
 Desta maneira, em primeiro lugar no componente de JSX criamos a referência:
 
@@ -177,7 +178,7 @@ class CustomTextInput extends React.Component {
   }
   render() {
   // Use o callback `ref` para gravar a referência do elemento
-  // text input nesta instancia (por exemplo, this.textInput).
+  // text input nesta instância (por exemplo, this.textInput).
     return (
       <input
         type="text"
@@ -188,17 +189,17 @@ class CustomTextInput extends React.Component {
 }
 ```
 
-Depois podemos colocar o foco quando for necessário:
+Depois podemos colocar o focus quando for necessário:
 
  ```javascript
  focus() {
-   // Explicitamente devemos usar a DOM API nativa para colocar o foco
+   // Explicitamente devemos usar a DOM API nativa para colocar o focus
    // Nota: estamos a aceder ao "current" para obter o elemento DOM
    this.textInput.current.focus();
  }
  ```
 
-Às vezes um componente pai precisa de colocar o foco a um elemento no componente filho. Podemos fazer isso [expondo as referências DOM aos componentes pais](/docs/refs-and-the-dom.html#exposing-dom-refs-to-parent-components) através de uma `prop` especial no componente filho que encaminhe o componente pai ao elemento DOM do componente filho.
+Às vezes um componente pai precisa de colocar o focus a um elemento no componente filho. Podemos fazer isso [expondo as referências DOM aos componentes pais](/docs/refs-and-the-dom.html#exposing-dom-refs-to-parent-components) através de uma `prop` especial no componente filho que encaminhe o componente pai ao elemento DOM do componente filho.
 
 ```javascript{4,12,16}
 function CustomTextInput(props) {
@@ -221,26 +222,26 @@ class Parent extends React.Component {
   }
 }
 
-// Agora podemos colocar o foco quando for necessário.
+// Agora podemos colocar o focus quando for necessário.
 this.inputElement.current.focus();
 ```
 
 Ao usar um HOC para estender componentes, é recomendado [encaminhar a ref](/docs/forwarding-refs.html) para o elemento embrulhado usando a função de React `forwardRef`. se um third party HOC  não implementar o `forwardRef`, o padrão acima pode ser usado como fallback.
 
-Um ótimo exemplo de controlar o foco é o [react-aria-modal](https://github.com/davidtheclark/react-aria-modal). Este é um exemplo relativamente raro de uma janela modal totalmente acessível. Não só coloca o foco inicial no botão de cancelar (prevenindo assim que o utilizador ative acidentalmente a ação de sucesso) mas também bloqueia o foco do teclado dentro da modal, e ainda reinicia o foco ao elemento que primeiramente acionou a modal.
+Um ótimo exemplo de controlar o focus é o [react-aria-modal](https://github.com/davidtheclark/react-aria-modal). Este é um exemplo relativamente raro de uma janela modal totalmente acessível. Não só coloca o focus inicial no botão de cancelar (prevenindo assim que o utilizador ative acidentalmente a ação de sucesso) mas também bloqueia o focus do teclado dentro da modal, e ainda reinicia o focus ao elemento que primeiramente acionou a modal.
 
 >Nota:
 >
->Embora seja um recurso de acessibilidade muito importante, esta técnica deve ser usada de maneira criteriosa. Use-o para corrigir o comportamento do foco quando este está distorcido, e não para tentar
+>Embora seja um recurso de acessibilidade muito importante, esta técnica deve ser usada de maneira criteriosa. Use-o para corrigir o comportamento do focus quando este está distorcido, e não para tentar
 >antecipar como os utilizadores querem usar a aplicação.
 
 ## Eventos do rato e cursor {#mouse-and-pointer-events}
 
-Certifique-se de que todas as funcionalidades expostas atráves dos eventos do rato ou cursor também possam ser acedidas usando apenas o teclado. Se depender apenas no rato, vai haver muitos casos em que os utilizadores não consigam utilizar a sua aplicação.
+Certifique-se de que todas as funcionalidades expostas através dos eventos do rato ou cursor também possam ser acedidas usando apenas o teclado. Se depender apenas no rato, vai haver muitos casos em que os utilizadores não consigam utilizar a sua aplicação.
 
 Para ilustrar isto, abaixa pode ver um exemplo clássico de quebra da acessibilidade causada por um click. Este é o padrão de click externo, em que o utilizador pode desativar uma popover aberto ao carregar fora do elemento.
 
-<img src="../images/docs/outerclick-with-mouse.gif" alt="Um botão que abre uma lista popover implementada com um padrão de click externo e operado por um rato a mostrar quee a ação de fechar funciona." />
+<img src="../images/docs/outerclick-with-mouse.gif" alt="Um botão que abre uma lista popover implementada com um padrão de click externo e operado por um rato a mostrar que a ação de fechar funciona." />
 
 Isto geralmente é implementado ao anexar um evento `click` ao objeto `window` que fecha a popover:
 
@@ -293,7 +294,7 @@ class OuterClickExample extends React.Component {
 }
 ```
 
-Isso pode funcionar bem para os utilizadores com dispositivos com ponteiro, como por exemplo um rato, mas se for apenas com um teclado pode quebrar a funcionalidade ao utilizar o `tab` para o próximo elemento, sendo que o objecto `window` não recebe o evento `click`. Pode também levar a uma funcionalidade escondida que impede os utilizadores de utilizar a aplicação. 
+Isso pode funcionar bem para os utilizadores com dispositivos com ponteiro como, por exemplo um rato, mas se for apenas com um teclado pode quebrar a funcionalidade ao utilizar o `tab` para o próximo elemento, sendo que o objecto `window` não recebe o evento `click`. Pode também levar a uma funcionalidade escondida que impede os utilizadores de utilizar a aplicação. 
 
 <img src="../images/docs/outerclick-with-keyboard.gif" alt="Um botão que abre uma lista popover implementada com um padrão de click externo e também com a possibilidade de ser operada apenas com o teclado." />
 
@@ -320,8 +321,8 @@ class BlurExample extends React.Component {
 
   // Fechamos a popover no proximo tick usando o setTimeout.
   // É necessário porque precisamos primeiro de verificar o
-  // outro filho do elemento que recebeu o foco
-  // visto que o evento blue foi acionado antes do novo evento de foco.
+  // outro filho do elemento que recebeu o focus
+  // visto que o evento blur foi acionado antes do novo evento de focus.
   onBlurHandler() {
     this.timeOutId = setTimeout(() => {
       this.setState({
@@ -330,14 +331,14 @@ class BlurExample extends React.Component {
     });
   }
 
-  // Se o elemento filho receber foco, não fechamos a popover.
+  // Se o elemento filho receber focus, não fechamos a popover.
   onFocusHandler() {
     clearTimeout(this.timeOutId);
   }
 
   render() {
     // O React ajuda-nos a cancelar o evento blur
-    // e a colocar o foco no elemento pai.
+    // e a colocar o focus no elemento pai.
     return (
       <div onBlur={this.onBlurHandler}
            onFocus={this.onFocusHandler}>
@@ -361,16 +362,16 @@ class BlurExample extends React.Component {
 
 Este código expõe a funcionalidade para os utilizadores com dispositivos de cursor (rato) e teclado. Observe também as props `aria-*` adicionadas para suportar utilizadores com leitores de ecrã. Por motivos de simplificação as interações das `arrow keys` nas opções da popover não foram implementadas. 
 
-<img src="../images/docs/blur-popover-close.gif" alt="Uma lista popover correamente fechada com o rato e com o teclado." />
+<img src="../images/docs/blur-popover-close.gif" alt="Uma lista popover corretamente fechada com o rato e com o teclado." />
 
 Este é um exemplo de muitos casos em que depender apenas dos eventos de cursor, pode quebrar a funcionalidade para os utilizadores de teclado. Deve ir testando sempre com o teclado porque vai realçar logo as áreas problemáticas que podem ser corrigidas usando os eventos de reconhecimento de teclado.
 
 ## Widgets mais complexos {#more-complex-widgets}
 
-Uma experiencia de utilização mais complexa não significa que seja menos acessível. Considerando que a acessibilidade é alcançada mais facilmente se programado o mais proximo possivel do HTML, até mesmo o widget mais complexo pode ser programado de forma acessível.
+Uma experiência de utilização mais complexa não significa que seja menos acessível. Considerando que a acessibilidade é alcançada mais facilmente se programado o mais próximo possível do HTML, até mesmo o widget mais complexo pode ser programado de forma acessível.
 
 Aqui é necessário conhecimento de [ARIA Roles](https://www.w3.org/TR/wai-aria/#roles) bem como [ARIA States and Properties](https://www.w3.org/TR/wai-aria/#states_and_properties).
-Estas são ferramentas com atrributos HTML que são totalmente suportadas em JSX e permitem construir componentes em React totalmente funcionais e totalmente acessíveis.
+Estas são ferramentas com atributos HTML que são totalmente suportadas em JSX e permitem construir componentes em React totalmente funcionais e totalmente acessíveis.
 
 Cada tipo de widget tem um design específico e espera-se que funcione de uma certa forma:
 
@@ -392,18 +393,17 @@ Defina o `<title>` para descrever corretamente o conteúdo atual da página, poi
 
 - [WCAG - Understanding the Document Title Requirement](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html)
 
-Podemos definir o titulo em React usando o [React Document Title Component](https://github.com/gaearon/react-document-title).
+Podemos definir o título em React usando o [React Document Title Component](https://github.com/gaearon/react-document-title).
 
 ### Contraste de Cor {#color-contrast}
 
-Ensure that all readable text on your website has sufficient color contrast to remain maximally readable by users with low vision:
-Certifique-se de que todo o texto  no site tem o contraste suficiente para ser legível por utilizadores com baixa visão:
+Certifique-se de que todo o texto no site tem o contraste suficiente para ser legível por utilizadores com baixa visão:
 
 - [WCAG - Understanding the Color Contrast Requirement](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)
 - [Everything About Color Contrast And Why You Should Rethink It](https://www.smashingmagazine.com/2014/10/color-contrast-tips-and-tools-for-accessibility/)
 - [A11yProject - What is Color Contrast](https://a11yproject.com/posts/what-is-color-contrast/)
 
-Pode ser um trabalho arduo calcular adequadamente todas as combinações de cores no website. Utilize ferramentas como o [Colorable](https://jxnblk.com/colorable/).
+Pode ser um trabalho árduo calcular adequadamente todas as combinações de cores no website. Utilize ferramentas como o [Colorable](https://jxnblk.com/colorable/).
 
 As ferramentas aXe e WAVE mencionadas abaixo também incluem testes de contraste.
 
@@ -418,17 +418,16 @@ Existe várias ferramentas que pode usar para o ajudar na criação de aplicaç�
 
 ### Teclado {#the-keyboard}
 
-By far the easiest and also one of the most important checks is to test if your entire website can be reached and used with the keyboard alone. Do this by:
-De longe o mais facil e também a verificação mais importante. Deve testar se todo o website pode ser utilizado apenas com o teclado, fazendo o seguinte:
+De longe o mais fácil e também a verificação mais importante. Deve testar se todo o website pode ser utilizado apenas com o teclado, fazendo o seguinte:
 
 1. Desconecte o rato.
 1. Use o `Tab` e o `Shift+Tab` para navegar.
 1. Use o `Enter` para clicar em elementos.
-1. Se necessário, use as setas do teclado e interaja com alguns elementos, como por exemplo menus e dropdowns.
+1. Se necessário, use as setas do teclado e interaja com alguns elementos como, por exemplo menus e dropdowns.
 
 ### Assistência ao desenvolvimento {#development-assistance}
 
-Pode verificar algumas funcionalidades de acessibilidade diretamente no código JSX. Na maioria dos casos, os intellisense utilizados nos IDE's já fornecem verificações para os ARIA roles, estados e propriedades. Pode tambem usar as seguintes ferramentas:
+Pode verificar algumas funcionalidades de acessibilidade diretamente no código JSX. Na maioria dos casos, os intellisense utilizados nos IDE's já fornecem verificações para os ARIA roles, estados e propriedades. Pode também usar as seguintes ferramentas:
 
 #### eslint-plugin-jsx-a11y {#eslint-plugin-jsx-a11y}
 
@@ -453,15 +452,15 @@ Deque Systems oferece [aXe-core](https://github.com/dequelabs/axe-core) para tes
 
 [O Motor de Acessibilidade](https://www.deque.com/products/axe/) ou aXe, é uma extensão de browser desenvolvida com o `aXe-core`.
 
-Pode tambem usar o modúlo [react-axe](https://github.com/dylanb/react-axe) para reportar todos os erros de acessibilidade encontados na consola durante o desenvolvimento e o debugging.
+Pode também usar o modulo [react-axe](https://github.com/dylanb/react-axe) para reportar todos os erros de acessibilidade encontrados na consola durante o desenvolvimento e o debugging.
 
 #### WebAIM WAVE {#webaim-wave}
 
-O [Web Accessibility Evaluation Tool](https://wave.webaim.org/extension/) é outra extensão de acessibilidade para o browser
+O [Web Accessibility Evaluation Tool](https://wave.webaim.org/extension/) é outra extensão de acessibilidade para o browser.
 
 #### Inspetores de Acessibilidade e Árvore de Acessibilidade {#accessibility-inspectors-and-the-accessibility-tree}
 
-[The Accessibility Tree](https://www.paciellogroup.com/blog/2015/01/the-browser-accessibility-tree/) é um subconjunto da árvore DOM que contém objectos de acessibilidade para cada elemento DOM que deve ser disponibilidade para a tecnologia assistiva como os leitores de ecrã.
+[The Accessibility Tree](https://www.paciellogroup.com/blog/2015/01/the-browser-accessibility-tree/) é um subconjunto da árvore DOM que contém objetos de acessibilidade para cada elemento DOM que deve ser disponibilidade para a tecnologia assistida como os leitores de ecrã.
 
 Em alguns browsers podemos facilmente visualizar as informações de acessibilidade em cada elemento na árvore de acessibilidade:
 
@@ -479,7 +478,7 @@ Note que a combinação entre os browsers e os leitores de ecrã tem importânci
 
 #### NVDA no Firefox {#nvda-in-firefox}
 
-[NonVisual Desktop Access](https://www.nvaccess.org/) ou NVDA é um leitor de ecrã open source que é bastant utilizado.
+[NonVisual Desktop Access](https://www.nvaccess.org/) ou NVDA é um leitor de ecrã open source que é bastante utilizado.
 
 Consulte os seguintes guias de como usar o NVDA:
 
