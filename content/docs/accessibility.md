@@ -394,26 +394,27 @@ Defina o `<title>` para descrever corretamente o conteúdo atual da página, poi
 
 Podemos definir o titulo em React usando o [React Document Title Component](https://github.com/gaearon/react-document-title).
 
-### Color contrast {#color-contrast}
+### Contraste de Cor {#color-contrast}
 
 Ensure that all readable text on your website has sufficient color contrast to remain maximally readable by users with low vision:
+Certifique-se de que todo o texto  no site tem o contraste suficiente para ser legível por utilizadores com baixa visão:
 
 - [WCAG - Understanding the Color Contrast Requirement](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)
 - [Everything About Color Contrast And Why You Should Rethink It](https://www.smashingmagazine.com/2014/10/color-contrast-tips-and-tools-for-accessibility/)
 - [A11yProject - What is Color Contrast](https://a11yproject.com/posts/what-is-color-contrast/)
 
-It can be tedious to manually calculate the proper color combinations for all cases in your website so instead, you can [calculate an entire accessible color palette with Colorable](https://jxnblk.com/colorable/).
+Pode ser um trabalho arduo calcular adequadamente todas as combinações de cores no website. Utilize ferramentas como o [Colorable](https://jxnblk.com/colorable/).
 
-Both the aXe and WAVE tools mentioned below also include color contrast tests and will report on contrast errors.
+As ferramentas aXe e WAVE mencionadas abaixo também incluem testes de contraste.
 
-If you want to extend your contrast testing abilities you can use these tools:
+Se quiser estender as suas habilidades de teste de contraste, pode usar estas ferramentas: 
 
 - [WebAIM - Color Contrast Checker](https://webaim.org/resources/contrastchecker/)
 - [The Paciello Group - Color Contrast Analyzer](https://www.paciellogroup.com/resources/contrastanalyser/)
 
-## Development and Testing Tools {#development-and-testing-tools}
+## Ferramentas de Desenvolvimento e Testes {#development-and-testing-tools}
 
-There are a number of tools we can use to assist in the creation of accessible web applications.
+Existe várias ferramentas que pode usar para o ajudar na criação de aplicações web acessíveis.
 
 ### The keyboard {#the-keyboard}
 
