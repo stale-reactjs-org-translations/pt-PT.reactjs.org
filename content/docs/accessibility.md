@@ -416,24 +416,25 @@ Se quiser estender as suas habilidades de teste de contraste, pode usar estas fe
 
 Existe várias ferramentas que pode usar para o ajudar na criação de aplicações web acessíveis.
 
-### The keyboard {#the-keyboard}
+### Teclado {#the-keyboard}
 
 By far the easiest and also one of the most important checks is to test if your entire website can be reached and used with the keyboard alone. Do this by:
+De longe o mais facil e também a verificação mais importante. Deve testar se todo o website pode ser utilizado apenas com o teclado, fazendo o seguinte:
 
-1. Disconnecting your mouse.
-1. Using `Tab` and `Shift+Tab` to browse.
-1. Using `Enter` to activate elements.
-1. Where required, using your keyboard arrow keys to interact with some elements, such as menus and dropdowns.
+1. Desconecte o rato.
+1. Use o `Tab` e o `Shift+Tab` para navegar.
+1. Use o `Enter` para clicar em elementos.
+1. Se necessário, use as setas do teclado e interaja com alguns elementos, como por exemplo menus e dropdowns.
 
-### Development assistance {#development-assistance}
+### Assistência ao desenvolvimento {#development-assistance}
 
-We can check some accessibility features directly in our JSX code. Often intellisense checks are already provided in JSX aware IDE's for the ARIA roles, states and properties. We also have access to the following tool:
+Pode verificar algumas funcionalidades de acessibilidade diretamente no código JSX. Na maioria dos casos, os intellisense utilizados nos IDE's já fornecem verificações para os ARIA roles, estados e propriedades. Pode tambem usar as seguintes ferramentas:
 
 #### eslint-plugin-jsx-a11y {#eslint-plugin-jsx-a11y}
 
-The [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y) plugin for ESLint provides AST linting feedback regarding accessibility issues in your JSX. Many IDE's allow you to integrate these findings directly into code analysis and source code windows.
+O plugin [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y) para o ESLint fornece feedback sobre o linting da AST em relação a problemas de acessibilidade no JSX. A maioria dos IDE's permite a integração dos resultados diretamente nas janelas de código.
 
-[Create React App](https://github.com/facebookincubator/create-react-app) has this plugin with a subset of rules activated. If you want to enable even more accessibility rules, you can create an `.eslintrc` file in the root of your project with this content:
+[Create React App](https://github.com/facebookincubator/create-react-app) tem este plugin com um subconjunto de regras já ativadas. Se quiser pode ainda adicionar mais regras de acessibilidade, adicionando o ficheiro `.eslintrc` na pasta root do seu projeto com o seguinte conteúdo:
 
   ```json
   {
@@ -442,39 +443,37 @@ The [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y) 
   }
   ```
 
-### Testing accessibility in the browser {#testing-accessibility-in-the-browser}
+### Testar acessibilidade no browser {#testing-accessibility-in-the-browser}
 
-A number of tools exist that can run accessibility audits on web pages in your browser. Please use them in combination with other accessibility checks mentioned here as they can only
-test the technical accessibility of your HTML.
+Existem várias ferramentas que podem executar auditorias de acessibilidade nas páginas web no browser. Por favor, use-as em combinação com outros testes de acessibilidade, sendo que o browser só irá testar as acessibilidades do conteúdo HTML.
 
-#### aXe, aXe-core and react-axe {#axe-axe-core-and-react-axe}
+#### aXe, aXe-core e react-axe {#axe-axe-core-and-react-axe}
 
-Deque Systems offers [aXe-core](https://github.com/dequelabs/axe-core) for automated and end-to-end accessibility tests of your applications. This module includes integrations for Selenium.
+Deque Systems oferece [aXe-core](https://github.com/dequelabs/axe-core) para testes de acessibilidade automatizados e testes end-to-end de acessibilidade nas suas aplicações. Este modúlo inclui integrações com o Selenium.
 
-[The Accessibility Engine](https://www.deque.com/products/axe/) or aXe, is an accessibility inspector browser extension built on `aXe-core`.
+[O Motor de Acessibilidade](https://www.deque.com/products/axe/) ou aXe, é uma extensão de browser desenvolvida com o `aXe-core`.
 
-You can also use the [react-axe](https://github.com/dylanb/react-axe) module to report these accessibility findings directly to the console while developing and debugging.
+Pode tambem usar o modúlo [react-axe](https://github.com/dylanb/react-axe) para reportar todos os erros de acessibilidade encontados na consola durante o desenvolvimento e o debugging.
 
 #### WebAIM WAVE {#webaim-wave}
 
-The [Web Accessibility Evaluation Tool](https://wave.webaim.org/extension/) is another accessibility browser extension.
+O [Web Accessibility Evaluation Tool](https://wave.webaim.org/extension/) é outra extensão de acessibilidade para o browser
 
-#### Accessibility inspectors and the Accessibility Tree {#accessibility-inspectors-and-the-accessibility-tree}
+#### Inspetores de Acessibilidade e Árvore de Acessibilidade {#accessibility-inspectors-and-the-accessibility-tree}
 
-[The Accessibility Tree](https://www.paciellogroup.com/blog/2015/01/the-browser-accessibility-tree/) is a subset of the DOM tree that contains accessible objects for every DOM element that should be exposed
-to assistive technology, such as screen readers.
+[The Accessibility Tree](https://www.paciellogroup.com/blog/2015/01/the-browser-accessibility-tree/) é um subconjunto da árvore DOM que contém objectos de acessibilidade para cada elemento DOM que deve ser disponibilidade para a tecnologia assistiva como os leitores de ecrã.
 
-In some browsers we can easily view the accessibility information for each element in the accessibility tree:
+Em alguns browsers podemos facilmente visualizar as informações de acessibilidade em cada elemento na árvore de acessibilidade:
 
 - [Using the Accessibility Inspector in Firefox](https://developer.mozilla.org/en-US/docs/Tools/Accessibility_inspector)
 - [Using the Accessibility Inspector in Chrome](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference#pane)
 - [Using the Accessibility Inspector in OS X Safari](https://developer.apple.com/library/content/documentation/Accessibility/Conceptual/AccessibilityMacOSX/OSXAXTestingApps.html)
 
-### Screen readers {#screen-readers}
+### Leitores de ecrã {#screen-readers}
 
-Testing with a screen reader should form part of your accessibility tests.
+Testar com um leitor de ecrã deve fazer parte dos testes de acessibilidade.
 
-Please note that browser / screen reader combinations matter. It is recommended that you test your application in the browser best suited to your screen reader of choice.
+Note que a combinação entre os browsers e os leitores de ecrã tem importância. É recomendado que teste a sua aplicação no browser mais adequando ao seu leitor de ecrã.
 
 ### Commonly Used Screen Readers {#commonly-used-screen-readers}
 
