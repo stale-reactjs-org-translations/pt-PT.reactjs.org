@@ -318,10 +318,10 @@ class BlurExample extends React.Component {
     }));
   }
 
-  // We close the popover on the next tick by using setTimeout.
-  // This is necessary because we need to first check if
-  // another child of the element has received focus as
-  // the blur event fires prior to the new focus event.
+  // Fechamos a popover no proximo tick usando o setTimeout.
+  // É necessário porque precisamos primeiro de verificar o
+  // outro filho do elemento que recebeu o foco
+  // visto que o evento blue foi acionado antes do novo evento de foco.
   onBlurHandler() {
     this.timeOutId = setTimeout(() => {
       this.setState({
@@ -330,14 +330,14 @@ class BlurExample extends React.Component {
     });
   }
 
-  // If a child receives focus, do not close the popover.
+  // Se o elemento filho receber foco, não fechamos a popover.
   onFocusHandler() {
     clearTimeout(this.timeOutId);
   }
 
   render() {
-    // React assists us by bubbling the blur and
-    // focus events to the parent.
+    // O React ajuda-nos a cancelar o evento blur
+    // e a colocar o foco no elemento pai.
     return (
       <div onBlur={this.onBlurHandler}
            onFocus={this.onFocusHandler}>
@@ -359,11 +359,11 @@ class BlurExample extends React.Component {
 }
 ```
 
-This code exposes the functionality to both pointer device and keyboard users. Also note the added `aria-*` props to support screen-reader users. For simplicity's sake the keyboard events to enable `arrow key` interaction of the popover options have not been implemented.
+Este código expõe a funcionalidade para os utilizadores com dispositivos de cursor (rato) e teclado. Observe também as props `aria-*` adicionadas para suportar utilizadores com leitores de ecrã. Por motivos de simplificação as interações das `arrow keys` nas opções da popover não foram implementadas. 
 
-<img src="../images/docs/blur-popover-close.gif" alt="A popover list correctly closing for both mouse and keyboard users." />
+<img src="../images/docs/blur-popover-close.gif" alt="Uma lista popover correamente fechada com o rato e com o teclado." />
 
-This is one example of many cases where depending on only pointer and mouse events will break functionality for keyboard users. Always testing with the keyboard will immediately highlight the problem areas which can then be fixed by using keyboard aware event handlers.
+Este é um exemplo de muitos casos em que depender apenas dos eventos de cursor, pode quebrar a funcionalidade para os utilizadores de teclado. Deve ir testando sempre com o teclado porque vai realçar logo as áreas problemáticas que podem ser corrigidas usando os eventos de reconhecimento de teclado.
 
 ## More Complex Widgets {#more-complex-widgets}
 
