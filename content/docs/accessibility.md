@@ -378,21 +378,21 @@ Cada tipo de widget tem um design específico e espera-se que funcione de uma ce
 - [Heydon Pickering - ARIA Examples](https://heydonworks.com/practical_aria_examples/)
 - [Inclusive Components](https://inclusive-components.design/)
 
-## Other Points for Consideration {#other-points-for-consideration}
+## Outros pontos a ter em consideração {#other-points-for-consideration}
 
-### Setting the language {#setting-the-language}
+### Definir o idioma {#setting-the-language}
 
-Indicate the human language of page texts as screen reader software uses this to select the correct voice settings:
+Indique o idioma dos textos da página, pois o software de leitura de ecrã usa essa definição para escolher a voz correta:
 
 - [WebAIM - Document Language](https://webaim.org/techniques/screenreader/#language)
 
-### Setting the document title {#setting-the-document-title}
+### Definir o titulo do documento {#setting-the-document-title}
 
-Set the document `<title>` to correctly describe the current page content as this ensures that the user remains aware of the current page context:
+Defina o `<title>` para descrever corretamente o conteúdo atual da página, pois isso garante que o utilizador tenha noção do contexto da página atual:
 
 - [WCAG - Understanding the Document Title Requirement](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html)
 
-We can set this in React using the [React Document Title Component](https://github.com/gaearon/react-document-title).
+Podemos definir o titulo em React usando o [React Document Title Component](https://github.com/gaearon/react-document-title).
 
 ### Color contrast {#color-contrast}
 
