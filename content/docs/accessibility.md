@@ -234,15 +234,15 @@ Um ótimo exemplo de controlar o foco é o [react-aria-modal](https://github.com
 >Embora seja um recurso de acessibilidade muito importante, esta técnica deve ser usada de maneira criteriosa. Use-o para corrigir o comportamento do foco quando este está distorcido, e não para tentar
 >antecipar como os utilizadores querem usar a aplicação.
 
-## Mouse and pointer events {#mouse-and-pointer-events}
+## Eventos do rato e cursor {#mouse-and-pointer-events}
 
-Ensure that all functionality exposed through a mouse or pointer event can also be accessed using the keyboard alone. Depending only on the pointer device will lead to many cases where keyboard users cannot use your application.
+Certifique-se de que todas as funcionalidades expostas atráves dos eventos do rato ou cursor também possam ser acedidas usando apenas o teclado. Se depender apenas no rato, vai haver muitos casos em que os utilizadores não consigam utilizar a sua aplicação.
 
-To illustrate this, let's look at a prolific example of broken accessibility caused by click events. This is the outside click pattern, where a user can disable an opened popover by clicking outside the element.
+Para ilustrar isto, abaixa pode ver um exemplo clássico de quebra da acessibilidade causada por um click. Este é o padrão de click externo, em que o utilizador pode desativar uma popover aberto ao carregar fora do elemento.
 
-<img src="../images/docs/outerclick-with-mouse.gif" alt="A toggle button opening a popover list implemented with the click outside pattern and operated with a mouse showing that the close action works." />
+<img src="../images/docs/outerclick-with-mouse.gif" alt="Um botão que abre uma lista popover implementada com um padrão de click externo e operado por um rato a mostrar quee a ação de fechar funciona." />
 
-This is typically implemented by attaching a `click` event to the `window` object that closes the popover:
+Isto geralmente é implementado ao anexar um evento `click` ao objeto `window` que fecha a popover:
 
 ```javascript{12-14,26-30}
 class OuterClickExample extends React.Component {
@@ -293,11 +293,11 @@ class OuterClickExample extends React.Component {
 }
 ```
 
-This may work fine for users with pointer devices, such as a mouse, but operating this with the keyboard alone leads to broken functionality when tabbing to the next element as the `window` object never receives a `click` event. This can lead to obscured functionality which blocks users from using your application.
+Isso pode funcionar bem para os utilizadores com dispositivos com ponteiro, como por exemplo um rato, mas se for apenas com um teclado pode quebrar a funcionalidade ao utilizar o `tab` para o próximo elemento, sendo que o objecto `window` não recebe o evento `click`. Pode também levar a uma funcionalidade escondida que impede os utilizadores de utilizar a aplicação. 
 
-<img src="../images/docs/outerclick-with-keyboard.gif" alt="A toggle button opening a popover list implemented with the click outside pattern and operated with the keyboard showing the popover not being closed on blur and it obscuring other screen elements." />
+<img src="../images/docs/outerclick-with-keyboard.gif" alt="Um botão que abre uma lista popover implementada com um padrão de click externo e também com a possibilidade de ser operada apenas com o teclado." />
 
-The same functionality can be achieved by using appropriate event handlers instead, such as `onBlur` and `onFocus`:
+A mesma funcionalidade pode ser obtida com os eventos apropriados, como `onBlur` e `onFocus`:
 
 ```javascript{19-29,31-34,37-38,40-41}
 class BlurExample extends React.Component {
