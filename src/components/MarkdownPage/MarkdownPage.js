@@ -84,7 +84,10 @@ const MarkdownPage = ({
               <MarkdownHeader title={titlePrefix} />
 
               {(date || hasAuthors) && (
-                <div css={{marginTop: 15}}>
+                <div
+                  css={{
+                    marginTop: 15,
+                  }}>
                   {date}{' '}
                   {hasAuthors && (
                     <span>
@@ -112,10 +115,15 @@ const MarkdownPage = ({
                   <div css={{marginTop: 80}}>
                     <a
                       css={sharedStyles.articleLayout.editLink}
+<<<<<<< HEAD
                       href={`https://github.com/reactjs/pt-pt.reactjs.org/tree/master/${
                         markdownRemark.fields.path
                       }`}>
                       Edite esta página
+=======
+                      href={`https://github.com/reactjs/reactjs.org/tree/master/${markdownRemark.fields.path}`}>
+                      Edit this page
+>>>>>>> e548bd7e65086a8206fee46bd9e24b18b68bf045
                     </a>
                   </div>
                 )}
