@@ -8,7 +8,11 @@ redirect_from:
   - "docs/events-ko-KR.html"
 ---
 
+<<<<<<< HEAD
 Manipular eventos em elementos React é muito semelhante à manipular eventos em elementos do DOM. Existem algumas diferenças sintáticas:
+=======
+Handling events with React elements is very similar to handling events on DOM elements. There are some syntax differences:
+>>>>>>> e548bd7e65086a8206fee46bd9e24b18b68bf045
 
 * Eventos em React são nomeados usando camelCase ao invés de letras minúsculas.
 * Com o JSX tu passas uma função como manipulador de eventos ao invés de um texto.
@@ -130,8 +134,13 @@ class LoggingButton extends React.Component {
   render() {
     // Esta sintaxe garante que o `this` seja vinculado ao handleClick.
     return (
+<<<<<<< HEAD
       <button onClick={(e) => this.handleClick(e)}>
         Clica-me
+=======
+      <button onClick={() => this.handleClick()}>
+        Click me
+>>>>>>> e548bd7e65086a8206fee46bd9e24b18b68bf045
       </button>
     );
   }
