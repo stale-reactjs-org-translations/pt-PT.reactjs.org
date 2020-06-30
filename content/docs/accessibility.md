@@ -226,7 +226,7 @@ class Parent extends React.Component {
 this.inputElement.current.focus();
 ```
 
-Ao usar um HOC para estender componentes, é recomendado [encaminhar a ref](/docs/forwarding-refs.html) para o elemento embrulhado usando a função de React `forwardRef`. se um third party HOC  não implementar o `forwardRef`, o padrão acima pode ser usado como fallback.
+Ao usar um HOC para estender componentes, é recomendado [encaminhar a ref](/docs/forwarding-refs.html) para o elemento embrulhado usando a função de React `forwardRef`. Se um HOC de terceiros não implementar o `forwardRef`, o padrão acima pode ser usado como fallback.
 
 Um ótimo exemplo de controlar o focus é o [react-aria-modal](https://github.com/davidtheclark/react-aria-modal). Este é um exemplo relativamente raro de uma janela modal totalmente acessível. Não só coloca o focus inicial no botão de cancelar (prevenindo assim que o utilizador ative acidentalmente a ação de sucesso) mas também bloqueia o focus do teclado dentro da modal, e ainda reinicia o focus ao elemento que primeiramente acionou a modal.
 
