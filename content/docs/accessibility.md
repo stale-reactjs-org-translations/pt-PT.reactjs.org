@@ -41,7 +41,7 @@ Nota que todos os atributos HTML `aria-*` são totalmente suportados em JSX. Ape
 
 ## Semântica HTML {#semantic-html}
 
-A semântica é a base de uma aplicação web acessível. Se usarmos corretamente os elementos HTML para reforçar o significado da informação colocada nos nossos websites, muitas das vezes a acessibilidade pode ser gratuita.
+A semântica HTML é a base de uma aplicação web acessível. Se usarmos corretamente os elementos HTML para reforçar o significado da informação colocada nos nossos websites, a acessibilidade pode vir de forma gratuita.
 
 - [MDN HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
