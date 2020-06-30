@@ -423,7 +423,7 @@ A verificação mais fácil e também mais importante é testar todo o teu websi
 1. Desconecta o rato.
 1. Usa o `Tab` e o `Shift+Tab` para navegar.
 1. Usa o `Enter` para clicar em elementos.
-1. Se necessário, use as setas do teclado e interaja com alguns elementos como, por exemplo menus e dropdowns.
+1. Se necessário, usa as setas do teclado e interaja com alguns elementos como, por exemplo menus e dropdowns.
 
 ### Assistência ao desenvolvimento {#development-assistance}
 
