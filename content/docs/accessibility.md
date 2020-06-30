@@ -237,7 +237,7 @@ Um ótimo exemplo de controlar o focus é o [react-aria-modal](https://github.co
 
 ## Eventos do rato e cursor {#mouse-and-pointer-events}
 
-Certifique-se de que todas as funcionalidades expostas através dos eventos do rato ou cursor também possam ser acedidas usando apenas o teclado. Se depender apenas no rato, vai haver muitos casos em que os utilizadores não consigam utilizar a sua aplicação.
+Certifique-se de que todas as funcionalidades expostas através dos eventos do rato ou cursor também possam ser acedidas usando apenas o teclado. Se depender apenas no rato, vai haver muitos casos em que os utilizadores não consigam utilizar a tua aplicação.
 
 Para ilustrar isto, abaixa pode ver um exemplo clássico de quebra da acessibilidade causada por um click. Este é o padrão de click externo, em que o utilizador pode desativar uma popover aberto ao carregar fora do elemento.
 
