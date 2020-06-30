@@ -418,7 +418,7 @@ Existe várias ferramentas que pode usar para o ajudar na criação de aplicaç�
 
 ### Teclado {#the-keyboard}
 
-De longe o mais fácil e também a verificação mais importante. Deve testar se todo o website pode ser utilizado apenas com o teclado, fazendo o seguinte:
+A verificação mais fácil e também mais importante é testar todo o teu website para verificar se pode ser utilizado apenas com o teclado, fazendo o seguinte:
 
 1. Desconecte o rato.
 1. Use o `Tab` e o `Shift+Tab` para navegar.
