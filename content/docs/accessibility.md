@@ -407,7 +407,7 @@ Pode ser um trabalho árduo calcular adequadamente todas as combinações de cor
 
 As ferramentas aXe e WAVE mencionadas abaixo também incluem testes de contraste.
 
-Se quiser estender as suas habilidades de teste de contraste, pode usar estas ferramentas: 
+Se tu quiseres estender as suas habilidades de teste de contraste, podes usar estas ferramentas: 
 
 - [WebAIM - Color Contrast Checker](https://webaim.org/resources/contrastchecker/)
 - [The Paciello Group - Color Contrast Analyzer](https://www.paciellogroup.com/resources/contrastanalyser/)
