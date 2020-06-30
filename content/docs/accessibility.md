@@ -319,7 +319,7 @@ class BlurExample extends React.Component {
     }));
   }
 
-  // Fechamos a popover no proximo tick usando o setTimeout.
+  // Fechamos a popover no próximo tick usando o setTimeout.
   // É necessário porque precisamos primeiro de verificar o
   // outro filho do elemento que recebeu o focus
   // visto que o evento blur foi acionado antes do novo evento de focus.
