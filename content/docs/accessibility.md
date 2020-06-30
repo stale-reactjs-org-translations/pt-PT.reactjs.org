@@ -143,7 +143,7 @@ Focus no teclado refere-se ao elemento DOM que foi selecionado e que aceita aç�
 
 <img src="../images/docs/keyboard-focus.png" alt="Contorno azul à volta da ligação selecionada." />
 
-Apenas use CSS que elimine este contorno, por exemplo definindo `outline: 0`, se for substituir por outra implementação de focus.
+Usa apenas CSS que elimine este contorno, por exemplo definindo `outline: 0`, se for substituir por outra implementação de focus.
 
 ### Mecanismos para avançar para o conteúdo desejado {#mechanisms-to-skip-to-desired-content}
 
