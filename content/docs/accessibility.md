@@ -133,7 +133,7 @@ Situações de erro precisam de ser entendidas por todos os utilizadores. Os art
 
 ## Controlo de focus {#focus-control}
 
-Certifique-se que a aplicação web possa ser utilizada apenas com o teclado:
+Certifica-te que a aplicação web possa ser utilizada apenas com o teclado:
 
 - [WebAIM talks about keyboard accessibility](https://webaim.org/techniques/keyboard/)
 
