@@ -499,7 +499,7 @@ Consulta os seguintes guias sobre como ativar e utilizar o VoiceOver:
 
 [Job Access With Speech](https://www.freedomscientific.com/Products/software/JAWS/) ou JAWS, é um leitor de ecrã muito popular no sistema operativo Windows.
 
-Consulte os seguintes guias de como usar o JAWS:
+Consulta os seguintes guias sobre como usar o JAWS:
 
 - [WebAIM - Using JAWS to Evaluate Web Accessibility](https://webaim.org/articles/jaws/)
 - [Deque - JAWS Keyboard Shortcuts](https://dequeuniversity.com/screenreaders/jaws-keyboard-shortcuts)
