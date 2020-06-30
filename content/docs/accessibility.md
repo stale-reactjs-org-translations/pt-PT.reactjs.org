@@ -397,7 +397,7 @@ Podemos definir o título em React usando o [React Document Title Component](htt
 
 ### Contraste de Cor {#color-contrast}
 
-Certifique-se de que todo o texto no site tem o contraste suficiente para ser legível por utilizadores com baixa visão:
+Certifica-te de que todo o texto no site tem o contraste suficiente para ser legível por utilizadores com baixa visão:
 
 - [WCAG - Understanding the Color Contrast Requirement](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)
 - [Everything About Color Contrast And Why You Should Rethink It](https://www.smashingmagazine.com/2014/10/color-contrast-tips-and-tools-for-accessibility/)
