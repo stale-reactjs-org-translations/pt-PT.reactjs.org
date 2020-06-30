@@ -433,7 +433,7 @@ Pode verificar algumas funcionalidades de acessibilidade diretamente no código 
 
 O plugin [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y) para o ESLint fornece feedback sobre o linting da AST em relação a problemas de acessibilidade no JSX. A maioria dos IDE's permite a integração dos resultados diretamente nas janelas de código.
 
-[Create React App](https://github.com/facebookincubator/create-react-app) tem este plugin com um subconjunto de regras já ativadas. Se quiser pode ainda adicionar mais regras de acessibilidade, adicionando o ficheiro `.eslintrc` na pasta root do seu projeto com o seguinte conteúdo:
+[Create React App](https://github.com/facebookincubator/create-react-app) tem este plugin com um subconjunto de regras já ativadas. Se quiser pode ainda adicionar mais regras de acessibilidade, adicionando o ficheiro `.eslintrc` na pasta raíz do seu projeto com o seguinte conteúdo:
 
   ```json
   {
