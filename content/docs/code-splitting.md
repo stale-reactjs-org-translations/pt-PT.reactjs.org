@@ -49,9 +49,9 @@ Senão, terás de configurar o empacotamento tu mesmo. Para referência, podes v
 
 Empacotamento é ótimo, mas, à medida que a tua aplicação cresce, o pacote cresce também. Especialmente se estiveres a incluir bibliotecas de terceiros de grandes dimensões. Tens de ficar atento ao código que estás a incluir no teu pacote, para que não o faças tão grande ao ponto que torne a aplicação muito lenta a carregar.
 
-Para evitar acabar com um pacote grande, é bom antecipar o problema e começar a “dividir” o pacote. A divisão de código é um recurso suportado por empacotadores como o Webpack, Rollup e Browserify (através do coeficiente de empacotamento ([factor-bundle](https://github.com/browserify/factor-bundle))) que podem criar múltiplos pacotes, que são posteriormente carregados dinamicamente em tempo de execução.
+Para evitar acabar com um pacote grande, é bom antecipar o problema e começar a "dividir" o pacote. A divisão de código é um recurso suportado por empacotadores como o Webpack, Rollup e Browserify (através do coeficiente de empacotamento ([factor-bundle](https://github.com/browserify/factor-bundle))) que podem criar múltiplos pacotes, que são posteriormente carregados dinamicamente em tempo de execução.
 
-Dividir o código da aplicação pode-te ajudar a carregar somente o necessário ao utilizador, o que pode melhorar dramaticamente o desempenho da aplicação. Apesar de não ter reduzido a quantidade total de código da aplicação, acabou por evitar carregar código que o utilizador talvez nunca precise e reduziu o código inicial necessário para carregar a aplicação.
+Dividir o código da aplicação pode ajudar-te a carregar somente o necessário ao utilizador, o que pode melhorar dramaticamente o desempenho da aplicação. Apesar de não reduzir a quantidade total de código da aplicação, acaba por evitar o carregamento de código que o utilizador talvez nunca precise, e reduz o código inicial necessário para carregar a aplicação.
 
 ## `import()` {#import}
 
@@ -77,7 +77,7 @@ import("./math").then(math => {
 > 
 >A sintaxe dinâmica `import()` é uma [proposta](https://github.com/tc39/proposal-dynamic-import) da ECMAScript (JavaScript) que ainda não faz parte da linguagem. Espera-se que seja aceite em breve.
 
-Quando o Webpack encontra esta sintaxe, a divisão do código da aplicação é automaticamente feita. Se estás a usar Create React App, isto já está configurado e podes [começar a usar](https://facebook.github.io/create-react-app/docs/code-splitting) imediatamente. Também é suportado por predefinição no [Next.js](https://github.com/zeit/next.js/#dynamic-import).
+Quando o Webpack encontra esta sintaxe, a divisão do código da aplicação é automaticamente feita. Se estás a usar _Create React App_, isto já está configurado e podes [começar a usar](https://facebook.github.io/create-react-app/docs/code-splitting) imediatamente. Também é suportado por predefinição no [Next.js](https://github.com/zeit/next.js/#dynamic-import).
 
 Se estiveres a configurar o Webpack manualmente, provavelmente vais querer ler o [guia em como dividir código](https://webpack.js.org/guides/code-splitting/) do Webpack. A tua configuração deverá ser algo parecida a [isto](https://gist.github.com/gaearon/ca6e803f5c604d37468b0091d9959269).
 
@@ -195,7 +195,7 @@ const App = () => (
 
 ## Exportações de nome {#named-exports}
 
-O `React.lazy`, atualmente, apenas suporta export default. Se o módulo que queres importar tem uma exportação de nome, então podes criar um módulo intermediário que tenha um export default. Assim garantes que o tree shaking continua a funcionar e não importa componentes não utilizados.
+O `React.lazy`, atualmente, apenas suporta `export default`. Se o módulo que queres importar tem uma exportação de nome, então podes criar um módulo intermediário que tenha um export default. Assim garantes que o _tree shaking_ continua a funcionar e não importa componentes não utilizados.
 
 ```js
 // ManyComponents.js
