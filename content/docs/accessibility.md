@@ -104,7 +104,7 @@ function ListItem({ item }) {
 }
 ```
 
-Para mais informação, veja a [documentação sobre Fragments](/docs/fragments.html).
+Para mais informação, vê a [documentação sobre Fragments](/docs/fragments.html).
 
 ## Formulários Acessíveis {#accessible-forms}
 
