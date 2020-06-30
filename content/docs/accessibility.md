@@ -420,7 +420,7 @@ Existe várias ferramentas que pode usar para o ajudar na criação de aplicaç�
 
 A verificação mais fácil e também mais importante é testar todo o teu website para verificar se pode ser utilizado apenas com o teclado, fazendo o seguinte:
 
-1. Desconecte o rato.
+1. Desconecta o rato.
 1. Use o `Tab` e o `Shift+Tab` para navegar.
 1. Use o `Enter` para clicar em elementos.
 1. Se necessário, use as setas do teclado e interaja com alguns elementos como, por exemplo menus e dropdowns.
