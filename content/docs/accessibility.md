@@ -508,7 +508,7 @@ Consulta os seguintes guias sobre como usar o JAWS:
 
 #### ChromeVox no Google Chrome {#chromevox-in-google-chrome}
 
-[ChromeVox](https://www.chromevox.com/) é um leitor de ecrã integrado no Chromebooks e está disponível como [extensão](https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en) para o Google Chrome.
+[ChromeVox](https://www.chromevox.com/) é um leitor de ecrã integrado nos Chromebooks e está disponível como [extensão](https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en) para o Google Chrome.
 
 Consulte os seguintes guias de como usar o ChromeVox:
 
