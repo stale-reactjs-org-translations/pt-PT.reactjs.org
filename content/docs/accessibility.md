@@ -163,7 +163,7 @@ Saiba mais sobre o uso destes elementos para melhorar a acessibilidade aqui:
 
 As nossas aplicações React modificam continuamente o HTML DOM durante o tempo de execução, às vezes perdendo o focus do teclado ou adicionado o focus a um elemento inesperado. Para corrigir isso, é necessário programar o focus do teclado na direção certo. Por exemplo, colocar o focus do teclado no botão que faz abrir uma modal depois dessa mesma modal ser fechada.
 
-Pode encontrar mais informações de como implementar no MDN Web Docs [keyboard-navigable JavaScript widgets](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets).
+Podes encontrar mais informações de como implementar no MDN Web Docs [keyboard-navigable JavaScript widgets](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets).
 
 Para colocar o focus no React, podemos usar [Refs para elementos no DOM](/docs/refs-and-the-dom.html).
 
