@@ -427,7 +427,7 @@ A verificação mais fácil e também mais importante é testar todo o teu websi
 
 ### Assistência ao desenvolvimento {#development-assistance}
 
-Pode verificar algumas funcionalidades de acessibilidade diretamente no código JSX. Na maioria dos casos, os intellisense utilizados nos IDE's já fornecem verificações para os ARIA roles, estados e propriedades. Pode também usar as seguintes ferramentas:
+Podemos verificar algumas funcionalidades de acessibilidade diretamente no código JSX. Na maioria dos casos, os intellisense utilizados nos IDE's já fornecem verificações para os ARIA roles, estados e propriedades. Podemos também usar as seguintes ferramentas:
 
 #### eslint-plugin-jsx-a11y {#eslint-plugin-jsx-a11y}
 
