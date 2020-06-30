@@ -472,7 +472,7 @@ Em alguns browsers podemos facilmente visualizar as informações de acessibilid
 
 Testar com um leitor de ecrã deve fazer parte dos testes de acessibilidade.
 
-Note que a combinação entre os browsers e os leitores de ecrã tem importância. É recomendado que teste a sua aplicação no browser mais adequando ao seu leitor de ecrã.
+Note que a combinação entre os browsers e os leitores de ecrã tem importância. É recomendado que testes a tua aplicação no browser mais adequando ao teu leitor de ecrã.
 
 ### Leitores de ecrã mais comuns {#commonly-used-screen-readers}
 
