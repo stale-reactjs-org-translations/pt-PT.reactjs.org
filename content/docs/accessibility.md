@@ -444,7 +444,7 @@ O plugin [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a
 
 ### Testar acessibilidade no browser {#testing-accessibility-in-the-browser}
 
-Existem várias ferramentas que podem executar auditorias de acessibilidade nas páginas web no browser. Por favor, use-as em combinação com outros testes de acessibilidade, sendo que o browser só irá testar as acessibilidades do conteúdo HTML.
+Existem várias ferramentas que podem executar auditorias de acessibilidade nas páginas web no browser. Use-as em combinação com outros testes de acessibilidade, uma vez que o browser só irá testar as acessibilidades do conteúdo HTML.
 
 #### aXe, aXe-core e react-axe {#axe-axe-core-and-react-axe}
 
