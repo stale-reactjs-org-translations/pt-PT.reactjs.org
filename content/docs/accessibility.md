@@ -153,7 +153,7 @@ Skiplinks ou Skip Navigation Links são ligações escondidos que só ficam vis�
 
 - [WebAIM - Skip Navigation Links](https://webaim.org/techniques/skipnav/)
 
-Use também elementos e pontos de referência como `<main>` e `<aside>`, para demarcar zonas da página, sendo que as tecnologias de acessibilidade permitem assim que o utilizador navegue rapidamente nessas secções.
+Usa também elementos e pontos de referência como `<main>` e `<aside>`, para demarcar zonas da página, sendo que as tecnologias de acessibilidade permitem assim que o utilizador navegue rapidamente nessas secções.
 
 Saiba mais sobre o uso destes elementos para melhorar a acessibilidade aqui:
 
