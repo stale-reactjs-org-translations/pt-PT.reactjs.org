@@ -4,7 +4,7 @@ title: Accessibility
 permalink: docs/accessibility.html
 ---
 
-## Porque Acessibilidade? {#why-accessibility}
+## Porquê Acessibilidade? {#why-accessibility}
 
 A acessibilidade na web (também conhecida por [** a11y **](https://en.wiktionary.org/wiki/a11y)) é o design e a criação de websites que podem ser usados por todos. O suporte à acessibilidade é necessário para permitir que as tecnologias de acessibilidade interpretem as páginas da web.
 
