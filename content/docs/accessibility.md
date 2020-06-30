@@ -294,7 +294,7 @@ class OuterClickExample extends React.Component {
 }
 ```
 
-Isso pode funcionar bem para os utilizadores com dispositivos com ponteiro como, por exemplo um rato, mas se for apenas com um teclado pode quebrar a funcionalidade ao utilizar o `tab` para o próximo elemento, sendo que o objecto `window` não recebe o evento `click`. Pode também levar a uma funcionalidade escondida que impede os utilizadores de utilizar a aplicação. 
+Isso pode funcionar bem para os utilizadores com dispositivos com ponteiro como, por exemplo um rato, mas se for apenas com um teclado pode quebrar a funcionalidade ao utilizar o `tab` para o próximo elemento, sendo que o objecto `window` não recebe o evento `click`. Pode também levar a uma funcionalidade escondida que impede os utilizadores de utilizar a tua aplicação. 
 
 <img src="../images/docs/outerclick-with-keyboard.gif" alt="Um botão que abre uma lista popover implementada com um padrão de click externo e também com a possibilidade de ser operada apenas com o teclado." />
 
