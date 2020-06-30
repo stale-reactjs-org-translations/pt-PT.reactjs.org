@@ -364,7 +364,7 @@ Este código expõe a funcionalidade para os utilizadores com dispositivos de cu
 
 <img src="../images/docs/blur-popover-close.gif" alt="Uma lista popover corretamente fechada com o rato e com o teclado." />
 
-Este é um exemplo de muitos casos em que depender apenas dos eventos de cursor, pode quebrar a funcionalidade para os utilizadores de teclado. Deve ir testando sempre com o teclado porque vai realçar logo as áreas problemáticas que podem ser corrigidas usando os eventos de reconhecimento de teclado.
+Este é um exemplo de muitos casos em que depender apenas dos eventos de cursor, pode quebrar a funcionalidade para os utilizadores de teclado. Deve-se ir testando sempre com o teclado para realçar imediatamente as áreas problemáticas que podem ser corrigidas usando os eventos de reconhecimento de teclado.
 
 ## Widgets mais complexos {#more-complex-widgets}
 
