@@ -91,7 +91,7 @@ function Glossary(props) {
 }
 ```
 
-Quando não é necessário passar propriedades para a tag Fragment podemos usar a [syntax curta](/docs/fragments.html#short-syntax), se a configuração suportar:
+Quando não é necessário passar props para a tag Fragment podemos usar a [síntaxe curta](/docs/fragments.html#short-syntax), se a configuração suportar:
 
 ```javascript{3,6}
 function ListItem({ item }) {
