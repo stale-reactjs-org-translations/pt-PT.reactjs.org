@@ -147,7 +147,7 @@ Apenas use CSS que elimine este contorno, por exemplo definindo `outline: 0`, se
 
 ### Mecanismos para avançar para o conteúdo desejado {#mechanisms-to-skip-to-desired-content}
 
-Providencie mecanismos para permitir que os utilizadores consigam ignorar as secções de navegação, acelerando assim a navegação com o teclado.
+Providencia mecanismos para permitir que os utilizadores consigam ignorar as secções de navegação, acelerando assim a navegação com o teclado.
 
 Skiplinks ou Skip Navigation Links são ligações escondidos que só ficam visíveis quando os utilizadores de teclado interagem com a página. São muito fáceis de implementar com alguns estilos e âncoras:
 
