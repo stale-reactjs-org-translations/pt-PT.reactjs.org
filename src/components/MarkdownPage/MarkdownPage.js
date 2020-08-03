@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2013-present, Facebook, Inc.
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * @emails react-core
  * @flow
@@ -84,7 +84,10 @@ const MarkdownPage = ({
               <MarkdownHeader title={titlePrefix} />
 
               {(date || hasAuthors) && (
-                <div css={{marginTop: 15}}>
+                <div
+                  css={{
+                    marginTop: 15,
+                  }}>
                   {date}{' '}
                   {hasAuthors && (
                     <span>
@@ -112,10 +115,15 @@ const MarkdownPage = ({
                   <div css={{marginTop: 80}}>
                     <a
                       css={sharedStyles.articleLayout.editLink}
+<<<<<<< HEAD
                       href={`https://github.com/reactjs/pt-pt.reactjs.org/tree/master/${
                         markdownRemark.fields.path
                       }`}>
                       Edite esta página
+=======
+                      href={`https://github.com/reactjs/reactjs.org/tree/master/${markdownRemark.fields.path}`}>
+                      Edit this page
+>>>>>>> c89c38241278804b48bf34b1d8d9ee0b9f1b6e8c
                     </a>
                   </div>
                 )}
