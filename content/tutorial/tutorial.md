@@ -12,44 +12,44 @@ redirect_from:
   - "docs/tutorial-zh-CN.html"
 ---
 
-This tutorial doesn't assume any existing React knowledge.
+Este tutorial não assume nenhum conhecimento existente de React.
 
-## Before We Start the Tutorial {#before-we-start-the-tutorial}
+## Antes de começarmos o tutorial {#before-we-start-the-tutorial}
 
-We will build a small game during this tutorial. **You might be tempted to skip it because you're not building games -- but give it a chance.** The techniques you'll learn in the tutorial are fundamental to building any React app, and mastering it will give you a deep understanding of React.
+Vamos construir um pequeno jogo durante este tutorial. **Poderá estar tentado a ignorar-lo porque não vai construir jogos -- Dê uma chance.** TAs técnicas que você aprenderá no tutorial são fundamentais para criar qualquer aplicativo React e o domínio delas lhe dará um profundo entendimento de React.
 
->Tip
+>Dica
 >
->This tutorial is designed for people who prefer to **learn by doing**. If you prefer learning concepts from the ground up, check out our [step-by-step guide](/docs/hello-world.html). You might find this tutorial and the guide complementary to each other.
+>Este tutorial é feito para pessoas que preferem **aprender fazendo**. Se preferir aprender conceitos do zero, confira o nosso [step-by-step guia](/docs/hello-world.html). Poderá achar que este tutorial e guia complementam-se um ao outro.
 
-The tutorial is divided into several sections:
+O tutorial está dividido em várias seções:
 
-* [Setup for the Tutorial](#setup-for-the-tutorial) will give you **a starting point** to follow the tutorial.
-* [Overview](#overview) will teach you **the fundamentals** of React: components, props, and state.
-* [Completing the Game](#completing-the-game) will teach you **the most common techniques** in React development.
-* [Adding Time Travel](#adding-time-travel) will give you **a deeper insight** into the unique strengths of React.
+* [Configuração do Tutorial](#setup-for-the-tutorial) vai lhe dar **um ponto de partida** to follow the tutorial.
+* [Visão geral](#overview) Vai lhe ensinar **os fundamentais** de React: components, props, e state.
+* [Completar o jogo](#completing-the-game) vai lhe ensinar **as têcnicas mais comuns** do desenvolvimento React.
+* [Adicionando Time Travel (viagem no tempo)](#adding-time-travel) vai lhe dar **uma visão mais aprofundada** dos pontos fortes de React.
 
-You don't have to complete all of the sections at once to get the value out of this tutorial. Try to get as far as you can -- even if it's one or two sections.
+Não precisa completar todas as seções de uma vez para entender tudo que o tutorial tem a oferecer. Tente chegar o mais longe possível, mesmo que seja uma ou duas seções.
 
-### What Are We Building? {#what-are-we-building}
+### O que vamos construir? {#what-are-we-building}
 
-In this tutorial, we'll show how to build an interactive tic-tac-toe game with React.
+Neste tutorial, mostraremos como criar um jogo interativo de jogo-da-velha com React.
 
-You can see what we'll be building here: **[Final Result](https://codepen.io/gaearon/pen/gWWZgR?editors=0010)**. If the code doesn't make sense to you, or if you are unfamiliar with the code's syntax, don't worry! The goal of this tutorial is to help you understand React and its syntax.
+Pode ver o que vamos construir aqui:: **[Resultado Final](https://codepen.io/gaearon/pen/gWWZgR?editors=0010)**. Se o código não fizer sentido ou se não estiver familiarizado com a sintaxe do código, não se preocupe! O objetivo deste tutorial é ajudar a entender o React e sua sintaxe.
 
-We recommend that you check out the tic-tac-toe game before continuing with the tutorial. One of the features that you'll notice is that there is a numbered list to the right of the game's board. This list gives you a history of all of the moves that have occurred in the game, and is updated as the game progresses.
+Recomendamos que confira o jogo tic-tac-toe (jogo da velha) antes de continuar com o tutorial. Uma das características que notará é que existe uma lista numerada à direita do tabuleiro do jogo. Esta lista fornece um histórico de todas as jogadas que ocorreram no jogo e é atualizada à medida que o jogo avança.
 
-You can close the tic-tac-toe game once you're familiar with it. We'll be starting from a simpler template in this tutorial. Our next step is to set you up so that you can start building the game.
+Pode fechar o jogo da velha assim que estiver familiarizado com ele. Começaremos a partir de um modelo mais simples neste tutorial. Nosso próximo passo é prepará-lo para que possa começar a desenvolver o jogo.
 
-### Prerequisites {#prerequisites}
+### Pré-requisitos {#prerequisites}
 
-We'll assume that you have some familiarity with HTML and JavaScript, but you should be able to follow along even if you're coming from a different programming language. We'll also assume that you're familiar with programming concepts like functions, objects, arrays, and to a lesser extent, classes.
+Vamos presumir que você já tenha alguma familiaridade com HTML e JavaScript. Porém, deve ser capaz de acompanhá-lo mesmo que esteja vindo de uma linguagem de programação diferente. Também vamos presumir que já esteja familiarizado com conceitos de programação. Tais como: funções, objetos, matrizes em menor escala e classes.
 
-If you need to review JavaScript, we recommend reading [this guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript). Note that we're also using some features from ES6 -- a recent version of JavaScript. In this tutorial, we're using [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), [classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes), [`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let), and [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) statements. You can use the [Babel REPL](babel://es5-syntax-example) to check what ES6 code compiles to.
+Se precisa rever JavaScript, recomendamos ler [this guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript). Observe que também estamos usando alguns recursos do ES6 - uma versão recente do JavaScript. Neste tutorial, estamos usando [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), [classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes), [`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let), e declarações [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const). Pode usar o [Babel REPL](babel://es5-syntax-example) para verificar o código ES6 compilado.
 
-## Setup for the Tutorial {#setup-for-the-tutorial}
+## Configuração para o tutorial {#setup-for-the-tutorial}
 
-There are two ways to complete this tutorial: you can either write the code in your browser, or you can set up a local development environment on your computer.
+Há duas maneiras de concluir este tutorial: você pode escrever o código em seu navegador ou configurar um ambiente de desenvolvimento local em seu computador.
 
 ### Setup Option 1: Write Code in the Browser {#setup-option-1-write-code-in-the-browser}
 
