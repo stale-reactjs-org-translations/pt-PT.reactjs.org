@@ -41,7 +41,12 @@ console.log(add(16, 26)); // 42
 >
 > Os teus pacotes vão ser bastante diferentes do exemplo anterior.
 
+<<<<<<< HEAD
 Se estás a usar [Create React App](https://github.com/facebookincubator/create-react-app), [Next.js](https://github.com/zeit/next.js/), [Gatsby](https://www.gatsbyjs.org/), ou uma ferramenta semelhante, terás uma configuração predefinida do Webpack para empacotar a tua aplicação.
+=======
+If you're using [Create React App](https://create-react-app.dev/), [Next.js](https://nextjs.org/), [Gatsby](https://www.gatsbyjs.org/), or a similar tool, you will have a Webpack setup out of the box to bundle your
+app.
+>>>>>>> bd0c9d8c5f5e78e0bd1066b46024ba98f4daac84
 
 Senão, terás de configurar o empacotamento tu mesmo. Para referência, podes ver os guias de [Instalação](https://webpack.js.org/guides/installation/) e [Introdução](https://webpack.js.org/guides/getting-started/) na documentação do Webpack.
 
@@ -73,15 +78,27 @@ import("./math").then(math => {
 });
 ```
 
+<<<<<<< HEAD
 > Nota:
 > 
 >A sintaxe dinâmica `import()` é uma [proposta](https://github.com/tc39/proposal-dynamic-import) da ECMAScript (JavaScript) que ainda não faz parte da linguagem. Espera-se que seja aceite em breve.
+=======
+When Webpack comes across this syntax, it automatically starts code-splitting
+your app. If you're using Create React App, this is already configured for you
+and you can [start using it](https://create-react-app.dev/docs/code-splitting/) immediately. It's also supported
+out of the box in [Next.js](https://nextjs.org/docs/advanced-features/dynamic-import).
+>>>>>>> bd0c9d8c5f5e78e0bd1066b46024ba98f4daac84
 
 Quando o Webpack encontra esta sintaxe, a divisão do código da aplicação é automaticamente feita. Se estás a usar _Create React App_, isto já está configurado e podes [começar a usar](https://facebook.github.io/create-react-app/docs/code-splitting) imediatamente. Também é suportado por predefinição no [Next.js](https://github.com/zeit/next.js/#dynamic-import).
 
+<<<<<<< HEAD
 Se estiveres a configurar o Webpack manualmente, provavelmente vais querer ler o [guia em como dividir código](https://webpack.js.org/guides/code-splitting/) do Webpack. A tua configuração deverá ser algo parecida a [isto](https://gist.github.com/gaearon/ca6e803f5c604d37468b0091d9959269).
 
 Ao usar [Babel](https://babeljs.io/), terás de ter a certeza que o Babel consegue analisar a sintaxe de importação dinâmica e que não a esteja a transformar. Para tal, vais precisar do [babel-plugin-syntax-dynamic-import](https://yarnpkg.com/en/package/babel-plugin-syntax-dynamic-import).
+=======
+When using [Babel](https://babeljs.io/), you'll need to make sure that Babel can
+parse the dynamic import syntax but is not transforming it. For that you will need [@babel/plugin-syntax-dynamic-import](https://classic.yarnpkg.com/en/package/@babel/plugin-syntax-dynamic-import).
+>>>>>>> bd0c9d8c5f5e78e0bd1066b46024ba98f4daac84
 
 ## `React.lazy` {#reactlazy}
 
@@ -110,6 +127,8 @@ O `React.lazy` recebe uma função que deve chamar um `import()` dinâmico. Este
 O componente dinâmico (ou lazy) pode ser renderizado dentro de um componente `Suspense`, o que nos permite mostrar algum conteúdo como fallback (um indicador de carregamento, por exemplo) enquanto esperamos pelo carregamento do componente dinâmico.
 
 ```js
+import React, { Suspense } from 'react';
+
 const OtherComponent = React.lazy(() => import('./OtherComponent'));
 
 function MyComponent() {
@@ -126,6 +145,8 @@ function MyComponent() {
 A propriedade `fallback` aceita qualquer elemento React que queiras que seja renderizado enquanto esperas que o componente seja carregado completamente. Podes colocar o componente `Suspense` em qualquer lugar acima do componente dinâmico. Podes até ter vários componentes dinâmicos dentro de apenas um componente `Suspense`.
 
 ```js
+import React, { Suspense } from 'react';
+
 const OtherComponent = React.lazy(() => import('./OtherComponent'));
 const AnotherComponent = React.lazy(() => import('./AnotherComponent'));
 
@@ -148,7 +169,9 @@ function MyComponent() {
 Se um outro módulo não for carregado (por exemplo, devido a uma falha na conexão), será disparado um erro. Estes erros podem ser manipulados para dar ao utilizador uma boa experiência de utilização e gerir a recuperação atráves de [Limites de Erro](/docs/error-boundaries.html). Quando um Limite de Erro é criado, podes usá-lo em qualquer lugar acima dos teus componentes dinâmicos para exibir uma mensagem de erro quando houver uma falha de conexão.
 
 ```js
+import React, { Suspense } from 'react';
 import MyErrorBoundary from './MyErrorBoundary';
+
 const OtherComponent = React.lazy(() => import('./OtherComponent'));
 const AnotherComponent = React.lazy(() => import('./AnotherComponent'));
 
@@ -175,8 +198,8 @@ Um bom lugar para começar é nas rotas. A maioria das pessoas na web estão fam
 Aqui está um exemplo de como configurar a divisão de código baseada nas rotas da aplicação através de bibliotecas como o [React Router](https://reacttraining.com/react-router/) com `React.lazy`.
 
 ```js
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import React, { Suspense, lazy } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 const Home = lazy(() => import('./routes/Home'));
 const About = lazy(() => import('./routes/About'));
