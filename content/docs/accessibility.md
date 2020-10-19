@@ -376,7 +376,7 @@ Estas são ferramentas com atributos HTML que são totalmente suportadas em JSX 
 Cada tipo de widget tem um design específico e espera-se que funcione de uma certa forma:
 
 - [WAI-ARIA Authoring Practices - Design Patterns and Widgets](https://www.w3.org/TR/wai-aria-practices/#aria_ex)
-- [Heydon Pickering - ARIA Examples](https://heydonworks.com/practical_aria_examples/)
+- [Heydon Pickering - ARIA Examples](https://heydonworks.com/article/practical-aria-examples/)
 - [Inclusive Components](https://inclusive-components.design/)
 
 ## Outros pontos a ter em consideração {#other-points-for-consideration}
