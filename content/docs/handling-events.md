@@ -8,7 +8,11 @@ redirect_from:
   - "docs/events-ko-KR.html"
 ---
 
+<<<<<<< HEAD
 Manipular eventos em elementos React é muito semelhante à manipular eventos em elementos do DOM. Existem algumas diferenças sintáticas:
+=======
+Handling events with React elements is very similar to handling events on DOM elements. There are some syntax differences:
+>>>>>>> 82b8c9f2ab094eb7b0268029ab72fc99ffcadaf6
 
 * Eventos em React são nomeados usando camelCase ao invés de letras minúsculas.
 * Com o JSX tu passas uma função como manipulador de eventos ao invés de um texto.
@@ -54,7 +58,11 @@ function ActionLink() {
 }
 ```
 
+<<<<<<< HEAD
 Aqui, "`e`" é um synthetic event. O React define esses eventos sintéticos de acordo com a [especificação W3C](https://www.w3.org/TR/DOM-Level-3-Events/). Então, não precisamos nos preocupar com a compatibilidade entre navegadores. Vê a página [`SyntheticEvent`](/docs/events.html) para saberes mais.
+=======
+Here, `e` is a synthetic event. React defines these synthetic events according to the [W3C spec](https://www.w3.org/TR/DOM-Level-3-Events/), so you don't need to worry about cross-browser compatibility. React events do not work exactly the same as native events. See the [`SyntheticEvent`](/docs/events.html) reference guide to learn more.
+>>>>>>> 82b8c9f2ab094eb7b0268029ab72fc99ffcadaf6
 
 Ao usar o React geralmente não precisas chamar `addEventListener` para adicionar _listeneres_ à um elemento no DOM depois que ele é criado. Ao invés disso podes apenas definir um _listener_ quando o elemento é inicialmente renderizado.
 
@@ -130,8 +138,13 @@ class LoggingButton extends React.Component {
   render() {
     // Esta sintaxe garante que o `this` seja vinculado ao handleClick.
     return (
+<<<<<<< HEAD
       <button onClick={(e) => this.handleClick(e)}>
         Clica-me
+=======
+      <button onClick={() => this.handleClick()}>
+        Click me
+>>>>>>> 82b8c9f2ab094eb7b0268029ab72fc99ffcadaf6
       </button>
     );
   }

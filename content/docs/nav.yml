@@ -99,9 +99,13 @@
     - id: events
       title: SyntheticEvent
     - id: test-utils
+<<<<<<< HEAD
       title: Utilitários de Teste
     - id: shallow-renderer
       title: Renderização superficial
+=======
+      title: Test Utilities
+>>>>>>> 82b8c9f2ab094eb7b0268029ab72fc99ffcadaf6
     - id: test-renderer
       title: Test Renderer
     - id: javascript-environment-requirements
@@ -175,4 +179,8 @@
     - id: faq-versioning
       title: Política de Versão
     - id: faq-internals
+<<<<<<< HEAD
       title: Virtual DOM e Objetos Internos
+=======
+      title: Virtual DOM and Internals
+>>>>>>> 82b8c9f2ab094eb7b0268029ab72fc99ffcadaf6
