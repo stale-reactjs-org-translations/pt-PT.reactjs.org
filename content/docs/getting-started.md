@@ -36,9 +36,15 @@ O React foi construído desde o início com um método de adaptação em mente, 
 
 ### Editores Online {#online-playgrounds}
 
+<<<<<<< HEAD
 Se estiveres interessado em interagir com React, podes usar um editor online. Experimenta um template "Hello World" no [CodePen](codepen://hello-world), no [CodeSandbox](https://codesandbox.io/s/new) ou no [Glitch](https://glitch.com/edit/#!/remix/starter-react-template).
 
 Caso prefiras usar o teu próprio editor de texto, podes efectuar o [download deste ficheiro HTML](https://raw.githubusercontent.com/reactjs/reactjs.org/master/static/html/single-file-example.html), editá-lo, e abrir com o teu sistema local. Acaba por ser mais lento ao alterares código, recomendamos a usares apenas para demonstrações simples.
+=======
+If you're interested in playing around with React, you can use an online code playground. Try a Hello World template on [CodePen](codepen://hello-world), [CodeSandbox](https://codesandbox.io/s/new), or [Stackblitz](https://stackblitz.com/fork/react).
+
+If you prefer to use your own text editor, you can also [download this HTML file](https://raw.githubusercontent.com/reactjs/reactjs.org/main/static/html/single-file-example.html), edit it, and open it from the local filesystem in your browser. It does a slow runtime code transformation, so we'd only recommend using this for simple demos.
+>>>>>>> 0bb0303fb704147452a568472e968993f0729c28
 
 ### Adiciona React a um Website {#add-react-to-a-website}
 
@@ -84,7 +90,11 @@ Recomendamos que acedas a [esta visão geral sobre JavaScript](https://developer
 
 ### Tutorial Prático {#practical-tutorial}
 
+<<<<<<< HEAD
 Se preferires **aprender escrevendo código,** acede ao nosso [tutorial prático](/tutorial/tutorial.html). Neste tutorial vamos construir um jogo do galo em React. Podes estar tentado a não o fazer porque não estás a desenvolver jogos -- mas experimenta. As técnicas que vais aprender neste tutorial são fundamentais para construir *qualquer* aplicação em React, e ao seguires o tutorial vai fornecer-te uma compreensão mais profunda.
+=======
+If you prefer to **learn by doing,** check out our [practical tutorial](/tutorial/tutorial.html). In this tutorial, we build a tic-tac-toe game in React. You might be tempted to skip it because you're not into building games -- but give it a chance. The techniques you'll learn in the tutorial are fundamental to building *any* React apps, and mastering it will give you a much deeper understanding.
+>>>>>>> 0bb0303fb704147452a568472e968993f0729c28
 
 ### Guia Passo a Passo {#step-by-step-guide}
 
@@ -116,7 +126,11 @@ O [blogue do React](/blog/) é a fonte oficial para artigos sobre actualizaçõe
 
 Também podes seguir a [conta @reactjs](https://twitter.com/reactjs) no Twitter, mas não vais perder nada importante caso queiras _seguir_ só o blogue.
 
+<<<<<<< HEAD
 Nem todos os lançamentos de versões merecem o seu próprio artigo no blogue, mas podes encontrar informação detalhada sobre cada lançamento [no ficheiro `CHANGELOG.md` do repositório React](https://github.com/facebook/react/blob/master/CHANGELOG.md), tal como na página de [Lançamentos](https://github.com/facebook/react/releases).
+=======
+Not every React release deserves its own blog post, but you can find a detailed changelog for every release in the [`CHANGELOG.md` file in the React repository](https://github.com/facebook/react/blob/main/CHANGELOG.md), as well as on the [Releases](https://github.com/facebook/react/releases) page.
+>>>>>>> 0bb0303fb704147452a568472e968993f0729c28
 
 ## Documentação por Versões {#versioned-documentation}
 

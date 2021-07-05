@@ -99,9 +99,13 @@
     - id: events
       title: SyntheticEvent
     - id: test-utils
+<<<<<<< HEAD
       title: Utilitários de Teste
     - id: shallow-renderer
       title: Renderização superficial
+=======
+      title: Test Utilities
+>>>>>>> 0bb0303fb704147452a568472e968993f0729c28
     - id: test-renderer
       title: Test Renderer
     - id: javascript-environment-requirements
@@ -134,6 +138,7 @@
     - id: testing-recipes
       title: Receitas de Teste
     - id: testing-environments
+<<<<<<< HEAD
       title: Ambientes de Teste
 - title: Modo Concorrente (Experimental)
   isOrdered: true
@@ -149,6 +154,10 @@
     - id: concurrent-mode-reference
       title: Referência da API do Modo Concorrente
 - title: Contribuindo
+=======
+      title: Testing Environments
+- title: Contributing
+>>>>>>> 0bb0303fb704147452a568472e968993f0729c28
   items:
     - id: how-to-contribute
       title: Como Contribuir
@@ -175,4 +184,8 @@
     - id: faq-versioning
       title: Política de Versão
     - id: faq-internals
+<<<<<<< HEAD
       title: Virtual DOM e Objetos Internos
+=======
+      title: Virtual DOM and Internals
+>>>>>>> 0bb0303fb704147452a568472e968993f0729c28
