@@ -44,7 +44,11 @@ class Welcome extends React.Component {
 
 Os dois componentes acima são equivalentes do ponto de vista do React.
 
+<<<<<<< HEAD
 Classes tem alguns recursos adicionais que nós discutiremos nas [próximas seções](/docs/state-and-lifecycle.html). Até lá, nós usaremos componentes de função por serem mais sucintos.
+=======
+Function and Class components both have some additional features that we will discuss in the [next sections](/docs/state-and-lifecycle.html).
+>>>>>>> 0bb0303fb704147452a568472e968993f0729c28
 
 ## Renderização de um Componente {#rendering-a-component}
 
@@ -60,7 +64,11 @@ No entanto, elementos também podem representar componentes definidos pelo utili
 const element = <Welcome name="Sara" />;
 ```
 
+<<<<<<< HEAD
 Quando o React vê um elemento representando um componente definido pelo utilizador, ele passa atributos JSX para esse componente como um único objeto. Nós chamamos esse objeto de "props".
+=======
+When React sees an element representing a user-defined component, it passes JSX attributes and children to this component as a single object. We call this object "props".
+>>>>>>> 0bb0303fb704147452a568472e968993f0729c28
 
 Por exemplo, esse código renderiza "Hello, Sara" na página:
 
@@ -233,7 +241,11 @@ function Comment(props) {
 
 [](codepen://components-and-props/extracting-components-continued)
 
+<<<<<<< HEAD
 Extrair componentes pode parecer um trabalho pesado no começo, mas ter uma conjunto de componentes reutilizáveis compensa em aplicações maiores. Uma boa regra é, se uma parte da sua UI for usada várias vezes (`Button`, `Panel`, `Avatar`) ou for complexa o suficiente por si só (`App`, `FeedStory`, `Comment`), é uma boa candidata a se tornar um componente reutilizável.
+=======
+Extracting components might seem like grunt work at first, but having a palette of reusable components pays off in larger apps. A good rule of thumb is that if a part of your UI is used several times (`Button`, `Panel`, `Avatar`), or is complex enough on its own (`App`, `FeedStory`, `Comment`), it is a good candidate to be extracted to a separate component.
+>>>>>>> 0bb0303fb704147452a568472e968993f0729c28
 
 ## Props são somente leitura {#props-are-read-only}
 
