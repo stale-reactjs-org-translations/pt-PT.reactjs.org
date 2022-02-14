@@ -48,7 +48,13 @@ Se o _callback_ opcional for fornecido, este irá ser executado após a renderiz
 >
 > `ReactDOM.render()` não modifica o nó (_node_) do _container_ (apenas modifica os filhos do _container_). É portanto possível, inserir um componente num nó já existente no DOM sem reescrever os filhos existentes.
 >
+<<<<<<< HEAD
 > `ReactDOM.render()` retorna a referência para a raíz da instância `ReactComponent`. No entanto, deverás evitar usá-la, pois em futuras versões de React, os componentes poderão ser renderizados assíncronamente em algums casos. Se necessitares usar uma referência para a raíz da instância `ReactComponent`, a melhor solução será anexar uma [referência callback (_callback ref_)](/docs/more-about-refs.html#the-ref-callback-attribute) no elemento raíz.
+=======
+> `ReactDOM.render()` currently returns a reference to the root `ReactComponent` instance. However, using this return value is legacy
+> and should be avoided because future versions of React may render components asynchronously in some cases. If you need a reference to the root `ReactComponent` instance, the preferred solution is to attach a
+> [callback ref](/docs/refs-and-the-dom.html#callback-refs) to the root element.
+>>>>>>> 71cc6be6182418dec43b72f2a9ef464619cb7025
 >
 > Usar `ReactDOM.render()` para "hidratar" um _container_ renderizado pelo servidor está descontinuado e será removido no React 17. Usa antes o método [`hydrate()`](#hydrate).
 

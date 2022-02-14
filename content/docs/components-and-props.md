@@ -44,7 +44,11 @@ class Welcome extends React.Component {
 
 Os dois componentes acima são equivalentes do ponto de vista do React.
 
+<<<<<<< HEAD
 Classes tem alguns recursos adicionais que nós discutiremos nas [próximas seções](/docs/state-and-lifecycle.html). Até lá, nós usaremos componentes de função por serem mais sucintos.
+=======
+Function and Class components both have some additional features that we will discuss in the [next sections](/docs/state-and-lifecycle.html).
+>>>>>>> 71cc6be6182418dec43b72f2a9ef464619cb7025
 
 ## Renderização de um Componente {#rendering-a-component}
 
@@ -60,7 +64,11 @@ No entanto, elementos também podem representar componentes definidos pelo utili
 const element = <Welcome name="Sara" />;
 ```
 
+<<<<<<< HEAD
 Quando o React vê um elemento representando um componente definido pelo utilizador, ele passa atributos JSX para esse componente como um único objeto. Nós chamamos esse objeto de "props".
+=======
+When React sees an element representing a user-defined component, it passes JSX attributes and children to this component as a single object. We call this object "props".
+>>>>>>> 71cc6be6182418dec43b72f2a9ef464619cb7025
 
 Por exemplo, esse código renderiza "Hello, Sara" na página:
 
@@ -76,7 +84,7 @@ ReactDOM.render(
 );
 ```
 
-[](codepen://components-and-props/rendering-a-component)
+**[Try it on CodePen](https://codepen.io/gaearon/pen/YGYmEG?editors=1010)**
 
 Vamos recapitular o que acontece neste exemplo:
 
@@ -118,7 +126,7 @@ ReactDOM.render(
 );
 ```
 
-[](codepen://components-and-props/composing-components)
+**[Try it on CodePen](https://codepen.io/gaearon/pen/KgQKPr?editors=1010)**
 
 Geralmente, novas aplicações em React têm um único componente `App` no topo. Contudo, se integrares o React em uma aplicação existente, podes começar de baixo para cima com um componente pequeno como o `Button` e gradualmente chegar ao topo da hierarquia de componentes.
 
@@ -152,7 +160,7 @@ function Comment(props) {
 }
 ```
 
-[](codepen://components-and-props/extracting-components)
+**[Try it on CodePen](https://codepen.io/gaearon/pen/VKQwEo?editors=1010)**
 
 Ele aceita `author` (um objeto), `text` (uma string) e `date` (uma data) como props e descreve um comentário em um website de mídia social.
 
@@ -231,9 +239,13 @@ function Comment(props) {
 }
 ```
 
-[](codepen://components-and-props/extracting-components-continued)
+**[Try it on CodePen](https://codepen.io/gaearon/pen/rrJNJY?editors=1010)**
 
+<<<<<<< HEAD
 Extrair componentes pode parecer um trabalho pesado no começo, mas ter uma conjunto de componentes reutilizáveis compensa em aplicações maiores. Uma boa regra é, se uma parte da sua UI for usada várias vezes (`Button`, `Panel`, `Avatar`) ou for complexa o suficiente por si só (`App`, `FeedStory`, `Comment`), é uma boa candidata a se tornar um componente reutilizável.
+=======
+Extracting components might seem like grunt work at first, but having a palette of reusable components pays off in larger apps. A good rule of thumb is that if a part of your UI is used several times (`Button`, `Panel`, `Avatar`), or is complex enough on its own (`App`, `FeedStory`, `Comment`), it is a good candidate to be extracted to a separate component.
+>>>>>>> 71cc6be6182418dec43b72f2a9ef464619cb7025
 
 ## Props são somente leitura {#props-are-read-only}
 
