@@ -8,28 +8,29 @@ prev: getting-started.html
 next: create-a-new-react-app.html
 ---
 
-Use as little or as much React as you need.
+Use o mínimo ou o máximo de React que precisar.
 
-React has been designed from the start for gradual adoption, and **you can use as little or as much React as you need**. Perhaps you only want to add some "sprinkles of interactivity" to an existing page. React components are a great way to do that.
+O React foi desenvolvido desde o início para uma adoção gradual, e **podes usar o mínimo ou o máximo de React que precisares**
+Talves só precisas de adicionar uma "pitada de interactividade" a um projeto existente. Os componente de React são uma excelente maneira para fazer isso.
 
-The majority of websites aren't, and don't need to be, single-page apps. With **a few lines of code and no build tooling**, try React in a small part of your website. You can then either gradually expand its presence, or keep it contained to a few dynamic widgets.
+A maior parte das páginas web não são, e não precisam de ser aplicações single-page. Com **algumas linhas de código e sem build tools**, experimente React numa pequena parte da sua página web. Depois poderás expandir a sua presença, ou manter-la contida em alguns widgets.
 
 ---
 
-- [Add React in One Minute](#add-react-in-one-minute)
-- [Optional: Try React with JSX](#optional-try-react-with-jsx) (no bundler necessary!)
+- [Adiciona React num minuto](#add-react-in-one-minute)
+- [Opcional: Experimente React com JSX](#optional-try-react-with-jsx) (não precisa de bundler!)
 
-## Add React in One Minute {#add-react-in-one-minute}
+## Adiciona React num minuto {#add-react-in-one-minute}
 
-In this section, we will show how to add a React component to an existing HTML page. You can follow along with your own website, or create an empty HTML file to practice.
+Nesta secção, vamos mostrar como adicionar um componente de React a uma existente página web. Poderás seguir com a tua página web ou criar um projeto HTML vazio para praticar.
 
-There will be no complicated tools or install requirements -- **to complete this section, you only need an internet connection, and a minute of your time.**
+Não serão necessarias ferramentas complicadas ou instalações -- **para completares esta secção, só precisas de uma conecção à internet e um minuto do teu tempo.**
 
-Optional: [Download the full example (2KB zipped)](https://gist.github.com/gaearon/6668a1f6986742109c00a581ce704605/archive/f6c882b6ae18bde42dcf6fdb751aae93495a2275.zip)
+Opcional: [Faça Download do exemplo completo (2KB zipped)](https://gist.github.com/gaearon/6668a1f6986742109c00a581ce704605/archive/f6c882b6ae18bde42dcf6fdb751aae93495a2275.zip)
 
-### Step 1: Add a DOM Container to the HTML {#step-1-add-a-dom-container-to-the-html}
+### Passo 1: Adiciona o contentor DOM ao HTML {#step-1-add-a-dom-container-to-the-html}
 
-First, open the HTML page you want to edit. Add an empty `<div>` tag to mark the spot where you want to display something with React. For example:
+Primeiro abre uma página HTML que queira editar. Adiciona uma tag `<div>` que será usada para mostrar algo usando React. Por exemplo:
 
 ```html{3}
 <!-- ... existing HTML ... -->
@@ -39,11 +40,11 @@ First, open the HTML page you want to edit. Add an empty `<div>` tag to mark the
 <!-- ... existing HTML ... -->
 ```
 
-We gave this `<div>` a unique `id` HTML attribute. This will allow us to find it from the JavaScript code later and display a React component inside of it.
+Adicionamos a esta tag `<div>` um atributo `id` único. Que fará com que o código JavaScript o encontre mais tarde onde irá mostrar dentro o componente React.
 
->Tip
+>Dica
 >
->You can place a "container" `<div>` like this **anywhere** inside the `<body>` tag. You may have as many independent DOM containers on one page as you need. They are usually empty -- React will replace any existing content inside DOM containers.
+>Poderá colocar um "contentor" como esta tag `<div>` em **qualquer lado** dentro da tag `<body>`. Poderá ter a quantidade de contentores DOM que precisar em uma só página web. Normalmente estão vazios -- React irá substituir qualquer conteudo existente.
 
 ### Step 2: Add the Script Tags {#step-2-add-the-script-tags}
 
