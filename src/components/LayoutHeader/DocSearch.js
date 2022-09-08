@@ -27,7 +27,9 @@ class DocSearch extends Component<{}, State> {
         inputSelector: '#algolia-doc-search',
       });
     } else {
-      console.warn('A pesquisa falhou ao ser carregada e agora será desativada');
+      console.warn(
+        'A pesquisa falhou ao ser carregada e agora será desativada',
+      );
       this.setState({enabled: false});
     }
   }
