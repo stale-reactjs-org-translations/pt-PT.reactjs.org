@@ -3,24 +3,28 @@ id: cdn-links
 title: Hiperligações CDN
 permalink: docs/cdn-links.html
 prev: create-a-new-react-app.html
-next: hello-world.html
+next: release-channels.html
 ---
 
 Tanto o React como o ReactDOM estão disponíveis através de uma CDN (_Rede de Entrega de Conteúdos_).
 
 ```html
-<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 ```
 
 As versões acima são para uso num ambiente de desenvolvimento, não são adequadas para ambientes de produção. Versões minificadas e optimizadas para produção podem ser encontradas em:
 
 ```html
-<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 ```
 
+<<<<<<< HEAD
 Para carregar uma versão específica de `react` e `react-dom` substitui `16` com o número da versão que pretendes.
+=======
+To load a specific version of `react` and `react-dom`, replace `18` with the version number.
+>>>>>>> e21b37c8cc8b4e308015ea87659f13aa26bd6356
 
 ### O Porquê do Atributo `crossorigin`? {#why-the-crossorigin-attribute}
 
