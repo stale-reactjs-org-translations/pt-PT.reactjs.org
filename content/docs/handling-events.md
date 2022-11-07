@@ -8,7 +8,11 @@ redirect_from:
   - "docs/events-ko-KR.html"
 ---
 
+<<<<<<< HEAD
 Manipular eventos em elementos React é muito semelhante à manipular eventos em elementos do DOM. Existem algumas diferenças sintáticas:
+=======
+Handling events with React elements is very similar to handling events on DOM elements. There are some syntax differences:
+>>>>>>> 822330c3dfa686dbb3424886abce116f20ed20e6
 
 * Eventos em React são nomeados usando camelCase ao invés de letras minúsculas.
 * Com o JSX tu passas uma função como manipulador de eventos ao invés de um texto.
@@ -29,20 +33,30 @@ Por exemplo, com HTML:
 </button>
 ```
 
+<<<<<<< HEAD
 Outra diferença é que não podes retornar `false` para evitar o comportamento padrão no React. Deves chamar `preventDefault` explícitamente. Por exemplo, com HTML simples, para evitar que um link abra uma nova página, podes escrever:
 
 ```html
 <a href="#" onclick="console.log('O link foi clicado.'); return false">
   Clica-me
 </a>
+=======
+Another difference is that you cannot return `false` to prevent default behavior in React. You must call `preventDefault` explicitly. For example, with plain HTML, to prevent the default form behavior of submitting, you can write:
+
+```html
+<form onsubmit="console.log('You clicked submit.'); return false">
+  <button type="submit">Submit</button>
+</form>
+>>>>>>> 822330c3dfa686dbb3424886abce116f20ed20e6
 ```
 
 Em React, isto poderia ser:
 
-```js{2-5,8}
-function ActionLink() {
-  function handleClick(e) {
+```js{3}
+function Form() {
+  function handleSubmit(e) {
     e.preventDefault();
+<<<<<<< HEAD
     console.log('O link foi clicado.');
   }
 
@@ -50,11 +64,24 @@ function ActionLink() {
     <a href="#" onClick={handleClick}>
       Clica-me
     </a>
+=======
+    console.log('You clicked submit.');
+  }
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <button type="submit">Submit</button>
+    </form>
+>>>>>>> 822330c3dfa686dbb3424886abce116f20ed20e6
   );
 }
 ```
 
+<<<<<<< HEAD
 Aqui, "`e`" é um synthetic event. O React define esses eventos sintéticos de acordo com a [especificação W3C](https://www.w3.org/TR/DOM-Level-3-Events/). Então, não precisamos nos preocupar com a compatibilidade entre navegadores. Vê a página [`SyntheticEvent`](/docs/events.html) para saberes mais.
+=======
+Here, `e` is a synthetic event. React defines these synthetic events according to the [W3C spec](https://www.w3.org/TR/DOM-Level-3-Events/), so you don't need to worry about cross-browser compatibility. React events do not work exactly the same as native events. See the [`SyntheticEvent`](/docs/events.html) reference guide to learn more.
+>>>>>>> 822330c3dfa686dbb3424886abce116f20ed20e6
 
 Ao usar o React geralmente não precisas chamar `addEventListener` para adicionar _listeneres_ à um elemento no DOM depois que ele é criado. Ao invés disso podes apenas definir um _listener_ quando o elemento é inicialmente renderizado.
 
@@ -71,8 +98,8 @@ class Toggle extends React.Component {
   }
 
   handleClick() {
-    this.setState(state => ({
-      isToggleOn: !state.isToggleOn
+    this.setState(prevState => ({
+      isToggleOn: !prevState.isToggleOn
     }));
   }
 
@@ -84,11 +111,6 @@ class Toggle extends React.Component {
     );
   }
 }
-
-ReactDOM.render(
-  <Toggle />,
-  document.getElementById('root')
-);
 ```
 
 [**Experimenta no CodePen**](https://codepen.io/gaearon/pen/xEmzGg?editors=0010)
@@ -97,6 +119,7 @@ Precisas ter cuidado com o significado do `this` nos callbacks do JSX. Em JavaSc
 
 Este não é um comportamento específico do React. É [como funcionam as funções em JavaScript](https://www.smashingmagazine.com/2014/01/understanding-javascript-function-prototype-bind/). Geralmente, se referires à um método sem `()` depois dele, como `onClick={this.handleClick}`, deves fazer o _bind_ desse método.
 
+<<<<<<< HEAD
 Se chamar `bind` incomoda-te, há duas maneiras de contornar isto. Se estiveres a usar a [sintaxe experimental de campos de classe pública](https://babeljs.io/docs/plugins/transform-class-properties/), podes usar campos de classe para vincular callbacks corretamente:
 
 ```js{2-6}
@@ -106,6 +129,16 @@ class LoggingButton extends React.Component {
   handleClick = () => {
     console.log('this é:', this);
   }
+=======
+If calling `bind` annoys you, there are two ways you can get around this. You can use [public class fields syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields#public_instance_fields) to correctly bind callbacks:
+
+```js{2-6}
+class LoggingButton extends React.Component {
+  // This syntax ensures `this` is bound within handleClick.
+  handleClick = () => {
+    console.log('this is:', this);
+  };
+>>>>>>> 822330c3dfa686dbb3424886abce116f20ed20e6
 
   render() {
     return (
@@ -130,8 +163,13 @@ class LoggingButton extends React.Component {
   render() {
     // Esta sintaxe garante que o `this` seja vinculado ao handleClick.
     return (
+<<<<<<< HEAD
       <button onClick={(e) => this.handleClick(e)}>
         Clica-me
+=======
+      <button onClick={() => this.handleClick()}>
+        Click me
+>>>>>>> 822330c3dfa686dbb3424886abce116f20ed20e6
       </button>
     );
   }
