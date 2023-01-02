@@ -226,7 +226,11 @@ class Parent extends React.Component {
 this.inputElement.current.focus();
 ```
 
+<<<<<<< HEAD
 Ao usar um HOC para estender componentes, é recomendado [encaminhar a ref](/docs/forwarding-refs.html) para o elemento embrulhado usando a função de React `forwardRef`. Se um HOC de terceiros não implementar o `forwardRef`, o padrão acima pode ser usado como fallback.
+=======
+When using a [HOC](/docs/higher-order-components.html) to extend components, it is recommended to [forward the ref](/docs/forwarding-refs.html) to the wrapped component using the `forwardRef` function of React. If a third party HOC does not implement ref forwarding, the above pattern can still be used as a fallback.
+>>>>>>> e77ba1e90338ff18f965c9b94c733b034b3ac18f
 
 Um ótimo exemplo de controlar o focus é o [react-aria-modal](https://github.com/davidtheclark/react-aria-modal). Este é um exemplo relativamente raro de uma janela modal totalmente acessível. Não só coloca o focus inicial no botão de cancelar (prevenindo assim que o utilizador ative acidentalmente a ação de sucesso) mas também bloqueia o focus do teclado dentro da modal, e ainda reinicia o focus ao elemento que primeiramente acionou a modal.
 
@@ -375,8 +379,8 @@ Estas são ferramentas com atributos HTML que são totalmente suportadas em JSX 
 
 Cada tipo de widget tem um design específico e espera-se que funcione de uma certa forma:
 
-- [WAI-ARIA Authoring Practices - Design Patterns and Widgets](https://www.w3.org/TR/wai-aria-practices/#aria_ex)
-- [Heydon Pickering - ARIA Examples](https://heydonworks.com/practical_aria_examples/)
+- [ARIA Authoring Practices Guide (APG) - Design Patterns and Examples](https://www.w3.org/WAI/ARIA/apg/patterns/)
+- [Heydon Pickering - ARIA Examples](https://heydonworks.com/article/practical-aria-examples/)
 - [Inclusive Components](https://inclusive-components.design/)
 
 ## Outros pontos a ter em consideração {#other-points-for-consideration}
@@ -403,7 +407,11 @@ Certifica-te de que todo o texto no site tem o contraste suficiente para ser leg
 - [Everything About Color Contrast And Why You Should Rethink It](https://www.smashingmagazine.com/2014/10/color-contrast-tips-and-tools-for-accessibility/)
 - [A11yProject - What is Color Contrast](https://a11yproject.com/posts/what-is-color-contrast/)
 
+<<<<<<< HEAD
 Pode ser um trabalho árduo calcular adequadamente todas as combinações de cores no website. Usa ferramentas como o [Colorable](https://jxnblk.com/colorable/).
+=======
+It can be tedious to manually calculate the proper color combinations for all cases in your website so instead, you can [calculate an entire accessible color palette with Colorable](https://colorable.jxnblk.com/).
+>>>>>>> e77ba1e90338ff18f965c9b94c733b034b3ac18f
 
 As ferramentas aXe e WAVE mencionadas abaixo também incluem testes de contraste.
 
@@ -452,7 +460,11 @@ Deque Systems oferece [aXe-core](https://github.com/dequelabs/axe-core) para tes
 
 [O Motor de Acessibilidade](https://www.deque.com/products/axe/) ou aXe, é uma extensão de browser desenvolvida com o `aXe-core`.
 
+<<<<<<< HEAD
 Podes também usar o módulo [react-axe](https://github.com/dylanb/react-axe) para reportar todos os erros de acessibilidade encontrados na consola durante o desenvolvimento e a depuração.
+=======
+You can also use the [@axe-core/react](https://github.com/dequelabs/axe-core-npm/tree/develop/packages/react) module to report these accessibility findings directly to the console while developing and debugging.
+>>>>>>> e77ba1e90338ff18f965c9b94c733b034b3ac18f
 
 #### WebAIM WAVE {#webaim-wave}
 
